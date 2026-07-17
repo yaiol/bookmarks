@@ -1,0 +1,154 @@
+/**
+ * Bookmark Bar Switcher - popup/options local styles.
+ *
+ * All UI primitives (.ya-app-header, .ya-app-footer, .ya-modal-*, .ya-btn-*,
+ * .ya-input, etc.) live in ../shared/ui.css. This file only carries
+ * bookmark-specific layout (bar rows, drag placeholders, bar-name selector,
+ * common-bar markers, edit inline input, create/io section layout).
+ */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--ya-font);
+  font-size: var(--ya-font-size);
+  color: var(--ya-color-text);
+  background: var(--ya-color-surface);
+}
+
+#app {
+  min-width: 260px;
+  max-width: 320px;
+  padding: 8px;
+}
+
+/* --- Bar list (popup) --- */
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--ya-space-xs);
+  margin-bottom: var(--ya-space-xs);
+  border-radius: var(--ya-radius-sm);
+  transition: background 0.15s;
+  cursor: grab;
+}
+.bar-row:active { cursor: grabbing; }
+.bar-row.dragging { opacity: 0.4; }
+
+.grip {
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: -2px;
+  flex-shrink: 0;
+  user-select: none;
+  padding: 0 2px 0 var(--ya-space-xs);
+}
+
+.drop-placeholder {
+  height: 3px;
+  margin: -1px 0;
+  background: var(--ya-color-primary);
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ya-color-primary) 25%, transparent);
+  pointer-events: none;
+}
+
+/* --- Bar-name selector button (bespoke - flex-1, ellipsis, active state) --- */
+
+.bar-name {
+  flex: 1;
+  height: var(--ya-btn-height);
+  padding: 0 var(--ya-space-md);
+  border: var(--ya-border-width) solid var(--ya-color-border);
+  border-radius: var(--ya-radius);
+  background: var(--ya-color-surface);
+  color: var(--ya-color-text);
+  font: var(--ya-font-size) / 1 var(--ya-font);
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.bar-name:hover:not(.active) { background: var(--ya-color-hover); }
+
+.bar-name.active {
+  background: var(--ya-color-primary);
+  border-color: var(--ya-color-primary);
+  color: var(--ya-color-primary-text);
+  cursor: default;
+}
+
+.dirty-dot {
+  color: #f59f00;
+  margin-right: var(--ya-space-sm);
+  font-size: 11px;
+  vertical-align: middle;
+}
+.bar-name.active .dirty-dot { color: #ffd43b; }
+
+.common-star {
+  display: inline-flex;
+  align-items: center;
+  margin-right: var(--ya-space-sm);
+  color: var(--ya-color-text-muted);
+  vertical-align: middle;
+}
+.common-star svg { width: 12px; height: 12px; }
+.bar-name.active .common-star { color: var(--ya-color-primary-text); }
+
+/* --- Common-bar toggle button (active state on top of .ya-btn-secondary) --- */
+
+.btn-common.active {
+  background: var(--ya-color-hover);
+  border-color: var(--ya-color-text-muted);
+}
+
+/* --- Inline edit input (used when renaming a bar) --- */
+
+.edit-input {
+  flex: 1;
+  height: var(--ya-input-height);
+  padding: 0 var(--ya-space-md);
+  border: var(--ya-border-width) solid var(--ya-color-primary);
+  border-radius: var(--ya-radius);
+  font-size: var(--ya-font-size);
+  outline: none;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.edit-input:focus {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ya-color-primary) 25%, transparent);
+}
+
+/* --- Create / import row layout (options page) --- */
+
+#create-section {
+  display: flex;
+  gap: var(--ya-space-sm);
+  margin-top: var(--ya-space-md);
+  padding-top: var(--ya-space-md);
+  border-top: var(--ya-border-width) solid var(--ya-color-divider);
+}
+#create-section .ya-input { flex: 1; }
+#create-section .ya-btn { flex: none; white-space: nowrap; }
+
+/* --- Show-commons toggle (popup) --- */
+
+.show-commons {
+  display: flex;
+  align-items: center;
+  gap: var(--ya-space-sm);
+  margin-top: var(--ya-space-sm);
+  padding: var(--ya-space-sm) var(--ya-space-xs) 0;
+  font-size: var(--ya-font-size-sm);
+  color: var(--ya-color-text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+.show-commons input { margin: 0; cursor: pointer; }
+.show-commons:hover { color: var(--ya-color-text); }

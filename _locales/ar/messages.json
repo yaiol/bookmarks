@@ -1,0 +1,242 @@
+{
+  "extDescription": {
+    "message": "التبديل بين أشرطة إشارات مرجعية متعددة - احتفظ بمجموعات منفصلة من الإشارات المرجعية وبدّلها داخل الشريط وخارجه فورًا.",
+    "description": "Browser store description; must remain under 132 characters."
+  },
+  "cmdNextBar": {
+    "message": "التبديل إلى شريط الإشارات المرجعية التالي.",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdPreviousBar": {
+    "message": "التبديل إلى شريط الإشارات المرجعية السابق.",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdSwitchTo1": {
+    "message": "التبديل إلى شريط الإشارات المرجعية الأول.",
+    "description": "Keyboard-shortcut description - jump to the 1st bar."
+  },
+  "cmdSwitchTo2": {
+    "message": "التبديل إلى شريط الإشارات المرجعية الثاني.",
+    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+  },
+  "cmdSwitchTo3": {
+    "message": "التبديل إلى شريط الإشارات المرجعية الثالث.",
+    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+  },
+  "cmdSwitchTo4": {
+    "message": "التبديل إلى شريط الإشارات المرجعية الرابع.",
+    "description": "Keyboard-shortcut description - jump to the 4th bar."
+  },
+  "cmdSwitchTo5": {
+    "message": "التبديل إلى شريط الإشارات المرجعية الخامس.",
+    "description": "Keyboard-shortcut description - jump to the 5th bar."
+  },
+  "cmdSwitchTo6": {
+    "message": "التبديل إلى شريط الإشارات المرجعية السادس.",
+    "description": "Keyboard-shortcut description - jump to the 6th bar."
+  },
+  "cmdSwitchTo7": {
+    "message": "التبديل إلى شريط الإشارات المرجعية السابع.",
+    "description": "Keyboard-shortcut description - jump to the 7th bar."
+  },
+  "cmdSwitchTo8": {
+    "message": "التبديل إلى شريط الإشارات المرجعية الثامن.",
+    "description": "Keyboard-shortcut description - jump to the 8th bar."
+  },
+  "cmdSwitchTo9": {
+    "message": "التبديل إلى شريط الإشارات المرجعية التاسع.",
+    "description": "Keyboard-shortcut description - jump to the 9th bar."
+  },
+  "cmdSwitchTo10": {
+    "message": "التبديل إلى شريط الإشارات المرجعية العاشر.",
+    "description": "Keyboard-shortcut description - jump to the 10th bar."
+  },
+  "tooltipGithub": {
+    "message": "المصدر على GitHub",
+    "description": "Footer icon tooltip - link to the source repository."
+  },
+  "tooltipHelp": {
+    "message": "مساعدة",
+    "description": "Footer icon tooltip - opens the online help page."
+  },
+  "tooltipSettings": {
+    "message": "الإعدادات",
+    "description": "Footer gear-icon tooltip - opens the settings page."
+  },
+  "btnCancel": {
+    "message": "إلغاء",
+    "description": "Generic dialog button - dismiss without acting."
+  },
+  "btnSave": {
+    "message": "حفظ",
+    "description": "Dialog button - save the current bar before switching."
+  },
+  "btnDiscard": {
+    "message": "تجاهل",
+    "description": "Dialog button - drop unsaved changes."
+  },
+  "popupShowCommons": {
+    "message": "إظهار الأشرطة المشتركة",
+    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+  },
+  "popupRowLoaded": {
+    "message": "محمل حاليًا",
+    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+  },
+  "popupRowSwitch": {
+    "message": "انقر للتبديل",
+    "description": "Tooltip on an inactive bar row - click it to load that bar."
+  },
+  "popupUnsavedChanges": {
+    "message": "تغييرات غير محفوظة",
+    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+  },
+  "popupCommonBar": {
+    "message": "شريط مشترك",
+    "description": "Tooltip on the icon marking a row as a common bar."
+  },
+  "popupSaveInPlace": {
+    "message": "حفظ تغييرات الشريط في هذه المجموعة",
+    "description": "Tooltip on the save icon shown on the dirty loaded row."
+  },
+  "popupDirtySwitch": {
+    "message": "هل تريد حفظ التغييرات في \"{loaded}\" قبل التبديل إلى \"{target}\"؟",
+    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+  },
+  "popupDirtySave": {
+    "message": "هل تريد حفظ التغييرات في \"{loaded}\"؟",
+    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+  },
+  "optionsHeaderSuffix": {
+    "message": "- الإعدادات",
+    "description": "Suffix after the app name in the settings page header and tab title."
+  },
+  "optionsLanguageLabel": {
+    "message": "اللغة",
+    "description": "Label for the UI-language picker in settings."
+  },
+  "optionsLanguageAuto": {
+    "message": "تلقائي (لغة المتصفح)",
+    "description": "First option in the language picker - follow the browser's language."
+  },
+  "optionsBarsHeading": {
+    "message": "أشرطة الإشارات المرجعية",
+    "description": "Heading of the bars-management section in settings."
+  },
+  "optionsBarsHint": {
+    "message": "اسحب شريطًا لإعادة الترتيب. ضع علامة على شريط كشريط مشترك لجعل إشاراته المرجعية متاحة للأشرطة الأخرى. لكل شريط غير مشترك، اختر الأشرطة المشتركة التي تريد إلحاقها وبأي ترتيب.",
+    "description": "Explanatory hint under the Bookmark bars heading."
+  },
+  "optionsNewBarPlaceholder": {
+    "message": "اسم شريط جديد…",
+    "description": "Placeholder in the create-bar text input."
+  },
+  "optionsAddBar": {
+    "message": "+ إضافة شريط",
+    "description": "Label of the button that creates a new bar."
+  },
+  "optionsAddBarTitle": {
+    "message": "إضافة",
+    "description": "Tooltip on the create-bar button."
+  },
+  "optionsGripTitle": {
+    "message": "اسحب لإعادة ترتيب الأشرطة",
+    "description": "Tooltip on the drag handle of a bar card."
+  },
+  "optionsLoadedTag": {
+    "message": "محمل",
+    "description": "Tag shown on the bar card that is currently active in the bar."
+  },
+  "optionsCommonSet": {
+    "message": "ضع علامة كشريط مشترك (يمكن إلحاق إشاراته المرجعية بأشرطة أخرى)",
+    "description": "Tooltip on the common toggle when the bar is not yet common."
+  },
+  "optionsCommonUnset": {
+    "message": "شريط مشترك - انقر لإلغاء التعيين",
+    "description": "Tooltip on the common toggle when the bar is already common."
+  },
+  "optionsAddToAll": {
+    "message": "إضافة هذا الشريط المشترك إلى كل شريط آخر",
+    "description": "Tooltip on the + button of a common bar card."
+  },
+  "optionsRemoveFromAll": {
+    "message": "إزالة هذا الشريط المشترك من كل شريط آخر",
+    "description": "Tooltip on the − button of a common bar card."
+  },
+  "optionsExportOne": {
+    "message": "تصدير هذا الشريط إلى ملف JSON",
+    "description": "Tooltip on the per-bar export icon."
+  },
+  "optionsDeleteBar": {
+    "message": "حذف هذا الشريط",
+    "description": "Tooltip on the per-bar delete icon."
+  },
+  "optionsCannotDeleteLast": {
+    "message": "لا يمكن حذف الشريط الأخير",
+    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+  },
+  "optionsNoCommons": {
+    "message": "لا توجد أشرطة مشتركة بعد. ضع علامة على شريط كشريط مشترك لاستخدامه هنا.",
+    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+  },
+  "optionsCommonsLabel": {
+    "message": "الأشرطة المشتركة",
+    "description": "Label above the per-bar list of selected common bars."
+  },
+  "optionsRemoveFromBar": {
+    "message": "إزالة من هذا الشريط",
+    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+  },
+  "optionsAddCommonOption": {
+    "message": "إضافة شريط مشترك…",
+    "description": "Placeholder option in the dropdown that adds a common to a bar."
+  },
+  "optionsAddCommonBtn": {
+    "message": "إضافة",
+    "description": "Button that confirms adding the selected common to the bar."
+  },
+  "optionsDeleteConfirm": {
+    "message": "هل تريد إزالة شريط الإشارات المرجعية هذا وجميع إشاراته المرجعية؟",
+    "description": "Body of the delete-confirmation modal."
+  },
+  "optionsDeleteRemove": {
+    "message": "إزالة",
+    "description": "Confirm button of the delete-confirmation modal."
+  },
+  "optionsDirtyDiscardApply": {
+    "message": "تجاهل وتطبيق",
+    "description": "Button that discards unsaved edits and applies the config change."
+  },
+  "optionsDirtySaveApply": {
+    "message": "حفظ وتطبيق",
+    "description": "Button that saves unsaved edits then applies the config change."
+  },
+  "optionsRemergeDirty": {
+    "message": "الشريط المحمل حاليًا \"{title}\" يحتوي على تغييرات غير محفوظة. هل تريد حفظها، تجاهلها، أو إلغاء تغيير التكوين هذا؟",
+    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+  },
+  "optionsExportFailed": {
+    "message": "فشل التصدير: ",
+    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+  },
+  "optionsImportFailed": {
+    "message": "فشل الاستيراد: ",
+    "description": "Alert prefix when applying an import fails; followed by the error detail."
+  },
+  "errorMissingSets": {
+    "message": "مصفوفة 'sets' مفقودة",
+    "description": "Error thrown when an imported JSON file has no top-level sets array."
+  },
+  "errorNoBars": {
+    "message": "الملف لا يحتوي على أشرطة",
+    "description": "Error thrown when a single-bar import file contains zero bars."
+  },
+  "optionsImportNewBar": {
+    "message": "استيراد شريط...",
+    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+  },
+  "optionsImportNewBarTitle": {
+    "message": "استيراد شريط من ملف كنسخة جديدة — لا يحل محل شريط موجود أبدًا.",
+    "description": "Tooltip on the Import bar button beside Add bar."
+  }
+}

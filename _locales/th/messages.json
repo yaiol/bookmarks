@@ -1,0 +1,242 @@
+{
+  "extDescription": {
+    "message": "สลับระหว่างแถบที่คั่นหน้าหลายรายการ - เก็บชุดที่คั่นหน้าแยกกันและสลับเข้าออกแถบได้ทันที",
+    "description": "Browser store description; must remain under 132 characters."
+  },
+  "cmdNextBar": {
+    "message": "สลับไปแถบที่คั่นหน้าถัดไป",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdPreviousBar": {
+    "message": "สลับไปแถบที่คั่นหน้าก่อนหน้า",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdSwitchTo1": {
+    "message": "สลับไปแถบที่คั่นหน้า 1",
+    "description": "Keyboard-shortcut description - jump to the 1st bar."
+  },
+  "cmdSwitchTo2": {
+    "message": "สลับไปแถบที่คั่นหน้า 2",
+    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+  },
+  "cmdSwitchTo3": {
+    "message": "สลับไปแถบที่คั่นหน้า 3",
+    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+  },
+  "cmdSwitchTo4": {
+    "message": "สลับไปแถบที่คั่นหน้า 4",
+    "description": "Keyboard-shortcut description - jump to the 4th bar."
+  },
+  "cmdSwitchTo5": {
+    "message": "สลับไปแถบที่คั่นหน้า 5",
+    "description": "Keyboard-shortcut description - jump to the 5th bar."
+  },
+  "cmdSwitchTo6": {
+    "message": "สลับไปแถบที่คั่นหน้า 6",
+    "description": "Keyboard-shortcut description - jump to the 6th bar."
+  },
+  "cmdSwitchTo7": {
+    "message": "สลับไปแถบที่คั่นหน้า 7",
+    "description": "Keyboard-shortcut description - jump to the 7th bar."
+  },
+  "cmdSwitchTo8": {
+    "message": "สลับไปแถบที่คั่นหน้า 8",
+    "description": "Keyboard-shortcut description - jump to the 8th bar."
+  },
+  "cmdSwitchTo9": {
+    "message": "สลับไปแถบที่คั่นหน้า 9",
+    "description": "Keyboard-shortcut description - jump to the 9th bar."
+  },
+  "cmdSwitchTo10": {
+    "message": "สลับไปแถบที่คั่นหน้า 10",
+    "description": "Keyboard-shortcut description - jump to the 10th bar."
+  },
+  "tooltipGithub": {
+    "message": "ซอร์สโค้ดบน GitHub",
+    "description": "Footer icon tooltip - link to the source repository."
+  },
+  "tooltipHelp": {
+    "message": "วิธีใช้",
+    "description": "Footer icon tooltip - opens the online help page."
+  },
+  "tooltipSettings": {
+    "message": "การตั้งค่า",
+    "description": "Footer gear-icon tooltip - opens the settings page."
+  },
+  "btnCancel": {
+    "message": "ยกเลิก",
+    "description": "Generic dialog button - dismiss without acting."
+  },
+  "btnSave": {
+    "message": "บันทึก",
+    "description": "Dialog button - save the current bar before switching."
+  },
+  "btnDiscard": {
+    "message": "ละทิ้ง",
+    "description": "Dialog button - drop unsaved changes."
+  },
+  "popupShowCommons": {
+    "message": "แสดงแถบที่ใช้ร่วมกัน",
+    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+  },
+  "popupRowLoaded": {
+    "message": "กำลังโหลดอยู่",
+    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+  },
+  "popupRowSwitch": {
+    "message": "คลิกเพื่อสลับ",
+    "description": "Tooltip on an inactive bar row - click it to load that bar."
+  },
+  "popupUnsavedChanges": {
+    "message": "การเปลี่ยนแปลงที่ยังไม่ได้บันทึก",
+    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+  },
+  "popupCommonBar": {
+    "message": "แถบที่ใช้ร่วมกัน",
+    "description": "Tooltip on the icon marking a row as a common bar."
+  },
+  "popupSaveInPlace": {
+    "message": "บันทึกการเปลี่ยนแปลงแถบไปยังชุดนี้",
+    "description": "Tooltip on the save icon shown on the dirty loaded row."
+  },
+  "popupDirtySwitch": {
+    "message": "บันทึกการเปลี่ยนแปลงไปยัง \"{loaded}\" ก่อนสลับไป \"{target}\" หรือไม่?",
+    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+  },
+  "popupDirtySave": {
+    "message": "บันทึกการเปลี่ยนแปลงไปยัง \"{loaded}\" หรือไม่?",
+    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+  },
+  "optionsHeaderSuffix": {
+    "message": "- การตั้งค่า",
+    "description": "Suffix after the app name in the settings page header and tab title."
+  },
+  "optionsLanguageLabel": {
+    "message": "ภาษา",
+    "description": "Label for the UI-language picker in settings."
+  },
+  "optionsLanguageAuto": {
+    "message": "อัตโนมัติ (ภาษาของเบราว์เซอร์)",
+    "description": "First option in the language picker - follow the browser's language."
+  },
+  "optionsBarsHeading": {
+    "message": "แถบที่คั่นหน้า",
+    "description": "Heading of the bars-management section in settings."
+  },
+  "optionsBarsHint": {
+    "message": "ลากแถบเพื่อจัดลำดับใหม่ ทำเครื่องหมายแถบเป็นแบบทั่วไปเพื่อให้ที่คั่นหน้าของแถบนั้นพร้อมใช้งานสำหรับแถบอื่น สำหรับแต่ละแถบที่ไม่ใช่แบบทั่วไป ให้เลือกแถบทั่วไปที่จะนำหน้าและลำดับ",
+    "description": "Explanatory hint under the Bookmark bars heading."
+  },
+  "optionsNewBarPlaceholder": {
+    "message": "ชื่อแถบใหม่…",
+    "description": "Placeholder in the create-bar text input."
+  },
+  "optionsAddBar": {
+    "message": "+ เพิ่มแถบ",
+    "description": "Label of the button that creates a new bar."
+  },
+  "optionsAddBarTitle": {
+    "message": "เพิ่ม",
+    "description": "Tooltip on the create-bar button."
+  },
+  "optionsGripTitle": {
+    "message": "ลากเพื่อจัดลำดับแถบใหม่",
+    "description": "Tooltip on the drag handle of a bar card."
+  },
+  "optionsLoadedTag": {
+    "message": "โหลดแล้ว",
+    "description": "Tag shown on the bar card that is currently active in the bar."
+  },
+  "optionsCommonSet": {
+    "message": "ทำเครื่องหมายเป็นแถบที่ใช้ร่วมกัน (ที่คั่นหน้าของแถบนี้สามารถนำหน้าแถบอื่นได้)",
+    "description": "Tooltip on the common toggle when the bar is not yet common."
+  },
+  "optionsCommonUnset": {
+    "message": "แถบที่ใช้ร่วมกัน - คลิกเพื่อยกเลิก",
+    "description": "Tooltip on the common toggle when the bar is already common."
+  },
+  "optionsAddToAll": {
+    "message": "เพิ่มแถบที่ใช้ร่วมกันนี้ไปยังทุกแถบอื่น",
+    "description": "Tooltip on the + button of a common bar card."
+  },
+  "optionsRemoveFromAll": {
+    "message": "ลบแถบที่ใช้ร่วมกันนี้ออกจากทุกแถบอื่น",
+    "description": "Tooltip on the − button of a common bar card."
+  },
+  "optionsExportOne": {
+    "message": "ส่งออกแถบนี้ไปยังไฟล์ JSON",
+    "description": "Tooltip on the per-bar export icon."
+  },
+  "optionsDeleteBar": {
+    "message": "ลบแถบนี้",
+    "description": "Tooltip on the per-bar delete icon."
+  },
+  "optionsCannotDeleteLast": {
+    "message": "ไม่สามารถลบแถบสุดท้ายได้",
+    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+  },
+  "optionsNoCommons": {
+    "message": "ยังไม่มีแถบที่ใช้ร่วมกัน ทำเครื่องหมายแถบเป็นแบบทั่วไปเพื่อใช้ที่นี่",
+    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+  },
+  "optionsCommonsLabel": {
+    "message": "แถบที่ใช้ร่วมกัน",
+    "description": "Label above the per-bar list of selected common bars."
+  },
+  "optionsRemoveFromBar": {
+    "message": "ลบออกจากแถบนี้",
+    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+  },
+  "optionsAddCommonOption": {
+    "message": "เพิ่มแถบที่ใช้ร่วมกัน…",
+    "description": "Placeholder option in the dropdown that adds a common to a bar."
+  },
+  "optionsAddCommonBtn": {
+    "message": "เพิ่ม",
+    "description": "Button that confirms adding the selected common to the bar."
+  },
+  "optionsDeleteConfirm": {
+    "message": "ลบแถบที่คั่นหน้านี้และที่คั่นหน้าทั้งหมดของแถบนี้หรือไม่?",
+    "description": "Body of the delete-confirmation modal."
+  },
+  "optionsDeleteRemove": {
+    "message": "ลบ",
+    "description": "Confirm button of the delete-confirmation modal."
+  },
+  "optionsDirtyDiscardApply": {
+    "message": "ละทิ้งและใช้",
+    "description": "Button that discards unsaved edits and applies the config change."
+  },
+  "optionsDirtySaveApply": {
+    "message": "บันทึกและใช้",
+    "description": "Button that saves unsaved edits then applies the config change."
+  },
+  "optionsRemergeDirty": {
+    "message": "แถบที่โหลดอยู่ปัจจุบัน \"{title}\" มีการเปลี่ยนแปลงที่ยังไม่ได้บันทึก บันทึก, ละทิ้ง หรือยกเลิกการเปลี่ยนแปลงการกำหนดค่านี้หรือไม่?",
+    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+  },
+  "optionsExportFailed": {
+    "message": "ส่งออกล้มเหลว: ",
+    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+  },
+  "optionsImportFailed": {
+    "message": "นำเข้าล้มเหลว: ",
+    "description": "Alert prefix when applying an import fails; followed by the error detail."
+  },
+  "errorMissingSets": {
+    "message": "ไม่มีอาร์เรย์ 'sets'",
+    "description": "Error thrown when an imported JSON file has no top-level sets array."
+  },
+  "errorNoBars": {
+    "message": "ไฟล์ไม่มีแถบ",
+    "description": "Error thrown when a single-bar import file contains zero bars."
+  },
+  "optionsImportNewBar": {
+    "message": "นำเข้าแถบ…",
+    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+  },
+  "optionsImportNewBarTitle": {
+    "message": "นำเข้าแถบจากไฟล์เป็นสำเนาใหม่ — จะไม่แทนที่แถบที่มีอยู่เดิม",
+    "description": "Tooltip on the Import bar button beside Add bar."
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "extDescription": {
+    "message": "Váltás több könyvjelzősáv között - külön könyvjelzőkészleteket tarthat, és azonnal cserélheti őket a sávban.",
+    "description": "Browser store description; must remain under 132 characters."
+  },
+  "cmdNextBar": {
+    "message": "Váltás a következő könyvjelzősávra.",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdPreviousBar": {
+    "message": "Váltás az előző könyvjelzősávra.",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdSwitchTo1": {
+    "message": "Váltás az 1. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 1st bar."
+  },
+  "cmdSwitchTo2": {
+    "message": "Váltás a 2. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+  },
+  "cmdSwitchTo3": {
+    "message": "Váltás a 3. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+  },
+  "cmdSwitchTo4": {
+    "message": "Váltás a 4. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 4th bar."
+  },
+  "cmdSwitchTo5": {
+    "message": "Váltás az 5. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 5th bar."
+  },
+  "cmdSwitchTo6": {
+    "message": "Váltás a 6. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 6th bar."
+  },
+  "cmdSwitchTo7": {
+    "message": "Váltás a 7. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 7th bar."
+  },
+  "cmdSwitchTo8": {
+    "message": "Váltás a 8. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 8th bar."
+  },
+  "cmdSwitchTo9": {
+    "message": "Váltás a 9. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 9th bar."
+  },
+  "cmdSwitchTo10": {
+    "message": "Váltás a 10. könyvjelzősávra.",
+    "description": "Keyboard-shortcut description - jump to the 10th bar."
+  },
+  "tooltipGithub": {
+    "message": "Forrás a GitHubon",
+    "description": "Footer icon tooltip - link to the source repository."
+  },
+  "tooltipHelp": {
+    "message": "Súgó",
+    "description": "Footer icon tooltip - opens the online help page."
+  },
+  "tooltipSettings": {
+    "message": "Beállítások",
+    "description": "Footer gear-icon tooltip - opens the settings page."
+  },
+  "btnCancel": {
+    "message": "Mégse",
+    "description": "Generic dialog button - dismiss without acting."
+  },
+  "btnSave": {
+    "message": "Mentés",
+    "description": "Dialog button - save the current bar before switching."
+  },
+  "btnDiscard": {
+    "message": "Elvetés",
+    "description": "Dialog button - drop unsaved changes."
+  },
+  "popupShowCommons": {
+    "message": "Közös sávok megjelenítése",
+    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+  },
+  "popupRowLoaded": {
+    "message": "Jelenleg betöltve",
+    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+  },
+  "popupRowSwitch": {
+    "message": "Kattintson a váltáshoz",
+    "description": "Tooltip on an inactive bar row - click it to load that bar."
+  },
+  "popupUnsavedChanges": {
+    "message": "Mentetlen változtatások",
+    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+  },
+  "popupCommonBar": {
+    "message": "Közös sáv",
+    "description": "Tooltip on the icon marking a row as a common bar."
+  },
+  "popupSaveInPlace": {
+    "message": "Sáv változtatásainak mentése ebbe a készletbe",
+    "description": "Tooltip on the save icon shown on the dirty loaded row."
+  },
+  "popupDirtySwitch": {
+    "message": "Mentse a változtatásokat a „{loaded}” sávba, mielőtt átváltana a „{target}” sávra?",
+    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+  },
+  "popupDirtySave": {
+    "message": "Mentse a változtatásokat a „{loaded}” sávba?",
+    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+  },
+  "optionsHeaderSuffix": {
+    "message": "- Beállítások",
+    "description": "Suffix after the app name in the settings page header and tab title."
+  },
+  "optionsLanguageLabel": {
+    "message": "Nyelv",
+    "description": "Label for the UI-language picker in settings."
+  },
+  "optionsLanguageAuto": {
+    "message": "Automatikus (böngésző nyelve)",
+    "description": "First option in the language picker - follow the browser's language."
+  },
+  "optionsBarsHeading": {
+    "message": "Könyvjelzősávok",
+    "description": "Heading of the bars-management section in settings."
+  },
+  "optionsBarsHint": {
+    "message": "Húzza a sávot az átrendezéshez. Jelöljön meg egy sávot közösnek, hogy könyvjelzői más sávokhoz is hozzáadhatók legyenek. Minden nem közös sávhoz válassza ki, mely közös sávokat fűzze elé, és milyen sorrendben.",
+    "description": "Explanatory hint under the Bookmark bars heading."
+  },
+  "optionsNewBarPlaceholder": {
+    "message": "Új sáv neve…",
+    "description": "Placeholder in the create-bar text input."
+  },
+  "optionsAddBar": {
+    "message": "+ Sáv hozzáadása",
+    "description": "Label of the button that creates a new bar."
+  },
+  "optionsAddBarTitle": {
+    "message": "Hozzáadás",
+    "description": "Tooltip on the create-bar button."
+  },
+  "optionsGripTitle": {
+    "message": "Húzza a sávok átrendezéséhez",
+    "description": "Tooltip on the drag handle of a bar card."
+  },
+  "optionsLoadedTag": {
+    "message": "Betöltve",
+    "description": "Tag shown on the bar card that is currently active in the bar."
+  },
+  "optionsCommonSet": {
+    "message": "Megjelölés közös sávként (könyvjelzői más sávok elé fűzhetők)",
+    "description": "Tooltip on the common toggle when the bar is not yet common."
+  },
+  "optionsCommonUnset": {
+    "message": "Közös sáv - kattintson a megszüntetéshez",
+    "description": "Tooltip on the common toggle when the bar is already common."
+  },
+  "optionsAddToAll": {
+    "message": "Ennek a közös sávnak hozzáadása az összes többi sávhoz",
+    "description": "Tooltip on the + button of a common bar card."
+  },
+  "optionsRemoveFromAll": {
+    "message": "Ennek a közös sávnak eltávolítása az összes többi sávról",
+    "description": "Tooltip on the − button of a common bar card."
+  },
+  "optionsExportOne": {
+    "message": "Ennek a sávnak exportálása JSON fájlba",
+    "description": "Tooltip on the per-bar export icon."
+  },
+  "optionsDeleteBar": {
+    "message": "Sáv törlése",
+    "description": "Tooltip on the per-bar delete icon."
+  },
+  "optionsCannotDeleteLast": {
+    "message": "Nem törölhető az utolsó sáv",
+    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+  },
+  "optionsNoCommons": {
+    "message": "Nincsenek még közös sávok. Jelöljön meg egy sávot közösnek, hogy itt használhassa.",
+    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+  },
+  "optionsCommonsLabel": {
+    "message": "Közös sávok",
+    "description": "Label above the per-bar list of selected common bars."
+  },
+  "optionsRemoveFromBar": {
+    "message": "Eltávolítás ebből a sávból",
+    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+  },
+  "optionsAddCommonOption": {
+    "message": "Közös sáv hozzáadása…",
+    "description": "Placeholder option in the dropdown that adds a common to a bar."
+  },
+  "optionsAddCommonBtn": {
+    "message": "Hozzáadás",
+    "description": "Button that confirms adding the selected common to the bar."
+  },
+  "optionsDeleteConfirm": {
+    "message": "Eltávolítja ezt a könyvjelzősávot és az összes könyvjelzőjét?",
+    "description": "Body of the delete-confirmation modal."
+  },
+  "optionsDeleteRemove": {
+    "message": "Eltávolítás",
+    "description": "Confirm button of the delete-confirmation modal."
+  },
+  "optionsDirtyDiscardApply": {
+    "message": "Elvetés és alkalmazás",
+    "description": "Button that discards unsaved edits and applies the config change."
+  },
+  "optionsDirtySaveApply": {
+    "message": "Mentés és alkalmazás",
+    "description": "Button that saves unsaved edits then applies the config change."
+  },
+  "optionsRemergeDirty": {
+    "message": "A jelenleg betöltött „{title}” sáv mentetlen változtatásokat tartalmaz. Mentse, vesse el, vagy szakítsa meg ezt a konfigurációs változtatást?",
+    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+  },
+  "optionsExportFailed": {
+    "message": "Exportálás sikertelen: ",
+    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+  },
+  "optionsImportFailed": {
+    "message": "Importálás sikertelen: ",
+    "description": "Alert prefix when applying an import fails; followed by the error detail."
+  },
+  "errorMissingSets": {
+    "message": "Hiányzik a „sets” tömb",
+    "description": "Error thrown when an imported JSON file has no top-level sets array."
+  },
+  "errorNoBars": {
+    "message": "A fájl nem tartalmaz sávokat",
+    "description": "Error thrown when a single-bar import file contains zero bars."
+  },
+  "optionsImportNewBar": {
+    "message": "Sáv importálása…",
+    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+  },
+  "optionsImportNewBarTitle": {
+    "message": "Sáv importálása fájlból új másolatként — soha nem ír felül egy meglévő sávot.",
+    "description": "Tooltip on the Import bar button beside Add bar."
+  }
+}

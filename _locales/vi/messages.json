@@ -1,0 +1,242 @@
+{
+  "extDescription": {
+    "message": "Chuyển đổi giữa nhiều thanh dấu trang - giữ các bộ dấu trang riêng biệt và hoán đổi chúng vào/ra khỏi thanh ngay lập tức.",
+    "description": "Browser store description; must remain under 132 characters."
+  },
+  "cmdNextBar": {
+    "message": "Chuyển sang thanh dấu trang tiếp theo.",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdPreviousBar": {
+    "message": "Chuyển sang thanh dấu trang trước.",
+    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+  },
+  "cmdSwitchTo1": {
+    "message": "Chuyển sang thanh dấu trang thứ 1.",
+    "description": "Keyboard-shortcut description - jump to the 1st bar."
+  },
+  "cmdSwitchTo2": {
+    "message": "Chuyển sang thanh dấu trang thứ 2.",
+    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+  },
+  "cmdSwitchTo3": {
+    "message": "Chuyển sang thanh dấu trang thứ 3.",
+    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+  },
+  "cmdSwitchTo4": {
+    "message": "Chuyển sang thanh dấu trang thứ 4.",
+    "description": "Keyboard-shortcut description - jump to the 4th bar."
+  },
+  "cmdSwitchTo5": {
+    "message": "Chuyển sang thanh dấu trang thứ 5.",
+    "description": "Keyboard-shortcut description - jump to the 5th bar."
+  },
+  "cmdSwitchTo6": {
+    "message": "Chuyển sang thanh dấu trang thứ 6.",
+    "description": "Keyboard-shortcut description - jump to the 6th bar."
+  },
+  "cmdSwitchTo7": {
+    "message": "Chuyển sang thanh dấu trang thứ 7.",
+    "description": "Keyboard-shortcut description - jump to the 7th bar."
+  },
+  "cmdSwitchTo8": {
+    "message": "Chuyển sang thanh dấu trang thứ 8.",
+    "description": "Keyboard-shortcut description - jump to the 8th bar."
+  },
+  "cmdSwitchTo9": {
+    "message": "Chuyển sang thanh dấu trang thứ 9.",
+    "description": "Keyboard-shortcut description - jump to the 9th bar."
+  },
+  "cmdSwitchTo10": {
+    "message": "Chuyển sang thanh dấu trang thứ 10.",
+    "description": "Keyboard-shortcut description - jump to the 10th bar."
+  },
+  "tooltipGithub": {
+    "message": "Mã nguồn trên GitHub",
+    "description": "Footer icon tooltip - link to the source repository."
+  },
+  "tooltipHelp": {
+    "message": "Trợ giúp",
+    "description": "Footer icon tooltip - opens the online help page."
+  },
+  "tooltipSettings": {
+    "message": "Cài đặt",
+    "description": "Footer gear-icon tooltip - opens the settings page."
+  },
+  "btnCancel": {
+    "message": "Hủy",
+    "description": "Generic dialog button - dismiss without acting."
+  },
+  "btnSave": {
+    "message": "Lưu",
+    "description": "Dialog button - save the current bar before switching."
+  },
+  "btnDiscard": {
+    "message": "Hủy bỏ",
+    "description": "Dialog button - drop unsaved changes."
+  },
+  "popupShowCommons": {
+    "message": "Hiển thị các thanh chung",
+    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+  },
+  "popupRowLoaded": {
+    "message": "Đang tải",
+    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+  },
+  "popupRowSwitch": {
+    "message": "Nhấp để chuyển đổi",
+    "description": "Tooltip on an inactive bar row - click it to load that bar."
+  },
+  "popupUnsavedChanges": {
+    "message": "Thay đổi chưa lưu",
+    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+  },
+  "popupCommonBar": {
+    "message": "Thanh chung",
+    "description": "Tooltip on the icon marking a row as a common bar."
+  },
+  "popupSaveInPlace": {
+    "message": "Lưu thay đổi thanh vào bộ này",
+    "description": "Tooltip on the save icon shown on the dirty loaded row."
+  },
+  "popupDirtySwitch": {
+    "message": "Lưu thay đổi vào \"{loaded}\" trước khi chuyển sang \"{target}\"?",
+    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+  },
+  "popupDirtySave": {
+    "message": "Lưu thay đổi vào \"{loaded}\"?",
+    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+  },
+  "optionsHeaderSuffix": {
+    "message": "- Cài đặt",
+    "description": "Suffix after the app name in the settings page header and tab title."
+  },
+  "optionsLanguageLabel": {
+    "message": "Ngôn ngữ",
+    "description": "Label for the UI-language picker in settings."
+  },
+  "optionsLanguageAuto": {
+    "message": "Tự động (ngôn ngữ trình duyệt)",
+    "description": "First option in the language picker - follow the browser's language."
+  },
+  "optionsBarsHeading": {
+    "message": "Các thanh dấu trang",
+    "description": "Heading of the bars-management section in settings."
+  },
+  "optionsBarsHint": {
+    "message": "Kéo một thanh để sắp xếp lại. Đánh dấu một thanh là chung để các dấu trang của nó có sẵn cho các thanh khác. Đối với mỗi thanh không chung, chọn các thanh chung nào sẽ thêm vào đầu và theo thứ tự nào.",
+    "description": "Explanatory hint under the Bookmark bars heading."
+  },
+  "optionsNewBarPlaceholder": {
+    "message": "Tên thanh mới…",
+    "description": "Placeholder in the create-bar text input."
+  },
+  "optionsAddBar": {
+    "message": "+ Thêm thanh",
+    "description": "Label of the button that creates a new bar."
+  },
+  "optionsAddBarTitle": {
+    "message": "Thêm",
+    "description": "Tooltip on the create-bar button."
+  },
+  "optionsGripTitle": {
+    "message": "Kéo để sắp xếp lại các thanh",
+    "description": "Tooltip on the drag handle of a bar card."
+  },
+  "optionsLoadedTag": {
+    "message": "Đã tải",
+    "description": "Tag shown on the bar card that is currently active in the bar."
+  },
+  "optionsCommonSet": {
+    "message": "Đánh dấu là thanh chung (các dấu trang của nó có thể được thêm vào đầu các thanh khác)",
+    "description": "Tooltip on the common toggle when the bar is not yet common."
+  },
+  "optionsCommonUnset": {
+    "message": "Thanh chung - nhấp để bỏ đánh dấu",
+    "description": "Tooltip on the common toggle when the bar is already common."
+  },
+  "optionsAddToAll": {
+    "message": "Thêm thanh chung này vào mọi thanh khác",
+    "description": "Tooltip on the + button of a common bar card."
+  },
+  "optionsRemoveFromAll": {
+    "message": "Xóa thanh chung này khỏi mọi thanh khác",
+    "description": "Tooltip on the − button of a common bar card."
+  },
+  "optionsExportOne": {
+    "message": "Xuất thanh này ra tệp JSON",
+    "description": "Tooltip on the per-bar export icon."
+  },
+  "optionsDeleteBar": {
+    "message": "Xóa thanh này",
+    "description": "Tooltip on the per-bar delete icon."
+  },
+  "optionsCannotDeleteLast": {
+    "message": "Không thể xóa thanh cuối cùng",
+    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+  },
+  "optionsNoCommons": {
+    "message": "Chưa có thanh chung nào. Đánh dấu một thanh là chung để sử dụng nó ở đây.",
+    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+  },
+  "optionsCommonsLabel": {
+    "message": "Các thanh chung",
+    "description": "Label above the per-bar list of selected common bars."
+  },
+  "optionsRemoveFromBar": {
+    "message": "Xóa khỏi thanh này",
+    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+  },
+  "optionsAddCommonOption": {
+    "message": "Thêm một thanh chung…",
+    "description": "Placeholder option in the dropdown that adds a common to a bar."
+  },
+  "optionsAddCommonBtn": {
+    "message": "Thêm",
+    "description": "Button that confirms adding the selected common to the bar."
+  },
+  "optionsDeleteConfirm": {
+    "message": "Xóa thanh dấu trang này và tất cả các dấu trang của nó?",
+    "description": "Body of the delete-confirmation modal."
+  },
+  "optionsDeleteRemove": {
+    "message": "Xóa",
+    "description": "Confirm button of the delete-confirmation modal."
+  },
+  "optionsDirtyDiscardApply": {
+    "message": "Hủy bỏ & áp dụng",
+    "description": "Button that discards unsaved edits and applies the config change."
+  },
+  "optionsDirtySaveApply": {
+    "message": "Lưu & áp dụng",
+    "description": "Button that saves unsaved edits then applies the config change."
+  },
+  "optionsRemergeDirty": {
+    "message": "Thanh đang tải \"{title}\" có thay đổi chưa lưu. Lưu chúng, hủy bỏ, hay hủy thay đổi cấu hình này?",
+    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+  },
+  "optionsExportFailed": {
+    "message": "Xuất thất bại: ",
+    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+  },
+  "optionsImportFailed": {
+    "message": "Nhập thất bại: ",
+    "description": "Alert prefix when applying an import fails; followed by the error detail."
+  },
+  "errorMissingSets": {
+    "message": "Thiếu mảng 'sets'",
+    "description": "Error thrown when an imported JSON file has no top-level sets array."
+  },
+  "errorNoBars": {
+    "message": "Tệp không chứa thanh nào",
+    "description": "Error thrown when a single-bar import file contains zero bars."
+  },
+  "optionsImportNewBar": {
+    "message": "Nhập thanh…",
+    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+  },
+  "optionsImportNewBarTitle": {
+    "message": "Nhập một thanh từ tệp dưới dạng bản sao mới — nó không bao giờ thay thế thanh hiện có.",
+    "description": "Tooltip on the Import bar button beside Add bar."
+  }
+}

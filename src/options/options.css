@@ -1,0 +1,146 @@
+/**
+ * Bookmark Bar Switcher - Settings page styles.
+ *
+ * Shared primitives (.ya-section, .ya-input, .ya-btn-*) come from
+ * ../shared/ui.css. ../index.css provides bookmarks-specific bar/popup
+ * layout shared between popup and options. This file carries only the
+ * options-page-only patterns (bar-card, commons picker).
+ */
+
+.options-body { background: var(--ya-color-bg); }
+
+#options {
+  max-width: 720px;
+  min-width: 480px;
+  margin: 0 auto;
+  padding: var(--ya-space-xl) 20px 24px;
+}
+
+/* --- Bar card --- */
+
+.bar-card {
+  border: var(--ya-border-width) solid var(--ya-color-divider);
+  border-radius: var(--ya-radius);
+  margin-bottom: var(--ya-space-md);
+  background: var(--ya-color-surface);
+  transition: box-shadow 0.15s;
+}
+.bar-card.dragging { opacity: 0.4; }
+.bar-card.common { border-color: #f59f00; }
+
+.bar-head {
+  display: flex;
+  align-items: center;
+  gap: var(--ya-space-sm);
+  padding: var(--ya-space-md) 10px;
+}
+
+.bar-card .grip { cursor: grab; }
+.bar-card .grip:active { cursor: grabbing; }
+
+.bar-card .bar-name-input {
+  flex: 1;
+  height: var(--ya-input-height);
+  padding: 0 var(--ya-space-md);
+  border: var(--ya-border-width) solid var(--ya-color-border);
+  border-radius: var(--ya-radius);
+  font-size: var(--ya-font-size);
+  outline: none;
+  min-width: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+.bar-card .bar-name-input:focus {
+  border-color: var(--ya-color-primary);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ya-color-primary) 25%, transparent);
+  background: var(--ya-color-surface);
+}
+
+.bar-loaded-tag {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: var(--ya-color-primary);
+  color: var(--ya-color-primary-text);
+  padding: 2px var(--ya-space-sm);
+  border-radius: var(--ya-radius-sm);
+  flex-shrink: 0;
+}
+
+/* --- Commons picker --- */
+
+.commons-picker {
+  padding: 0 var(--ya-space-lg) 10px 30px;
+  font-size: var(--ya-font-size-sm);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--ya-space-sm);
+}
+
+.commons-empty {
+  color: var(--ya-color-text-muted);
+  font-style: italic;
+  padding: var(--ya-space-xs) 0;
+}
+
+.commons-label {
+  color: var(--ya-color-text-muted);
+  flex-shrink: 0;
+}
+
+.commons-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--ya-space-xs);
+}
+
+.common-pick {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--ya-space-sm);
+  padding: 2px var(--ya-space-sm);
+  border: var(--ya-border-width) solid #ffe6b3;
+  border-radius: var(--ya-radius-sm);
+  cursor: grab;
+}
+.common-pick.dragging { opacity: 0.4; }
+.common-pick:active { cursor: grabbing; }
+.common-pick .remove-btn {
+  background: transparent;
+  border: none;
+  color: var(--ya-color-text-muted);
+  cursor: pointer;
+  padding: 2px var(--ya-space-xs);
+  font-size: 14px;
+  line-height: 1;
+}
+.common-pick .remove-btn:hover { color: var(--ya-color-danger); }
+
+.add-common {
+  display: flex;
+  gap: var(--ya-space-xs);
+  align-items: center;
+  flex-basis: 100%;
+}
+.add-common select {
+  flex: 1;
+  height: var(--ya-input-height);
+  padding: 0 var(--ya-space-sm);
+  border: var(--ya-border-width) solid var(--ya-color-border);
+  border-radius: var(--ya-radius);
+  font-size: var(--ya-font-size-sm);
+  background: var(--ya-color-surface);
+  box-sizing: border-box;
+}
+
+/* --- Drop placeholders --- */
+.bar-card-placeholder, .common-pick-placeholder {
+  height: 3px;
+  margin: -1px 0;
+  background: var(--ya-color-primary);
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--ya-color-primary) 25%, transparent);
+  pointer-events: none;
+}
