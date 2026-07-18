@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 — 2026-07-18
+
+- Serialize bar switches so a second switch triggered before the first finishes now waits its turn, preventing duplicated or scrambled bookmarks (and Sync collisions on Firefox)
+
 ## 1.0.1 — 2026-07-18
 
 - Faster bar switching — the disposable toolbar is now cleared in parallel instead of one bookmark at a time (Firefox's slow bookmark API made switching laggy)

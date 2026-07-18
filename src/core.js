@@ -589,7 +589,20 @@ export async function getBarState() {
  * Replace the visible bar with a copy of the target set. Destroys current bar
  * contents - the caller is responsible for saving first if needed.
  */
-export async function switchToBar(targetId) {
+// ⚠ CLAUDE: single-flight — never let two switches run concurrently. Two
+// overlapping switches both wipe + rewrite the SAME toolbar (and on Firefox
+// collide with Sync mid-upload), which duplicates / scrambles bookmarks — the
+// exact "switch again before the first finished = mess" failure. A switch
+// requested while one is in flight WAITS its turn, so every bookmark write is
+// strictly sequential. Do NOT remove this serialization.
+let _switchQueue = Promise.resolve();
+export function switchToBar(targetId) {
+  const run = _switchQueue.then(() => _switchToBar(targetId));
+  _switchQueue = run.catch(() => {});   // keep the chain alive past a rejection
+  return run;
+}
+
+async function _switchToBar(targetId) {
   const barId = await getBookmarkBarId();
   const [target] = await chrome.bookmarks.get(targetId);
   if (!target || target.url) return;
