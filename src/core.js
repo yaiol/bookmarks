@@ -92,9 +92,11 @@ export async function reorderBar(barId, newIndex) {
 /** Remove every child of a folder. */
 async function wipeChildren(parentId) {
   const children = await chrome.bookmarks.getChildren(parentId);
-  for (const child of children) {
-    await chrome.bookmarks.removeTree(child.id);
-  }
+  // Removal order is irrelevant (we're clearing the whole disposable toolbar),
+  // so remove all subtrees in parallel. On Firefox's bookmarks API each op is a
+  // slow round-trip; running them serially made switching noticeably laggy.
+  // (Copy stays sequential — there, index = display order, so order matters.)
+  await Promise.all(children.map((child) => chrome.bookmarks.removeTree(child.id)));
 }
 
 /**
@@ -804,3 +806,20 @@ export async function init() {
   await migrateLegacyCommon();
   return await autoDetectLoadedSet();
 }
+
+// ── Safe icon insertion (no innerHTML) ──────────────────────
+// Turn a TRUSTED, STATIC SVG-markup constant into a DOM node without innerHTML.
+// Firefox AMO flags every `innerHTML =` assignment (its linter can't tell a
+// hardcoded constant from a dynamic value) and a reviewer may reject over it.
+// DOMParser("text/html") yields a correctly SVG-namespaced, inert node (no
+// scripts run); cache per markup and hand back a fresh clone each call.
+const _iconCache = new Map();
+function svgIcon(markup) {
+  let node = _iconCache.get(markup);
+  if (!node) {
+    node = new DOMParser().parseFromString(markup, "text/html").body.firstElementChild;
+    _iconCache.set(markup, node);
+  }
+  return node.cloneNode(true);
+}
+export function setIcon(el, markup) { el.replaceChildren(svgIcon(markup)); }

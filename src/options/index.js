@@ -32,6 +32,7 @@ import {
   removeCommonFromAllBars,
   exportSingleSet,
   importSetsAsNewBars,
+  setIcon,
 } from "../core.js";
 import * as i18n from "../lib/i18n.js";
 
@@ -145,7 +146,7 @@ dirtySave.addEventListener("click", async () => {
 // ---------------------------------------------------------------------------
 
 function render() {
-  barList.innerHTML = "";
+  barList.replaceChildren();
   bars.forEach((bar, index) => {
     barList.appendChild(renderBarCard(bar, index));
   });
@@ -229,7 +230,7 @@ function renderBarCard(bar, index) {
   const isCommon = commonBarIds.has(bar.id);
   const commonBtn = document.createElement("button");
   commonBtn.className = "ya-btn ya-btn-secondary ya-btn-icon btn-common" + (isCommon ? " active" : "");
-  commonBtn.innerHTML = isCommon ? ICON_COMMON_FILLED : ICON_COMMON_OUTLINE;
+  setIcon(commonBtn, isCommon ? ICON_COMMON_FILLED : ICON_COMMON_OUTLINE);
   commonBtn.title = isCommon
     ? i18n.t("optionsCommonUnset")
     : i18n.t("optionsCommonSet");
@@ -243,7 +244,7 @@ function renderBarCard(bar, index) {
   if (isCommon) {
     const addAllBtn = document.createElement("button");
     addAllBtn.className = "ya-btn ya-btn-secondary ya-btn-icon";
-    addAllBtn.innerHTML = ICON_PLUS;
+    setIcon(addAllBtn, ICON_PLUS);
     addAllBtn.title = i18n.t("optionsAddToAll");
     addAllBtn.addEventListener("click", async () => {
       addAllBtn.disabled = true;
@@ -255,7 +256,7 @@ function renderBarCard(bar, index) {
 
     const removeAllBtn = document.createElement("button");
     removeAllBtn.className = "ya-btn ya-btn-secondary ya-btn-icon";
-    removeAllBtn.innerHTML = ICON_MINUS;
+    setIcon(removeAllBtn, ICON_MINUS);
     removeAllBtn.title = i18n.t("optionsRemoveFromAll");
     removeAllBtn.addEventListener("click", async () => {
       removeAllBtn.disabled = true;
@@ -268,7 +269,7 @@ function renderBarCard(bar, index) {
 
   const exportOneBtn = document.createElement("button");
   exportOneBtn.className = "ya-btn ya-btn-secondary ya-btn-icon";
-  exportOneBtn.innerHTML = ICON_UPLOAD;
+  setIcon(exportOneBtn, ICON_UPLOAD);
   exportOneBtn.title = i18n.t("optionsExportOne");
   exportOneBtn.addEventListener("click", async () => {
     try {
@@ -285,7 +286,7 @@ function renderBarCard(bar, index) {
 
   const delBtn = document.createElement("button");
   delBtn.className = "ya-btn ya-btn-danger ya-btn-icon";
-  delBtn.innerHTML = ICON_TRASH;
+  setIcon(delBtn, ICON_TRASH);
   delBtn.title = i18n.t("optionsDeleteBar");
   if (bars.length <= 1) {
     delBtn.disabled = true;
@@ -621,7 +622,7 @@ function applyChrome() {
 async function setupLanguagePicker() {
   const sel = document.getElementById("lang-select");
   if (!sel) return;
-  sel.innerHTML = "";
+  sel.replaceChildren();
 
   const auto = document.createElement("option");
   auto.value = "auto";

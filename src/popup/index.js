@@ -16,6 +16,7 @@ import {
   getLoadedSet,
   switchToBar,
   saveBarToLoadedSet,
+  setIcon,
 } from "../core.js";
 import * as i18n from "../lib/i18n.js";
 
@@ -87,7 +88,7 @@ dirtySave.addEventListener("click", () => resolveDirty("save"));
 // ---------------------------------------------------------------------------
 
 function render() {
-  barList.innerHTML = "";
+  barList.replaceChildren();
   const visibleBars = bars.filter(b => showCommons || !commonBarIds.has(b.id));
 
   visibleBars.forEach((bar) => {
@@ -112,7 +113,7 @@ function render() {
     if (isCommon) {
       const star = document.createElement("span");
       star.className = "common-star";
-      star.innerHTML = ICON_COMMON_FILLED;
+      setIcon(star, ICON_COMMON_FILLED);
       star.title = i18n.t("popupCommonBar");
       nameBtn.appendChild(star);
     }
@@ -130,7 +131,7 @@ function render() {
     if (showDirty) {
       const saveBtn = document.createElement("button");
       saveBtn.className = "ya-btn ya-btn-primary ya-btn-icon";
-      saveBtn.innerHTML = ICON_SAVE;
+      setIcon(saveBtn, ICON_SAVE);
       saveBtn.title = i18n.t("popupSaveInPlace");
       saveBtn.addEventListener("click", async () => {
         saveBtn.disabled = true;
