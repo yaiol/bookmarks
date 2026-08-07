@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "इस बार को JSON फ़ाइल में निर्यात करें",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "इस बार को एक फ़ाइल में निर्यात करें",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "इस बार को हटाएँ",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "फ़ाइल से एक बार को नई कॉपी के रूप में आयात करें — यह कभी भी मौजूदा बार को प्रतिस्थापित नहीं करता है।",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "आयात और निर्यात",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "प्रत्येक बार पर निर्यात बटन द्वारा उपयोग किए जाने वाले फ़ाइल स्वरूप का चयन करें। JSON एक पूर्ण बैकअप है — यह बार के लिंक को उसके सामान्य बार में भी पुनर्स्थापित करता है। अन्य प्रारूप पठनीय टेक्स्ट हैं जिन्हें आप कहीं भी पेस्ट कर सकते हैं, और केवल फ़ोल्डर और लिंक रखते हैं। आयात इनमें से किसी भी प्रारूप को स्वीकार करता है और फ़ाइल से सही प्रारूप का पता लगाता है।",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "फ़ाइल स्वरूप",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "बार निर्यात करते समय उपयोग किया जाने वाला प्रारूप। आयात फ़ाइल से ही प्रारूप का पता लगाते हैं।",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "अज्ञात फ़ाइल प्रकार। समर्थित: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "लापता बुकमार्क आइकन ताज़ा करें (Shift-क्लिक: सभी)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "आइकन रीफ़्रेश हो रहे हैं... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} में से {visited} आइकन ताज़ा किए गए",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

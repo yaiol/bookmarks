@@ -46,6 +46,8 @@ let showCommons = false;
 
 const barList = document.getElementById("bar-list");
 const settingsBtn = document.getElementById("settings-btn");
+const refreshIconsBtn = document.getElementById("refresh-icons-btn");
+const refreshStatus = document.getElementById("refresh-status");
 const showCommonsCb = document.getElementById("show-commons-cb");
 
 const dirtyModal = document.getElementById("dirty-modal");
@@ -191,6 +193,96 @@ showCommonsCb.addEventListener("change", async () => {
 // Settings link
 // ---------------------------------------------------------------------------
 
+// ---------------------------------------------------------------------------
+// Refresh bookmark icons
+// ---------------------------------------------------------------------------
+//
+// The work runs in the service worker (see background/main.js) so that closing
+// the popup mid-run can't strand the background tabs it opened. All the popup
+// does is ask, then show progress for as long as it happens to be open.
+// Plain click refreshes only the bookmarks Chrome reports as icon-less; the
+// filter CALIBRATES itself and falls back to refreshing everything when it can't
+// tell (see noIconHash() in core.js), so this default cannot silently skip work.
+// Shift-click forces every bookmark — what you need when a site CHANGED its icon,
+// since that bookmark has a cached icon, just the old one.
+
+// The worker owns the run AND its progress state, so the popup can be closed and
+// reopened mid-run and still show where it is — it asks on open rather than
+// tracking anything itself. Without that, a run you started was invisible the
+// moment the popup lost focus, which is the whole reason this status line exists.
+
+// ⚠ Every string here goes through i18n.t(), which returns the KEY ITSELF until
+// i18n.init() has loaded the bundle — so a status rendered before init shows the
+// literal "popupRefreshingIcons". A worker message (or the adopt-a-run query
+// below) can land in that window, so the view is kept as STATE and re-rendered
+// once i18n is ready; nothing writes to the DOM directly.
+let i18nReady = false;
+let refreshView = null;   // { kind: "progress" | "done", ... } or null = idle
+
+function renderRefreshStatus() {
+  if (!refreshView) { refreshStatus.hidden = true; return; }
+  refreshIconsBtn.disabled = refreshView.kind === "progress";
+  if (!i18nReady) return;   // re-rendered by markI18nReady()
+  refreshStatus.hidden = false;
+  if (refreshView.kind === "progress") {
+    refreshStatus.className = "ya-status";
+    refreshStatus.textContent = i18n.t("popupRefreshingIcons", {
+      done: refreshView.done, total: refreshView.total,
+    });
+  } else {
+    refreshStatus.className = "ya-status ok";
+    refreshStatus.textContent = i18n.t("popupRefreshIconsDone", {
+      fixed: refreshView.fixed, visited: refreshView.visited,
+    });
+  }
+}
+
+function markI18nReady() {
+  i18nReady = true;
+  renderRefreshStatus();
+}
+
+function showProgress(done, total) {
+  refreshView = { kind: "progress", done, total };
+  renderRefreshStatus();
+}
+
+function showDone(result) {
+  refreshIconsBtn.disabled = false;
+  if (i18nReady) refreshIconsBtn.title = i18n.t("tooltipRefreshIcons");
+  refreshView = result?.ok
+    ? { kind: "done", fixed: result.fixed, visited: result.visited }
+    : null;
+  renderRefreshStatus();
+}
+
+refreshIconsBtn.addEventListener("click", async (e) => {
+  showProgress(0, "…");   // real total arrives with the first worker message
+  try {
+    const res = await chrome.runtime.sendMessage({
+      type: "bbs:refresh-favicons",
+      onlyMissing: !e.shiftKey,
+    });
+    if (res?.busy) return;            // a run is already going; its messages drive the line
+    showDone(res);
+  } catch {
+    showDone(null);
+  }
+});
+
+chrome.runtime.onMessage.addListener((msg) => {
+  if (msg?.type === "bbs:refresh-favicons-progress") showProgress(msg.done, msg.total);
+  else if (msg?.type === "bbs:refresh-favicons-done") showDone(msg);
+});
+
+/** Adopt a run already in flight (popup reopened while the worker works). */
+async function adoptRunningRefresh() {
+  try {
+    const state = await chrome.runtime.sendMessage({ type: "bbs:refresh-state" });
+    if (state?.running) showProgress(state.done, state.total);
+  } catch { /* worker asleep: nothing running */ }
+}
+
 settingsBtn.addEventListener("click", () => {
   if (chrome.runtime.openOptionsPage) {
     chrome.runtime.openOptionsPage();
@@ -222,6 +314,8 @@ chrome.storage.onChanged.addListener((changes, area) => {
 (async () => {
   await i18n.init();
   i18n.applyDom();
+  markI18nReady();
+  adoptRunningRefresh();
 
   // Help → the selected extension language. The help site falls back to EN
   // for languages it doesn't publish, so any code is safe to send.

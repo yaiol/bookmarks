@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "将此书签栏导出到 JSON 文件",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "将此栏导出到文件",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "删除此书签栏",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "从文件导入一个栏作为新副本 — 它绝不会替换现有栏。",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "导入与导出",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "选择每个栏上导出按钮使用的文件格式。JSON 是一个完整的备份 — 它还会恢复栏与其常用栏的链接。其他格式是可读文本，您可以粘贴到任何地方，并且只保留文件夹和链接。导入接受任何这些格式，并从文件中检测出正确的格式。",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "文件格式",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "导出栏时使用的格式。导入会从文件本身检测格式。",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "无法识别的文件类型。支持：{list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "刷新缺失的书签图标 (Shift+点击: 全部)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "正在刷新图标... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed}/{visited} 个图标已刷新",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

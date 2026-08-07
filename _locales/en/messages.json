@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Export this bar to a JSON file",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Export this bar to a file",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Delete this bar",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Import a bar from a file as a new copy — it never replaces an existing bar.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Import & export",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Pick the file format used by the export button on each bar. JSON is a complete backup — it also restores the bar's links to its common bars. The other formats are readable text you can paste anywhere, and keep folders and links only. Import accepts any of these formats and detects the right one from the file.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "File format",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format used when exporting a bar. Imports detect the format from the file itself.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Unrecognized file type. Supported: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Refresh missing bookmark icons (Shift-click: all)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Refreshing icons... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} of {visited} icons refreshed",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

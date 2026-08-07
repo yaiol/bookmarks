@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "將此書籤列匯出至 JSON 檔案",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "將此列匯出到檔案",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "刪除此書籤列",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "從檔案匯入一個列作為新副本 — 它絕不會取代現有列。",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "匯入與匯出",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "選擇每個列上匯出按鈕使用的檔案格式。JSON 是一個完整的備份 — 它還會還原列與其常用列的連結。其他格式是可讀文字，您可以貼到任何地方，並且只保留資料夾和連結。匯入接受任何這些格式，並從檔案中偵測出正確的格式。",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "檔案格式",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "匯出列時使用的格式。匯入會從檔案本身偵測格式。",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "無法辨識的檔案類型。支援：{list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "重新整理遺失的書籤圖示 (Shift+點擊: 全部)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "正在重新整理圖示... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed}/{visited} 個圖示已重新整理",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

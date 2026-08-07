@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Exporter cette barre vers un fichier JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Exporter cette barre vers un fichier",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Supprimer cette barre",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Importer une barre à partir d'un fichier en tant que nouvelle copie — elle ne remplace jamais une barre existante.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Importer et exporter",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Choisissez le format de fichier utilisé par le bouton d'exportation sur chaque barre. JSON est une sauvegarde complète — il restaure également les liens de la barre vers ses barres communes. Les autres formats sont du texte lisible que vous pouvez coller n'importe où, et ne conservent que les dossiers et les liens. L'importation accepte n'importe lequel de ces formats et détecte le bon à partir du fichier.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Format de fichier",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format utilisé lors de l'exportation d'une barre. Les importations détectent le format à partir du fichier lui-même.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Type de fichier non reconnu. Pris en charge : {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Actualiser les icônes de marque-pages manquantes (Maj+clic : tout)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Actualisation des icônes... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} icônes sur {visited} actualisées",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

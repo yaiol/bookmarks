@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "تصدير هذا الشريط إلى ملف JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "تصدير هذا الشريط إلى ملف",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "حذف هذا الشريط",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "استيراد شريط من ملف كنسخة جديدة — لا يحل محل شريط موجود أبدًا.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "استيراد وتصدير",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "اختر تنسيق الملف المستخدم بواسطة زر التصدير في كل شريط. JSON هو نسخة احتياطية كاملة — يستعيد أيضًا روابط الشريط إلى أشرطته الشائعة. التنسيقات الأخرى هي نصوص قابلة للقراءة يمكنك لصقها في أي مكان، وتحتفظ بالمجلدات والروابط فقط. يقبل الاستيراد أيًا من هذه التنسيقات ويكتشف التنسيق الصحيح من الملف.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "تنسيق الملف",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "التنسيق المستخدم عند تصدير شريط. يكتشف الاستيراد التنسيق من الملف نفسه.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "نوع ملف غير معروف. المدعوم: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "تحديث أيقونات الإشارات المرجعية المفقودة (Shift+نقر: الكل)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "جارٍ تحديث الأيقونات... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "تم تحديث {fixed} من {visited} أيقونات",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

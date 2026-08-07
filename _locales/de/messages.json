@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Diese Leiste in eine JSON-Datei exportieren",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Diese Leiste in eine Datei exportieren",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Diese Leiste löschen",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Eine Leiste aus einer Datei als neue Kopie importieren — sie ersetzt niemals eine bestehende Leiste.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Import & Export",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Wählen Sie das Dateiformat, das vom Export-Button auf jeder Leiste verwendet wird. JSON ist ein vollständiges Backup – es stellt auch die Verknüpfungen der Leiste zu ihren gemeinsamen Leisten wieder her. Die anderen Formate sind lesbarer Text, den Sie überall einfügen können, und behalten nur Ordner und Verknüpfungen bei. Der Import akzeptiert jedes dieser Formate und erkennt das richtige aus der Datei.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Dateiformat",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format, das beim Exportieren einer Leiste verwendet wird. Importe erkennen das Format aus der Datei selbst.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Unbekannter Dateityp. Unterstützt: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Fehlende Lesezeichen-Symbole aktualisieren (Shift+Klick: alle)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Symbole werden aktualisiert... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} von {visited} Icons aktualisiert",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

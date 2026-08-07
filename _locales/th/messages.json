@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "ส่งออกแถบนี้ไปยังไฟล์ JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "ส่งออกแถบนี้ไปยังไฟล์",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "ลบแถบนี้",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "นำเข้าแถบจากไฟล์เป็นสำเนาใหม่ — จะไม่แทนที่แถบที่มีอยู่เดิม",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "นำเข้าและส่งออก",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "เลือกรูปแบบไฟล์ที่ใช้โดยปุ่มส่งออกบนแต่ละแถบ JSON คือการสำรองข้อมูลที่สมบูรณ์ — ซึ่งจะกู้คืนลิงก์ของแถบไปยังแถบที่ใช้ร่วมกันด้วย รูปแบบอื่น ๆ เป็นข้อความที่อ่านได้ซึ่งคุณสามารถวางที่ใดก็ได้ และเก็บเฉพาะโฟลเดอร์และลิงก์ การนำเข้ายอมรับรูปแบบใดก็ได้เหล่านี้และตรวจจับรูปแบบที่ถูกต้องจากไฟล์",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "รูปแบบไฟล์",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "รูปแบบที่ใช้เมื่อส่งออกแถบ การนำเข้าจะตรวจจับรูปแบบจากไฟล์เอง",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "ชนิดไฟล์ไม่รู้จัก รองรับ: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "รีเฟรชไอคอนบุ๊กมาร์กที่ขาดหายไป (Shift+คลิก: ทั้งหมด)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "กำลังรีเฟรชไอคอน... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "รีเฟรชไอคอนแล้ว {fixed} จาก {visited}",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

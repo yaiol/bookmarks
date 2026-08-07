@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "このバーをJSONファイルにエクスポート",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "このバーをファイルにエクスポート",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "このバーを削除",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "ファイルからバーを新しいコピーとしてインポートします — 既存のバーを置き換えることはありません。",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "インポートとエクスポート",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "各バーのエクスポートボタンで使用されるファイル形式を選択します。JSONは完全なバックアップであり、バーの共通バーへのリンクも復元します。他の形式はどこにでも貼り付けられる読み取り可能なテキストであり、フォルダーとリンクのみを保持します。インポートはこれらのどの形式でも受け入れ、ファイルから正しいものを検出します。",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "ファイル形式",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "バーをエクスポートする際に使用される形式。インポートはファイル自体から形式を検出します。",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "未認識のファイルタイプ。サポートされている形式: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "不足しているブックマークアイコンを更新 (Shift+クリック: すべて)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "アイコンを更新中... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed}/{visited}個のアイコンを更新しました",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

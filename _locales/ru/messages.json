@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Экспортировать эту панель в файл JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Экспортировать эту панель в файл",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Удалить эту панель",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Импортировать панель из файла как новую копию — она никогда не заменяет существующую панель.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Импорт и экспорт",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Выберите формат файла, используемый кнопкой экспорта на каждой панели. JSON — это полная резервная копия, которая также восстанавливает ссылки панели на ее общие панели. Другие форматы — это читаемый текст, который можно вставить куда угодно, и они сохраняют только папки и ссылки. Импорт принимает любой из этих форматов и определяет правильный из файла.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Формат файла",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Формат, используемый при экспорте панели. Импорт определяет формат из самого файла.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Нераспознанный тип файла. Поддерживаемые: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Обновить отсутствующие значки закладок (Shift+клик: все)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Обновление значков... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "Обновлено {fixed} из {visited} значков",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

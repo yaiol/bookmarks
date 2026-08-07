@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Ekspor bilah ini ke berkas JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Ekspor bilah ini ke berkas",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Hapus bilah ini",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Impor bilah dari berkas sebagai salinan baru — ini tidak pernah menggantikan bilah yang sudah ada.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Impor & ekspor",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Pilih format file yang digunakan oleh tombol ekspor di setiap bilah. JSON adalah cadangan lengkap — ini juga memulihkan tautan bilah ke bilah umumnya. Format lain adalah teks yang dapat dibaca yang dapat Anda tempel di mana saja, dan hanya menyimpan folder dan tautan. Impor menerima format apa pun ini dan mendeteksi yang benar dari file.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Format file",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format yang digunakan saat mengekspor bilah. Impor mendeteksi format dari file itu sendiri.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Jenis file tidak dikenal. Didukung: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Segarkan ikon bookmark yang hilang (Shift-klik: semua)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Menyegarkan ikon... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} dari {visited} ikon diperbarui",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

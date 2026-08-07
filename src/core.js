@@ -836,3 +836,203 @@ function svgIcon(markup) {
   return node.cloneNode(true);
 }
 export function setIcon(el, markup) { el.replaceChildren(svgIcon(markup)); }
+
+// ---------------------------------------------------------------------------
+// Favicon refresh
+// ---------------------------------------------------------------------------
+//
+// ⚠ CLAUDE: there is NO API to refresh a bookmark's icon. Chrome keeps favicons
+// in its own cache; chrome.bookmarks has no icon field, and the _favicon/
+// endpoint below only READS that cache. The cache is written in exactly one
+// situation — Chrome loading the page. So the only way to refresh an icon is to
+// make Chrome visit the URL: open a background tab, wait for the load, close it.
+// Everything here exists to do that to as few URLs as possible.
+
+const FAVICON_CONCURRENCY = 4;      // background tabs open at once
+const FAVICON_TIMEOUT_MS  = 15000;  // give up waiting on one page
+const FAVICON_POLL_MS     = 300;    // how often to ask "has the icon arrived yet?"
+
+/**
+ * Every http(s) URL currently on the bookmark bar, depth-first, deduplicated.
+ * Other schemes are skipped: chrome://, file:// and javascript: bookmarks either
+ * refuse to open in a tab or have no favicon to fetch.
+ */
+export async function collectBarUrls() {
+  const [tree] = await chrome.bookmarks.getSubTree(await getBookmarkBarId());
+  const urls = new Set();
+  const walk = (node) => {
+    if (node.url) { if (/^https?:/iu.test(node.url)) urls.add(node.url); }
+    else for (const child of node.children || []) walk(child);
+  };
+  walk(tree);
+  return [...urls];
+}
+
+// `.invalid` is reserved (RFC 2606) and never resolves, so Chrome cannot hold a
+// cached icon for either of these and answers with its placeholder. TWO of them,
+// not one, because the whole filter rests on an assumption that has to be TESTED
+// rather than believed: that Chrome serves ONE shared default for every icon-less
+// URL. If it instead draws a per-URL placeholder, these two probes disagree, no
+// real bookmark can ever match a baseline, and the filter is not fixable by
+// tweaking — it needs a different signal. Calibrating says which world we are in
+// instead of guessing, which is what the two previous attempts did.
+const NO_ICON_PROBES = ["https://no-favicon-a.invalid/", "https://no-favicon-b.invalid/"];
+let _noIconHash;   // undefined = not calibrated, null = no usable baseline
+
+async function faviconBytes(pageUrl) {
+  const url = new URL(chrome.runtime.getURL("_favicon/"));
+  url.searchParams.set("pageUrl", pageUrl);
+  url.searchParams.set("size", "32");
+  // ⚠ no-store is load-bearing: this is polled in a loop to watch for the icon
+  // CHANGING, and a cached response would report the old bytes forever, so the
+  // wait would always run to the timeout and the icon would look like a failure.
+  const res = await fetch(url, { cache: "no-store" });
+  return new Uint8Array(await res.arrayBuffer());
+}
+
+async function hashOf(bytes) {
+  const digest = await crypto.subtle.digest("SHA-1", bytes);
+  return [...new Uint8Array(digest)].map(b => b.toString(16).padStart(2, "0")).join("");
+}
+
+/** What Chrome currently has cached for `pageUrl`: { hash, size }, or null if unreadable. */
+async function faviconProbe(pageUrl) {
+  try {
+    const bytes = await faviconBytes(pageUrl);
+    return { hash: await hashOf(bytes), size: bytes.length };
+  } catch { return null; }
+}
+
+async function faviconHash(pageUrl) {
+  return (await faviconProbe(pageUrl))?.hash ?? null;
+}
+
+/**
+ * Fingerprint of "Chrome has no icon for this URL", or null when the cache can't
+ * be read at all — Firefox has no _favicon/ endpoint and no equivalent, so there
+ * the missing-only filter doesn't apply and the wait falls back to a fixed delay.
+ */
+/**
+ * The "Chrome has no icon for this URL" fingerprint, or null when there isn't one.
+ * Null means the missing-only filter cannot work and callers must refresh everything.
+ */
+async function noIconHash() {
+  if (_noIconHash !== undefined) return _noIconHash;
+  const [a, b] = await Promise.all(NO_ICON_PROBES.map(faviconProbe));
+  if (!a || !b) {
+    _noIconHash = null;
+    console.warn("[BBS] favicon filter UNUSABLE: no readable _favicon/ endpoint (Firefox?) — refreshing every bookmark");
+  } else if (a.hash !== b.hash) {
+    _noIconHash = null;
+    console.warn("[BBS] favicon filter UNUSABLE: Chrome returns a DIFFERENT placeholder per URL " +
+                 `(${a.hash.slice(0, 12)}/${a.size}B vs ${b.hash.slice(0, 12)}/${b.size}B), ` +
+                 "so \"no icon\" cannot be recognised by comparison — refreshing every bookmark");
+  } else {
+    _noIconHash = a.hash;
+    console.log(`[BBS] favicon filter usable: shared no-icon default ${a.hash.slice(0, 12)} (${a.size}B)`);
+  }
+  return _noIconHash;
+}
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+/**
+ * Open `url` in a background tab and keep it open until Chrome's cached icon
+ * STOPS matching `before` — then close it. Resolves true if the icon changed.
+ *
+ * ⚠ CLAUDE: the stop condition is the GOAL ("did the icon arrive?"), never a
+ * proxy, and that distinction is the whole fix. The first version waited for
+ * tabs.onUpdated `status: "complete"` plus a fixed 600 ms and then closed the
+ * tab — which refreshed roughly half a bar. A favicon is fetched at low priority
+ * and, on plenty of sites, only after the document is "complete" (SPAs inject
+ * their <link rel="icon"> from script), so the tab was routinely closed while
+ * the icon was still in flight. Polling the cache instead means a fast site
+ * finishes in ~300 ms and a slow one gets the full timeout, with no guessing.
+ *
+ * `before` is null only where the cache is unreadable (Firefox); there we cannot
+ * observe arrival at all, so fall back to a plain wait.
+ */
+async function visitUntilIconArrives(url, before) {
+  let tab;
+  try { tab = await chrome.tabs.create({ url, active: false }); }
+  catch { return false; }   // a URL Chrome refuses to open must not stall the run
+  const deadline = Date.now() + FAVICON_TIMEOUT_MS;
+  let changed = false;
+  try {
+    if (before === null) {
+      await sleep(FAVICON_TIMEOUT_MS);
+    } else {
+      while (Date.now() < deadline) {
+        await sleep(FAVICON_POLL_MS);
+        const now = await faviconHash(url);
+        if (now && now !== before) { changed = true; break; }
+      }
+    }
+  } finally {
+    chrome.tabs.remove(tab.id).catch(() => {});   // already closed by the user: fine
+  }
+  return changed;
+}
+
+/**
+ * Re-fetch the favicons of the bookmarks currently on the bar.
+ *
+ * `onlyMissing` (the default) first asks Chrome's cache which URLs have no icon
+ * and visits just those — usually a handful instead of the whole bar. Pass false
+ * to visit everything, which is what you want when a site CHANGED its icon: that
+ * bookmark has a cached icon, it's simply the old one, so the filter skips it.
+ *
+ * ⚠ Call this from the SERVICE WORKER, never the popup — a popup's script is
+ * killed the instant the popup closes, which would strand every tab it opened.
+ *
+ * Returns { visited, total, fixed, failed, filtered } where `failed` is the list
+ * of URLs whose icon never arrived. Reporting that list is deliberate: "it only
+ * worked for half of them" has to be answerable with the actual half.
+ */
+export async function refreshBarFavicons({ onlyMissing = true, onProgress } = {}) {
+  const all = await collectBarUrls();
+  onProgress?.(0, all.length);   // total known: the probe phase below is not instant
+  const baseline = await noIconHash();
+  const filtered = onlyMissing && baseline !== null;
+
+  // One probe per URL up front: it is the "before" every visit watches for a
+  // change against, and (when filtering) it decides who gets visited at all.
+  const before = new Map();
+  for (const url of all) before.set(url, baseline === null ? null : await faviconHash(url));
+
+  // ⚠ CLAUDE: this table is the DIAGNOSTIC for the missing-only filter. Keep it.
+  // The filter selected only 3 URLs on a bar with far more blank icons
+  // (2026-08-05), so when it under-selects again this is what says why: per URL,
+  // the cached icon's hash + byte size and whether it matched the calibrated
+  // no-icon default. Diagnose from the table, never from a theory.
+  if (baseline !== null) {
+    const probes = await Promise.all(all.map(async url => {
+      const p = await faviconProbe(url);
+      return { url, hash: p?.hash?.slice(0, 12) ?? "(unreadable)", bytes: p?.size ?? 0,
+               matchesNoIcon: (p?.hash ?? baseline) === baseline };
+    }));
+    console.log(`[BBS] favicon probe — baseline(no-icon) ${baseline.slice(0, 12)}, ${all.length} url(s), ` +
+                `${probes.filter(p => p.matchesNoIcon).length} look icon-less`);
+    console.table(probes);
+  }
+
+  const urls = filtered ? all.filter(u => (before.get(u) ?? baseline) === baseline) : all;
+
+  let done = 0;
+  const failed = [];
+  onProgress?.(0, urls.length);
+  const queue = urls.slice();
+  const worker = async () => {
+    while (queue.length) {
+      const url = queue.shift();
+      if (!await visitUntilIconArrives(url, before.get(url))) failed.push(url);
+      onProgress?.(++done, urls.length);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(FAVICON_CONCURRENCY, queue.length) }, worker));
+
+  if (failed.length) {
+    console.warn(`[BBS] ${failed.length} of ${urls.length} icon(s) never arrived:`, failed);
+  }
+  return { visited: urls.length, total: all.length, fixed: urls.length - failed.length, failed, filtered };
+}

@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Esporta questa barra in un file JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Esporta questa barra in un file",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Elimina questa barra",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Importa una barra da un file come nuova copia — non sostituisce mai una barra esistente.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Importa ed esporta",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Scegli il formato di file utilizzato dal pulsante di esportazione su ogni barra. JSON è un backup completo — ripristina anche i collegamenti della barra alle sue barre comuni. Gli altri formati sono testo leggibile che puoi incollare ovunque e mantengono solo cartelle e collegamenti. L'importazione accetta qualsiasi di questi formati e rileva quello giusto dal file.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Formato file",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Formato utilizzato durante l'esportazione di una barra. Le importazioni rilevano il formato dal file stesso.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Tipo di file non riconosciuto. Supportati: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Aggiorna icone dei segnalibri mancanti (Shift+clic: tutti)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Aggiornamento icone... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} di {visited} icone aggiornate",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

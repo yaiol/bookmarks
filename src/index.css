@@ -125,7 +125,7 @@ body {
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--ya-color-primary) 25%, transparent);
 }
 
-/* --- Create / import row layout (options page) --- */
+/* --- Create row layout (options page) --- */
 
 #create-section {
   display: flex;
@@ -136,6 +136,21 @@ body {
 }
 #create-section .ya-input { flex: 1; }
 #create-section .ya-btn { flex: none; white-space: nowrap; }
+
+/* --- Import / export row layout (options page) - same shape as the create row --- */
+
+.io-row {
+  display: flex;
+  align-items: center;
+  gap: var(--ya-space-sm);
+}
+.io-row label {
+  flex: none;
+  font-size: var(--ya-font-size-sm);
+  color: var(--ya-color-text-muted);
+}
+.io-row .ya-select { flex: 1; }
+.io-row .ya-btn { flex: none; white-space: nowrap; }
 
 /* --- Show-commons toggle (popup) --- */
 

@@ -12,7 +12,8 @@ A browser sticks you with one bookmark bar. Bookmark Bar Switcher lets you keep 
 - **Common bar** - flag any bar as common, then have other bars pull it in. Its bookmarks merge into each chosen bar, folder by folder. Edit the common once and every bar that uses it reflects the change.
 - **Safe on multiple computers** - switching only copies a master set onto a disposable toolbar, never moving your saved bars, so browser autosync can't scramble them the way move-based switchers do.
 - **Easy switching** - a popup picker to switch, rename, reorder, and delete bars, plus keyboard shortcuts: cycle with Ctrl+Down / Up, or jump to one with Ctrl+Shift+1 / 2.
-- **Export & import** - export any bar to a JSON file and import it back as a new dated copy (import always adds, never overwrites).
+- **Refresh bookmark icons** - bookmarks whose icon never loaded sit there blank forever, because a browser only fetches a favicon when it loads the page. One button in the popup visits those pages quietly in the background and fills the icons in. It targets only the bookmarks that are missing an icon; Shift-click to refresh every bookmark on the bar, for sites that have changed their icon.
+- **Export & import, in four formats** - export any bar to **JSON**, **Markdown**, **BBCode**, or **AsciiDoc**, and import it back as a new dated copy (import always adds, never overwrites). JSON is the complete backup; the text formats are readable files you can paste into a forum post, a wiki, or a README. Import reads any of them and works out the format from the file itself.
 
 ## Install
 
@@ -40,6 +41,7 @@ The extension is built around a **copy-based** model that makes it safe under br
 | `background/main.js` | Service worker - keyboard commands, lifecycle, dispatch into `core.js` |
 | `popup/` | The visual picker - switch, rename, reorder, delete bars |
 | `options/` | Settings page - common-bar flags, per-bar common selection, export/import |
+| `lib/formats.js` | Import/export file formats - one codec per format, around a single payload shape |
 | `lib/i18n.js` | Runtime i18n loader |
 
 ### The model
@@ -51,6 +53,14 @@ The extension is built around a **copy-based** model that makes it safe under br
 - **A common bar merges folder-by-folder** into each bar that opts into it; the common itself stays read-only.
 
 Roots are resolved cross-browser: Firefox uses stable string IDs (`toolbar_____`, `unfiled_____`), Chrome uses numeric strings (`"1"` = toolbar, `"2"` = other), with a positional fallback.
+
+### File formats
+
+Every export format is a codec around **one** intermediate shape - the export payload `core.js` already produced, `{ version, exportedAt, bars, sets: [{ title, children }] }`. A format supplies `serialize(payload)` and `parse(text)`, so both ends of the pipeline stay format-blind and adding a format is one entry in `FORMATS`.
+
+- **JSON is the only lossless format.** It carries the payload verbatim, including the `bars` map that re-links a restored bar to its common bars. The text formats are a folder/link tree and nothing else, so a round-trip through one drops the commons config.
+- **Import detects the format from the file extension, not from the picker.** The dropdown chooses what *export* writes; making import obey it would let a mismatched selection mangle a perfectly good file.
+- **A parsed link is only emitted if its URL survives `new URL()`.** A hand-edited or mangled document therefore cannot abort a half-finished import with a `bookmarks.create()` throw - the bad entry is dropped and the rest lands.
 
 ## License / links
 Bookmark Bar Switcher is part of [yaiol Applications](https://apps.yaiol.com).

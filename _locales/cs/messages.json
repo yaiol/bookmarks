@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Exportovat tento panel do souboru JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Exportovat tento panel do souboru",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Smazat tento panel",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Importovat lištu ze souboru jako novou kopii — nikdy nenahradí existující lištu.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Import a export",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Vyberte formát souboru používaný tlačítkem exportu na každém panelu. JSON je kompletní záloha — obnovuje také odkazy panelu na jeho běžné panely. Ostatní formáty jsou čitelné texty, které můžete vložit kamkoli, a uchovávají pouze složky a odkazy. Import přijímá kterýkoli z těchto formátů a detekuje správný z daného souboru.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Formát souboru",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Formát použitý při exportu panelu. Importy detekují formát ze samotného souboru.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Nerozpoznaný typ souboru. Podporované: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Obnovit chybějící ikony záložek (Shift+klik: vše)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Obnovuji ikony... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "Obnoveno {fixed} z {visited} ikon",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

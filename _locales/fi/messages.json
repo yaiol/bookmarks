@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Vie tämä palkki JSON-tiedostoon",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Vie tämä palkki tiedostoon",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Poista tämä palkki",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Tuo palkki tiedostosta uutena kopiona — se ei koskaan korvaa olemassa olevaa palkkia.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Tuo ja vie",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Valitse tiedostomuoto, jota käytetään kunkin palkin vientipainikkeessa. JSON on täydellinen varmuuskopio — se palauttaa myös palkin linkit sen yhteisiin palkkeihin. Muut muodot ovat luettavaa tekstiä, jonka voit liittää minne tahansa, ja ne säilyttävät vain kansiot ja linkit. Tuonti hyväksyy minkä tahansa näistä muodoista ja tunnistaa oikean tiedostosta.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Tiedostomuoto",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Muoto, jota käytetään palkin viennissä. Tuonnit tunnistavat muodon itse tiedostosta.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Tunnistamaton tiedostotyyppi. Tuetut: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Päivitä puuttuvat kirjanmerkkikuvakkeet (Shift-klikkaus: kaikki)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Päivitetään kuvakkeita... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "Päivitetty {fixed}/{visited} kuvaketta",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

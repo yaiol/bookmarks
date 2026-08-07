@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Eksportuj ten pasek do pliku JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Eksportuj ten pasek do pliku",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Usuń ten pasek",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Importuj pasek z pliku jako nową kopię — nigdy nie zastępuje istniejącego paska.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Import i eksport",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Wybierz format pliku używany przez przycisk eksportu na każdym pasku. JSON to pełna kopia zapasowa — przywraca również linki paska do jego wspólnych pasków. Inne formaty to czytelny tekst, który można wkleić w dowolne miejsce, i zachowują tylko foldery i linki. Import akceptuje dowolny z tych formatów i wykrywa właściwy z pliku.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Format pliku",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format używany podczas eksportowania paska. Importy wykrywają format z samego pliku.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Nierozpoznany typ pliku. Obsługiwane: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Odśwież brakujące ikony zakładek (Shift+klik: wszystkie)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Odświeżanie ikon... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "Odświeżono {fixed} z {visited} ikon",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

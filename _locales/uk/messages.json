@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Експортувати цю панель до файлу JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Експортувати цю панель у файл",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Видалити цю панель",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Імпортувати панель із файлу як нову копію — вона ніколи не замінює наявну панель.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Імпорт та експорт",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Виберіть формат файлу, який використовується кнопкою експорту на кожній панелі. JSON — це повна резервна копія, яка також відновлює посилання панелі на її спільні панелі. Інші формати — це читабельний текст, який можна вставити куди завгодно, і вони зберігають лише папки та посилання. Імпорт приймає будь-який з цих форматів і визначає правильний з файлу.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Формат файлу",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Формат, що використовується при експорті панелі. Імпорт визначає формат із самого файлу.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Нерозпізнаний тип файлу. Підтримувані: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Оновити відсутні значки закладок (Shift+клік: усі)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Оновлення значків... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "Оновлено {fixed} з {visited} значків",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

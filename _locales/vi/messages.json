@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Xuất thanh này ra tệp JSON",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Xuất thanh này ra tệp",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Xóa thanh này",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Nhập một thanh từ tệp dưới dạng bản sao mới — nó không bao giờ thay thế thanh hiện có.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Nhập & xuất",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Chọn định dạng tệp được sử dụng bởi nút xuất trên mỗi thanh. JSON là một bản sao lưu hoàn chỉnh — nó cũng khôi phục các liên kết của thanh đến các thanh chung của nó. Các định dạng khác là văn bản có thể đọc được mà bạn có thể dán ở bất cứ đâu và chỉ giữ lại các thư mục và liên kết. Nhập chấp nhận bất kỳ định dạng nào trong số này và tự động phát hiện định dạng chính xác từ tệp.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Định dạng tệp",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Định dạng được sử dụng khi xuất một thanh. Nhập sẽ tự động phát hiện định dạng từ chính tệp.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Loại tệp không nhận dạng được. Hỗ trợ: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Làm mới biểu tượng dấu trang bị thiếu (Shift+nhấp: tất cả)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Đang làm mới biểu tượng... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} trong số {visited} biểu tượng đã làm mới",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

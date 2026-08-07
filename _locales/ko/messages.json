@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "이 바를 JSON 파일로 내보내기",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "이 바를 파일로 내보내기",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "이 바 삭제",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "파일에서 바를 새 복사본으로 가져옵니다 — 기존 바를 대체하지 않습니다.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "가져오기 및 내보내기",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "각 바의 내보내기 버튼에서 사용되는 파일 형식을 선택하세요. JSON은 완전한 백업이며, 바의 공통 바 링크도 복원합니다. 다른 형식은 어디든 붙여넣을 수 있는 읽기 가능한 텍스트이며, 폴더와 링크만 유지합니다. 가져오기는 이 형식들 중 어떤 것이든 허용하며 파일에서 올바른 형식을 감지합니다.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "파일 형식",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "바를 내보낼 때 사용되는 형식. 가져오기는 파일 자체에서 형식을 감지합니다.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "인식할 수 없는 파일 형식. 지원됨: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "누락된 북마크 아이콘 새로 고침 (Shift+클릭: 모두)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "아이콘 새로 고치는 중... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{visited}개 중 {fixed}개 아이콘 새로고침됨",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

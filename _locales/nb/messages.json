@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Eksporter denne linjen til en JSON-fil",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Eksporter denne linjen til en fil",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Slett denne linjen",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Importer en linje fra en fil som en ny kopi — den erstatter aldri en eksisterende linje.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Importer og eksporter",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Velg filformatet som brukes av eksportknappen på hver linje. JSON er en komplett sikkerhetskopi — den gjenoppretter også linjens lenker til dens felles linjer. De andre formatene er lesbar tekst du kan lime inn hvor som helst, og beholder kun mapper og lenker. Import aksepterer alle disse formatene og oppdager det riktige fra filen.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Filformat",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format brukt ved eksport av en linje. Import oppdager formatet fra selve filen.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Ukjent filtype. Støttede: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Oppdater manglende bokmerkeikoner (Shift-klikk: alle)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Oppdaterer ikoner... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} av {visited} ikoner oppdatert",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }

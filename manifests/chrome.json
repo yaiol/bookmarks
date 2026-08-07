@@ -2,11 +2,12 @@
   "name": "Bookmark Bar Switcher",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "manifest_version": 3,
   "permissions": [
     "bookmarks",
-    "storage"
+    "storage",
+    "favicon"
   ],
   "action": {
     "default_icon": {

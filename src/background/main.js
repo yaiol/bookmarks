@@ -17,6 +17,7 @@ import {
   switchToBar,
   saveBarToLoadedSet,
   isBarDirty,
+  refreshBarFavicons,
 } from "../core.js";
 
 const DEBOUNCE_MS = 100;
@@ -93,6 +94,55 @@ async function onStartup() {
     console.error("[BBS] init failed:", e);
   }
 }
+
+// ---------------------------------------------------------------------------
+// Favicon refresh (popup -> worker)
+// ---------------------------------------------------------------------------
+
+// ⚠ This runs HERE and not in the popup on purpose: the popup's script is killed
+// the moment the popup closes, and a half-finished run would leave every tab it
+// had opened behind. Progress is pushed back as a runtime message — the popup
+// picks it up if it is still open, and nothing breaks if it isn't.
+// Live state of a refresh run, so a popup that was closed (or never open) can
+// reopen mid-run and still show where it is. The worker is the only owner; the
+// popup never tracks progress itself.
+let refreshState = { running: false, done: 0, total: 0 };
+
+function broadcast(message) {
+  chrome.runtime.sendMessage(message).catch(() => {});   // popup closed: expected
+}
+
+chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+  if (msg?.type === "bbs:refresh-state") {
+    sendResponse(refreshState);
+    return undefined;
+  }
+  if (msg?.type !== "bbs:refresh-favicons") return undefined;
+  if (refreshState.running) {
+    sendResponse({ ok: false, busy: true });
+    return undefined;
+  }
+
+  refreshState = { running: true, done: 0, total: 0 };
+  refreshBarFavicons({
+    onlyMissing: msg.onlyMissing === true,
+    onProgress: (done, total) => {
+      refreshState = { running: true, done, total };
+      broadcast({ type: "bbs:refresh-favicons-progress", done, total });
+    },
+  })
+    .then((result) => {
+      refreshState = { running: false, done: 0, total: 0 };
+      broadcast({ type: "bbs:refresh-favicons-done", ...result });
+      sendResponse({ ok: true, ...result });
+    })
+    .catch((e) => {
+      refreshState = { running: false, done: 0, total: 0 };
+      broadcast({ type: "bbs:refresh-favicons-done", ok: false });
+      sendResponse({ ok: false, error: String(e) });
+    });
+  return true;   // keep the channel open for the async response
+});
 
 chrome.runtime.onInstalled.addListener(onInstalled);
 chrome.runtime.onStartup.addListener(onStartup);

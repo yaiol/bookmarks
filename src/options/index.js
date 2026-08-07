@@ -34,6 +34,14 @@ import {
   importSetsAsNewBars,
   setIcon,
 } from "../core.js";
+import {
+  FORMATS,
+  DEFAULT_FORMAT_ID,
+  getFormat,
+  formatForFile,
+  acceptAttribute,
+  extensionList,
+} from "../lib/formats.js";
 import * as i18n from "../lib/i18n.js";
 
 // ---------------------------------------------------------------------------
@@ -70,6 +78,10 @@ let pendingRemergeMsg = null;
 // Delete confirmation
 let removeCandidate = null;
 
+// Selected import/export file format (persisted in storage.local).
+const FORMAT_STORAGE_KEY = "fileFormat";
+let formatId = DEFAULT_FORMAT_ID;
+
 // ---------------------------------------------------------------------------
 // DOM references
 // ---------------------------------------------------------------------------
@@ -80,6 +92,7 @@ const createBtn = document.getElementById("create-btn");
 
 const importBtn = document.getElementById("import-btn");
 const importFile = document.getElementById("import-file");
+const formatSelect = document.getElementById("file-format");
 
 const deleteModal = document.getElementById("delete-modal");
 const deleteCancel = document.getElementById("delete-cancel");
@@ -273,10 +286,11 @@ function renderBarCard(bar, index) {
   exportOneBtn.title = i18n.t("optionsExportOne");
   exportOneBtn.addEventListener("click", async () => {
     try {
+      const fmt = getFormat(formatId);
       const data = await exportSingleSet(bar.id);
       const date = new Date().toISOString().slice(0, 10);
       const safe = bar.title.replace(/[^a-z0-9-_]+/gi, "_").slice(0, 60) || "bar";
-      downloadJson(data, `bookmark-bar-${safe}-${date}.json`);
+      downloadFile(fmt.serialize(data), `bookmark-bar-${safe}-${date}.${fmt.exts[0]}`, fmt.mime);
     } catch (e) {
       console.error("[BBS] single-bar export failed:", e);
       alert(i18n.t("optionsExportFailed") + e.message);
@@ -535,15 +549,38 @@ deleteConfirm.addEventListener("click", async () => {
 // Import / export
 // ---------------------------------------------------------------------------
 
-function downloadJson(data, filename) {
-  // Escape every non-ASCII codepoint as \uXXXX so the file is byte-identical
-  // under UTF-8, Latin-1, or cp1252 - survives a round-trip through any
-  // editor that might re-save it with the system codepage.
-  const json = JSON.stringify(data, null, 2).replace(
-    /[-￿]/g,
-    (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"),
-  );
-  const blob = new Blob([json], { type: "application/json;charset=utf-8" });
+// The format picker governs EXPORT only. Import deliberately ignores it and
+// detects the format from the file's own extension - the user picking "BBCode"
+// and then dropping in a .json backup must not silently mis-parse, and there is
+// nothing to gain from making them keep the dropdown in sync with the file.
+async function setupFormatPicker() {
+  if (!formatSelect) return;
+  formatSelect.replaceChildren();
+  for (const f of FORMATS) {
+    const opt = document.createElement("option");
+    opt.value = f.id;
+    opt.textContent = f.name; // a proper noun - never translated
+    formatSelect.appendChild(opt);
+  }
+
+  const stored = await new Promise(resolve => {
+    try {
+      chrome.storage.local.get([FORMAT_STORAGE_KEY], r => resolve(r?.[FORMAT_STORAGE_KEY]));
+    } catch { resolve(null); }
+  });
+  formatId = getFormat(stored).id; // unknown / missing -> the default format
+  formatSelect.value = formatId;
+
+  formatSelect.addEventListener("change", () => {
+    formatId = getFormat(formatSelect.value).id;
+    chrome.storage.local.set({ [FORMAT_STORAGE_KEY]: formatId });
+  });
+
+  if (importFile) importFile.accept = acceptAttribute();
+}
+
+function downloadFile(text, filename, mime) {
+  const blob = new Blob([text], { type: mime });
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
@@ -552,15 +589,6 @@ function downloadJson(data, filename) {
   a.click();
   document.body.removeChild(a);
   setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
-
-async function readJsonFile(file) {
-  const text = await file.text();
-  const data = JSON.parse(text);
-  if (!data || !Array.isArray(data.sets)) {
-    throw new Error(i18n.t("errorMissingSets"));
-  }
-  return data;
 }
 
 // Import always ADDS: every bar in the file becomes a new "<name> (<date>)"
@@ -576,8 +604,31 @@ importFile.addEventListener("change", async () => {
   const file = importFile.files?.[0];
   if (!file) return;
   try {
-    const data = await readJsonFile(file);
-    if (data.sets.length === 0) throw new Error(i18n.t("errorNoBars"));
+    const fmt = formatForFile(file.name);
+    if (!fmt) throw new Error(i18n.t("errorUnknownFormat", { list: extensionList() }));
+
+    let data;
+    try {
+      data = fmt.parse(await file.text());
+    } catch (e) {
+      // formats.js stays free of i18n - it raises sentinels, we word them.
+      throw new Error(e.message === "MISSING_SETS" ? i18n.t("errorMissingSets") : e.message);
+    }
+
+    if (!Array.isArray(data.sets) || data.sets.length === 0) {
+      throw new Error(i18n.t("errorNoBars"));
+    }
+
+    if (!fmt.lossless) {
+      const set = data.sets[0];
+      // A text document that parsed to nothing is a wrong-file mistake, not an
+      // empty bar - an exported EMPTY bar can only ever arrive as JSON.
+      if (!set.children || set.children.length === 0) throw new Error(i18n.t("errorNoBars"));
+      // Text formats carry no bar name when the document has no heading; fall
+      // back to the file name so the new bar is still identifiable.
+      if (!set.title) set.title = file.name.replace(/\.[^.]+$/, "").trim() || "bar";
+    }
+
     await importSetsAsNewBars(data);
     await refresh();
   } catch (e) {
@@ -657,5 +708,6 @@ async function setupLanguagePicker() {
   i18n.applyDom();
   applyChrome();
   await setupLanguagePicker();
+  await setupFormatPicker();
   await refresh();
 })();

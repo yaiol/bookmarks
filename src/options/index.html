@@ -30,8 +30,17 @@
         <div id="create-section">
           <input type="text" id="create-input" class="ya-input" placeholder="New bar name..." data-i18n-placeholder="optionsNewBarPlaceholder" spellcheck="false" />
           <button id="create-btn" class="ya-btn ya-btn-primary" data-i18n-title="optionsAddBarTitle" title="Add"><span data-i18n="optionsAddBar">+ Add bar</span></button>
+        </div>
+      </section>
+
+      <section class="ya-section" id="io-section">
+        <h2 data-i18n="optionsIoHeading">Import &amp; export</h2>
+        <p class="ya-hint" data-i18n="optionsIoHint">Pick the file format used by the export button on each bar. JSON is a complete backup — it also restores the bar's links to its common bars. The other formats are readable text you can paste anywhere, and keep folders and links only. Import accepts any of these formats and detects the right one from the file.</p>
+        <div class="io-row">
+          <label for="file-format" data-i18n="optionsFileFormatLabel">File format</label>
+          <select id="file-format" class="ya-select" data-i18n-title="optionsFileFormatTitle" title="Format used when exporting a bar"></select>
           <button id="import-btn" class="ya-btn ya-btn-secondary" data-i18n-title="optionsImportNewBarTitle" title="Import a bar from a file as a new copy"><span data-i18n="optionsImportNewBar">Import bar…</span></button>
-          <input type="file" id="import-file" accept="application/json,.json" hidden />
+          <input type="file" id="import-file" hidden />
         </div>
       </section>
 

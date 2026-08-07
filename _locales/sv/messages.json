@@ -164,8 +164,8 @@
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsExportOne": {
-    "message": "Exportera detta fält till en JSON-fil",
-    "description": "Tooltip on the per-bar export icon."
+    "message": "Exportera denna stapel till en fil",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsDeleteBar": {
     "message": "Ta bort detta fält",
@@ -238,5 +238,37 @@
   "optionsImportNewBarTitle": {
     "message": "Importera ett fält från en fil som en ny kopia — det ersätter aldrig ett befintligt fält.",
     "description": "Tooltip on the Import bar button beside Add bar."
+  },
+  "optionsIoHeading": {
+    "message": "Importera och exportera",
+    "description": "Heading of the settings section holding the file-format picker and the Import button."
+  },
+  "optionsIoHint": {
+    "message": "Välj det filformat som används av exportknappen på varje fält. JSON är en komplett säkerhetskopia — den återställer även fältets länkar till dess gemensamma fält. De andra formaten är läsbar text som du kan klistra in var som helst, och behåller endast mappar och länkar. Import accepterar alla dessa format och upptäcker det rätta från filen.",
+    "description": "Explanatory hint under the Import & export heading."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Filformat",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format som används vid export av ett fält. Importer upptäcker formatet från filen själv.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "errorUnknownFormat": {
+    "message": "Okänd filtyp. Stöds: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Uppdatera saknade bokmärkesikoner (Shift-klick: alla)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "popupRefreshingIcons": {
+    "message": "Uppdaterar ikoner... {done}/{total}",
+    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} av {visited} ikoner uppdaterade",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   }
 }
