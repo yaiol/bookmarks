@@ -1,4 +1,4 @@
-// app-icon tag for icons-cockpit (do not remove): data-icon="yaiol:bookmarks" -> res/icons/custom/apps/bookmarks.svg
+// data-icon="yaiol:bookmarks"
 /**
  * Bookmark Bar Switcher - shared core
  *
