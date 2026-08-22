@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4 — 2026-08-22
+
+- Shorten the app-icon marker comment in `src/core.js` to just the `data-icon` tag
+
 ## 1.0.3 — 2026-08-08
 
 - Refresh bookmark icons — a popup button that quietly visits, in a background tab, the pages of the bookmarks whose icon never loaded, and fills the icons in; Shift-click refreshes every bookmark on the bar, for sites that changed their icon
