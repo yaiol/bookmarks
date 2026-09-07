@@ -118,6 +118,8 @@ The extension is built around a **copy-based** model that makes it safe under br
 - **The "loaded set" is tracked per-PC** in `chrome.storage.local` (not sync storage), so each machine tracks its own working state independently.
 - **A common bar merges folder-by-folder** into each bar that opts into it; the common itself stays read-only.
 
+**Where the model stops — two machines browsing at the same time.** The toolbar is an ordinary synced bookmark folder, so two machines each holding a different set on it are writing to the same synced node, and the browser will merge them. No extension can prevent that: sync-applied changes arrive as ordinary `chrome.bookmarks` events, after the fact and indistinguishable from the user's own edits — there is no pre-merge hook to hold anything back. What the model buys is where the collision lands: on the disposable toolbar, surfaced as unsaved changes, never in a master (which only an explicit save rewrites). Recovery is a switch away with **Discard** and a switch back; the failure to warn users about is saving the merged toolbar over a good set.
+
 Roots are resolved cross-browser: Firefox uses stable string IDs (`toolbar_____`, `unfiled_____`), Chrome uses numeric strings (`"1"` = toolbar, `"2"` = other), with a positional fallback.
 
 </details>
