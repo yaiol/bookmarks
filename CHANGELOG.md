@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.5 — 2026-09-13
+
+- Switching to another bar no longer erases a toolbar it does not recognise. The extension only asked before replacing the toolbar when it could tell which saved bar was loaded — a marker kept per computer. On a second machine, or any fresh install, there was no marker, so a toolbar holding bookmarks that were in no saved bar was replaced with no prompt, and browser sync then carried the emptied toolbar to every other machine
+- Three states are now told apart instead of two: the toolbar matches a saved bar, it has unsaved changes against a known one, or it matches none. The third is treated as the most dangerous rather than the least — nothing about it is stored anywhere
+- Switching away from an unrecognised toolbar asks first, offering Save as a new bar, Switch anyway, or Cancel. The popup also says so above the bar list, instead of showing every row idle, which read as "everything is saved"
+- A keyboard switch cannot ask, so it now declines to replace an unrecognised toolbar and marks the toolbar button. Opening the popup clears the mark and offers the choice
+- Switching reads every bar it is about to copy before erasing the toolbar, so a deleted or unreadable bar fails while the toolbar is still intact. If a copy fails halfway the partial toolbar is reported as unrecognised, rather than being offered for saving over a good bar. Saving a bar likewise reads the toolbar before clearing the destination
+- Greek added — the interface is now available in 28 languages
+- Firefox: the extension was inert because the manifest declared the background script as a classic script while the code uses ES modules, so it never loaded — taking first-run setup and every keyboard shortcut with it
+- Document the switching model in the README: what the copy-based design protects, and where it stops
+
 ## 1.0.4 — 2026-08-22
 
 - Shorten the app-icon marker comment in `src/core.js` to just the `data-icon` tag
