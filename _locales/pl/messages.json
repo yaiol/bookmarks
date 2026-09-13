@@ -1,7 +1,27 @@
 {
-  "extDescription": {
-    "message": "Przełączaj się między wieloma paskami zakładek - przechowuj oddzielne zestawy zakładek i błyskawicznie je wymieniaj na pasku.",
-    "description": "Browser store description; must remain under 132 characters."
+  "badgeUnknownBar": {
+    "message": "Przełączenie anulowane – ten pasek narzędzi nie pasuje do żadnego zapisanego paska. Kliknij tutaj, aby wybrać, co zachować.",
+    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+  },
+  "btnCancel": {
+    "message": "Anuluj",
+    "description": "Generic dialog button - dismiss without acting."
+  },
+  "btnDiscard": {
+    "message": "Odrzuć",
+    "description": "Dialog button - drop unsaved changes."
+  },
+  "btnSave": {
+    "message": "Zapisz",
+    "description": "Dialog button - save the current bar before switching."
+  },
+  "btnSaveAsNewBar": {
+    "message": "Zapisz jako nowy pasek",
+    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+  },
+  "btnSwitchAnyway": {
+    "message": "Mimo to przełącz",
+    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
   },
   "cmdNextBar": {
     "message": "Przełącz na następny pasek zakładek.",
@@ -14,6 +34,10 @@
   "cmdSwitchTo1": {
     "message": "Przełącz na 1. pasek zakładek.",
     "description": "Keyboard-shortcut description - jump to the 1st bar."
+  },
+  "cmdSwitchTo10": {
+    "message": "Przełącz na 10. pasek zakładek.",
+    "description": "Keyboard-shortcut description - jump to the 10th bar."
   },
   "cmdSwitchTo2": {
     "message": "Przełącz na 2. pasek zakładek.",
@@ -47,89 +71,21 @@
     "message": "Przełącz na 9. pasek zakładek.",
     "description": "Keyboard-shortcut description - jump to the 9th bar."
   },
-  "cmdSwitchTo10": {
-    "message": "Przełącz na 10. pasek zakładek.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+  "errorMissingSets": {
+    "message": "Brak tablicy 'sets'",
+    "description": "Error thrown when an imported JSON file has no top-level sets array."
   },
-  "tooltipGithub": {
-    "message": "Źródło na GitHubie",
-    "description": "Footer icon tooltip - link to the source repository."
+  "errorNoBars": {
+    "message": "Plik nie zawiera pasków",
+    "description": "Error thrown when a single-bar import file contains zero bars."
   },
-  "tooltipHelp": {
-    "message": "Pomoc",
-    "description": "Footer icon tooltip - opens the online help page."
+  "errorUnknownFormat": {
+    "message": "Nierozpoznany typ pliku. Obsługiwane: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
   },
-  "tooltipSettings": {
-    "message": "Ustawienia",
-    "description": "Footer gear-icon tooltip - opens the settings page."
-  },
-  "btnCancel": {
-    "message": "Anuluj",
-    "description": "Generic dialog button - dismiss without acting."
-  },
-  "btnSave": {
-    "message": "Zapisz",
-    "description": "Dialog button - save the current bar before switching."
-  },
-  "btnDiscard": {
-    "message": "Odrzuć",
-    "description": "Dialog button - drop unsaved changes."
-  },
-  "popupShowCommons": {
-    "message": "Pokaż wspólne paski",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
-  },
-  "popupRowLoaded": {
-    "message": "Obecnie załadowany",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
-  },
-  "popupRowSwitch": {
-    "message": "Kliknij, aby przełączyć",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
-  },
-  "popupUnsavedChanges": {
-    "message": "Niezapisane zmiany",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
-  },
-  "popupCommonBar": {
-    "message": "Wspólny pasek",
-    "description": "Tooltip on the icon marking a row as a common bar."
-  },
-  "popupSaveInPlace": {
-    "message": "Zapisz zmiany paska w tym zestawie",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
-  },
-  "popupDirtySwitch": {
-    "message": "Zapisać zmiany w „{loaded}” przed przełączeniem na „{target}”?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
-  },
-  "popupDirtySave": {
-    "message": "Zapisać zmiany w „{loaded}”?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
-  },
-  "optionsHeaderSuffix": {
-    "message": "- Ustawienia",
-    "description": "Suffix after the app name in the settings page header and tab title."
-  },
-  "optionsLanguageLabel": {
-    "message": "Język",
-    "description": "Label for the UI-language picker in settings."
-  },
-  "optionsLanguageAuto": {
-    "message": "Auto (język przeglądarki)",
-    "description": "First option in the language picker - follow the browser's language."
-  },
-  "optionsBarsHeading": {
-    "message": "Paski zakładek",
-    "description": "Heading of the bars-management section in settings."
-  },
-  "optionsBarsHint": {
-    "message": "Przeciągnij pasek, aby zmienić kolejność. Oznacz pasek jako wspólny, aby jego zakładki były dostępne dla innych pasków. Dla każdego niewspólnego paska wybierz, które wspólne paski mają być dodane na początku i w jakiej kolejności.",
-    "description": "Explanatory hint under the Bookmark bars heading."
-  },
-  "optionsNewBarPlaceholder": {
-    "message": "Nazwa nowego paska…",
-    "description": "Placeholder in the create-bar text input."
+  "extDescription": {
+    "message": "Przełączaj się między wieloma paskami zakładek - przechowuj oddzielne zestawy zakładek i błyskawicznie je wymieniaj na pasku.",
+    "description": "Browser store description; must remain under 132 characters."
   },
   "optionsAddBar": {
     "message": "+ Dodaj pasek",
@@ -139,13 +95,29 @@
     "message": "Dodaj",
     "description": "Tooltip on the create-bar button."
   },
-  "optionsGripTitle": {
-    "message": "Przeciągnij, aby zmienić kolejność pasków",
-    "description": "Tooltip on the drag handle of a bar card."
+  "optionsAddCommonBtn": {
+    "message": "Dodaj",
+    "description": "Button that confirms adding the selected common to the bar."
   },
-  "optionsLoadedTag": {
-    "message": "Załadowany",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+  "optionsAddCommonOption": {
+    "message": "Dodaj wspólny pasek…",
+    "description": "Placeholder option in the dropdown that adds a common to a bar."
+  },
+  "optionsAddToAll": {
+    "message": "Dodaj ten wspólny pasek do każdego innego paska",
+    "description": "Tooltip on the + button of a common bar card."
+  },
+  "optionsBarsHeading": {
+    "message": "Paski zakładek",
+    "description": "Heading of the bars-management section in settings."
+  },
+  "optionsBarsHint": {
+    "message": "Przeciągnij pasek, aby zmienić kolejność. Oznacz pasek jako wspólny, aby jego zakładki były dostępne dla innych pasków. Dla każdego niewspólnego paska wybierz, które wspólne paski mają być dodane na początku i w jakiej kolejności.",
+    "description": "Explanatory hint under the Bookmark bars heading."
+  },
+  "optionsCannotDeleteLast": {
+    "message": "Nie można usunąć ostatniego paska",
+    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
   },
   "optionsCommonSet": {
     "message": "Oznacz jako wspólny pasek (jego zakładki mogą być dodawane na początku innych pasków)",
@@ -155,45 +127,13 @@
     "message": "Wspólny pasek - kliknij, aby odznaczyć",
     "description": "Tooltip on the common toggle when the bar is already common."
   },
-  "optionsAddToAll": {
-    "message": "Dodaj ten wspólny pasek do każdego innego paska",
-    "description": "Tooltip on the + button of a common bar card."
-  },
-  "optionsRemoveFromAll": {
-    "message": "Usuń ten wspólny pasek z każdego innego paska",
-    "description": "Tooltip on the − button of a common bar card."
-  },
-  "optionsExportOne": {
-    "message": "Eksportuj ten pasek do pliku",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
-  },
-  "optionsDeleteBar": {
-    "message": "Usuń ten pasek",
-    "description": "Tooltip on the per-bar delete icon."
-  },
-  "optionsCannotDeleteLast": {
-    "message": "Nie można usunąć ostatniego paska",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
-  },
-  "optionsNoCommons": {
-    "message": "Brak wspólnych pasków. Oznacz pasek jako wspólny, aby go tutaj użyć.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
-  },
   "optionsCommonsLabel": {
     "message": "Wspólne",
     "description": "Label above the per-bar list of selected common bars."
   },
-  "optionsRemoveFromBar": {
-    "message": "Usuń z tego paska",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
-  },
-  "optionsAddCommonOption": {
-    "message": "Dodaj wspólny pasek…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
-  },
-  "optionsAddCommonBtn": {
-    "message": "Dodaj",
-    "description": "Button that confirms adding the selected common to the bar."
+  "optionsDeleteBar": {
+    "message": "Usuń ten pasek",
+    "description": "Tooltip on the per-bar delete icon."
   },
   "optionsDeleteConfirm": {
     "message": "Usunąć ten pasek zakładek i wszystkie jego zakładki?",
@@ -211,25 +151,33 @@
     "message": "Zapisz i zastosuj",
     "description": "Button that saves unsaved edits then applies the config change."
   },
-  "optionsRemergeDirty": {
-    "message": "Obecnie załadowany pasek „{title}” ma niezapisane zmiany. Zapisać je, odrzucić czy anulować tę zmianę konfiguracji?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
-  },
   "optionsExportFailed": {
     "message": "Eksport nie powiódł się: ",
     "description": "Alert prefix when a JSON export fails; followed by the error detail."
   },
+  "optionsExportOne": {
+    "message": "Eksportuj ten pasek do pliku",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Format pliku",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format używany podczas eksportowania paska. Importy wykrywają format z samego pliku.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "optionsGripTitle": {
+    "message": "Przeciągnij, aby zmienić kolejność pasków",
+    "description": "Tooltip on the drag handle of a bar card."
+  },
+  "optionsHeaderSuffix": {
+    "message": "- Ustawienia",
+    "description": "Suffix after the app name in the settings page header and tab title."
+  },
   "optionsImportFailed": {
     "message": "Import nie powiódł się: ",
     "description": "Alert prefix when applying an import fails; followed by the error detail."
-  },
-  "errorMissingSets": {
-    "message": "Brak tablicy 'sets'",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
-  },
-  "errorNoBars": {
-    "message": "Plik nie zawiera pasków",
-    "description": "Error thrown when a single-bar import file contains zero bars."
   },
   "optionsImportNewBar": {
     "message": "Importuj pasek…",
@@ -247,28 +195,104 @@
     "message": "Wybierz format pliku używany przez przycisk eksportu na każdym pasku. JSON to pełna kopia zapasowa — przywraca również linki paska do jego wspólnych pasków. Inne formaty to czytelny tekst, który można wkleić w dowolne miejsce, i zachowują tylko foldery i linki. Import akceptuje dowolny z tych formatów i wykrywa właściwy z pliku.",
     "description": "Explanatory hint under the Import & export heading."
   },
-  "optionsFileFormatLabel": {
-    "message": "Format pliku",
-    "description": "Label beside the dropdown that selects the export file format."
+  "optionsLanguageAuto": {
+    "message": "Auto (język przeglądarki)",
+    "description": "First option in the language picker - follow the browser's language."
   },
-  "optionsFileFormatTitle": {
-    "message": "Format używany podczas eksportowania paska. Importy wykrywają format z samego pliku.",
-    "description": "Tooltip on the file-format dropdown."
+  "optionsLanguageLabel": {
+    "message": "Język",
+    "description": "Label for the UI-language picker in settings."
   },
-  "errorUnknownFormat": {
-    "message": "Nierozpoznany typ pliku. Obsługiwane: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  "optionsLoadedTag": {
+    "message": "Załadowany",
+    "description": "Tag shown on the bar card that is currently active in the bar."
   },
-  "tooltipRefreshIcons": {
-    "message": "Odśwież brakujące ikony zakładek (Shift+klik: wszystkie)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  "optionsNewBarPlaceholder": {
+    "message": "Nazwa nowego paska…",
+    "description": "Placeholder in the create-bar text input."
+  },
+  "optionsNoCommons": {
+    "message": "Brak wspólnych pasków. Oznacz pasek jako wspólny, aby go tutaj użyć.",
+    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+  },
+  "optionsRemergeDirty": {
+    "message": "Obecnie załadowany pasek „{title}” ma niezapisane zmiany. Zapisać je, odrzucić czy anulować tę zmianę konfiguracji?",
+    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+  },
+  "optionsRemoveFromAll": {
+    "message": "Usuń ten wspólny pasek z każdego innego paska",
+    "description": "Tooltip on the − button of a common bar card."
+  },
+  "optionsRemoveFromBar": {
+    "message": "Usuń z tego paska",
+    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+  },
+  "popupCapturedBarName": {
+    "message": "Pasek narzędzi {date}",
+    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+  },
+  "popupCommonBar": {
+    "message": "Wspólny pasek",
+    "description": "Tooltip on the icon marking a row as a common bar."
+  },
+  "popupDirtySave": {
+    "message": "Zapisać zmiany w „{loaded}”?",
+    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+  },
+  "popupDirtySwitch": {
+    "message": "Zapisać zmiany w „{loaded}” przed przełączeniem na „{target}”?",
+    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+  },
+  "popupRefreshIconsDone": {
+    "message": "Odświeżono {fixed} z {visited} ikon",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   },
   "popupRefreshingIcons": {
     "message": "Odświeżanie ikon... {done}/{total}",
     "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
   },
-  "popupRefreshIconsDone": {
-    "message": "Odświeżono {fixed} z {visited} ikon",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+  "popupRowLoaded": {
+    "message": "Obecnie załadowany",
+    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+  },
+  "popupRowSwitch": {
+    "message": "Kliknij, aby przełączyć",
+    "description": "Tooltip on an inactive bar row - click it to load that bar."
+  },
+  "popupSaveInPlace": {
+    "message": "Zapisz zmiany paska w tym zestawie",
+    "description": "Tooltip on the save icon shown on the dirty loaded row."
+  },
+  "popupShowCommons": {
+    "message": "Pokaż wspólne paski",
+    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+  },
+  "popupUnknownStatus": {
+    "message": "Ten pasek narzędzi nie pasuje do żadnego zapisanego paska.",
+    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+  },
+  "popupUnknownSwitch": {
+    "message": "Zakładki na pasku narzędzi nie pasują do żadnego z zapisanych pasków. Przełączenie na „{target}” spowoduje ich zastąpienie.",
+    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+  },
+  "popupUnsavedChanges": {
+    "message": "Niezapisane zmiany",
+    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+  },
+  "tooltipGithub": {
+    "message": "Źródło na GitHubie",
+    "description": "Footer icon tooltip - link to the source repository."
+  },
+  "tooltipHelp": {
+    "message": "Pomoc",
+    "description": "Footer icon tooltip - opens the online help page."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Odśwież brakujące ikony zakładek (Shift+klik: wszystkie)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "tooltipSettings": {
+    "message": "Ustawienia",
+    "description": "Footer gear-icon tooltip - opens the settings page."
   }
 }

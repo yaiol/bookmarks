@@ -2,7 +2,7 @@
   "name": "Bookmark Bar Switcher",
   "description": "__MSG_extDescription__",
   "default_locale": "en",
-  "version": "1.0.4",
+  "version": "1.0.4.1",
   "manifest_version": 3,
   "browser_specific_settings": {
     "gecko": {
@@ -32,7 +32,8 @@
   "background": {
     "scripts": [
       "background/main.js"
-    ]
+    ],
+    "type": "module"
   },
   "options_ui": {
     "page": "options/index.html",

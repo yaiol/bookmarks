@@ -16,6 +16,7 @@ import {
   getLoadedSet,
   switchToBar,
   saveBarToLoadedSet,
+  saveBarAsNewSet,
   setIcon,
 } from "../core.js";
 import * as i18n from "../lib/i18n.js";
@@ -38,6 +39,7 @@ let bars = [];
 let loadedSetId = null;
 let commonBarIds = new Set();
 let dirty = false;
+let unknown = false;
 let showCommons = false;
 
 // ---------------------------------------------------------------------------
@@ -45,6 +47,7 @@ let showCommons = false;
 // ---------------------------------------------------------------------------
 
 const barList = document.getElementById("bar-list");
+const barStatus = document.getElementById("bar-status");
 const settingsBtn = document.getElementById("settings-btn");
 const refreshIconsBtn = document.getElementById("refresh-icons-btn");
 const refreshStatus = document.getElementById("refresh-status");
@@ -62,14 +65,53 @@ const dirtySave = document.getElementById("dirty-save");
 
 let pendingDirtyChoice = null;
 
-function promptDirty(loadedTitle, targetTitle) {
-  dirtyMessage.textContent = targetTitle
-    ? i18n.t("popupDirtySwitch", { loaded: loadedTitle, target: targetTitle })
-    : i18n.t("popupDirtySave", { loaded: loadedTitle });
+// Both variants reuse the one modal, so every open sets ALL THREE labels —
+// otherwise the previous variant's wording leaks into the next open. The
+// data-i18n attributes in the HTML only seed the dirty-variant defaults.
+function openPrompt({ message, discardKey, saveKey }) {
+  dirtyMessage.textContent = message;
+  dirtyDiscard.textContent = i18n.t(discardKey);
+  dirtySave.textContent = i18n.t(saveKey);
   dirtyModal.classList.remove("hidden");
   return new Promise((resolve) => {
     pendingDirtyChoice = resolve;
   });
+}
+
+/** The bar drifted from a known set: save the diff, discard it, or cancel. */
+function promptDirty(loadedTitle, targetTitle) {
+  return openPrompt({
+    message: targetTitle
+      ? i18n.t("popupDirtySwitch", { loaded: loadedTitle, target: targetTitle })
+      : i18n.t("popupDirtySave", { loaded: loadedTitle }),
+    discardKey: "btnDiscard",
+    saveKey: "btnSave",
+  });
+}
+
+/**
+ * The bar matches NO set: there is no baseline to diff against, so "Save" here
+ * means "keep this whole toolbar as a new bar", not "save the changes". The
+ * wording claims only what is actually known — that nothing matches — never
+ * "you have unsaved changes", which the extension cannot tell in this state.
+ */
+function promptUnknown(targetTitle) {
+  return openPrompt({
+    message: i18n.t("popupUnknownSwitch", { target: targetTitle }),
+    discardKey: "btnSwitchAnyway",
+    saveKey: "btnSaveAsNewBar",
+  });
+}
+
+/** Default name for a rescued toolbar: "Toolbar 2026-09-13". */
+function captureName() {
+  const d = new Date();
+  const stamp = [
+    d.getFullYear(),
+    String(d.getMonth() + 1).padStart(2, "0"),
+    String(d.getDate()).padStart(2, "0"),
+  ].join("-");
+  return i18n.t("popupCapturedBarName", { date: stamp });
 }
 
 function resolveDirty(choice) {
@@ -90,6 +132,12 @@ dirtySave.addEventListener("click", () => resolveDirty("save"));
 // ---------------------------------------------------------------------------
 
 function render() {
+  // When the bar matches no set, NO row carries the ● dot — every row looks
+  // idle, which reads as "everything is saved". That false all-clear is half the
+  // danger, so the state gets said out loud instead of being left to silence.
+  barStatus.hidden = !unknown;
+  if (unknown) barStatus.textContent = i18n.t("popupUnknownStatus");
+
   barList.replaceChildren();
   const visibleBars = bars.filter(b => showCommons || !commonBarIds.has(b.id));
 
@@ -151,6 +199,11 @@ function render() {
 // Switch flow with dirty prompt
 // ---------------------------------------------------------------------------
 
+// ⚠ CLAUDE: switchToBar() ERASES the toolbar. Two different states put content
+// at risk and BOTH must be handled here — `dirty` (drifted from a known set)
+// and `unknown` (belongs to no set at all). Handling only `dirty` was the
+// original data-loss bug: `dirty` is false when there is no baseline, so an
+// uncaptured toolbar fell through to the wipe with no prompt shown.
 async function handleSwitch(target) {
   const loaded = await getLoadedSet();
   if (loaded && dirty) {
@@ -161,6 +214,15 @@ async function handleSwitch(target) {
     }
     if (choice === "save") {
       await saveBarToLoadedSet();
+    }
+  } else if (unknown) {
+    const choice = await promptUnknown(target.title);
+    if (choice === "cancel") {
+      await refresh();
+      return;
+    }
+    if (choice === "save") {
+      await saveBarAsNewSet(captureName());
     }
   }
   await switchToBar(target.id);
@@ -177,6 +239,10 @@ async function refresh() {
   loadedSetId = state.loaded?.id ?? null;
   commonBarIds = new Set(state.commonBarIds || []);
   dirty = state.dirty;
+  unknown = state.unknown;
+  // The hotkey raises a badge when it refuses to switch; opening the popup is
+  // the user acting on it, and the notice above now carries the same message.
+  chrome.action?.setBadgeText?.({ text: "" });
   const pref = await chrome.storage.local.get(PREF_SHOW_COMMONS);
   showCommons = !!pref[PREF_SHOW_COMMONS];
   showCommonsCb.checked = showCommons;

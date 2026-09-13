@@ -117,17 +117,33 @@ async function copyNode(node, parentId, idCollector = null) {
   return folder.id;
 }
 
-/** Copy all children of `sourceId` into `destId` (deep). */
+// ⚠ CLAUDE: the copy helpers below take an already-read SOURCE NODE, not an id.
+// That is deliberate and load-bearing: every caller that wipes a destination
+// must read its source FIRST, so a failed read can never happen after the
+// destination has been destroyed. Do not "simplify" them back to taking an id
+// and reading inside — that reintroduces read-after-wipe.
+
+/** Read a folder's subtree up front, for a caller that is about to wipe something. */
+async function readSubTree(folderId) {
+  const [node] = await chrome.bookmarks.getSubTree(folderId);
+  return node;
+}
+
+/** Copy all children of `sourceId` into `destId` (deep). Dest is not wiped. */
 async function copyChildrenInto(sourceId, destId) {
-  const [source] = await chrome.bookmarks.getSubTree(sourceId);
-  for (const child of source.children || []) {
+  await copyChildrenOf(await readSubTree(sourceId), destId);
+}
+
+/** Copy all children of an already-read `sourceNode` into `destId` (deep). */
+async function copyChildrenOf(sourceNode, destId) {
+  for (const child of sourceNode.children || []) {
     await copyNode(child, destId);
   }
 }
 
 /**
- * Copy children of `sourceId` onto `destId`, with top-level folder-name merging
- * against folders already in `destId`.
+ * Copy children of the already-read `sourceNode` onto `destId`, with top-level
+ * folder-name merging against folders already in `destId`.
  *
  *   mode = "common": the source is a common bar. Newly created nodes (including
  *     descendants) are added to `commonIds`. Folder-name merges KEEP the
@@ -136,16 +152,18 @@ async function copyChildrenInto(sourceId, destId) {
  *   mode = "x": the source is the loaded set X. Newly created nodes are NOT
  *     added to `commonIds`. Folder-name merges REMOVE the live folder's ID
  *     from `commonIds` (it now holds X items, no longer pure common).
+ *
+ * The DEST read stays inside: each call merges against whatever the previous
+ * calls already put on the toolbar.
  */
-async function copyChildrenMerging(sourceId, destId, commonIds, mode) {
+async function copyChildrenMerging(sourceNode, destId, commonIds, mode) {
   const liveChildren = await chrome.bookmarks.getChildren(destId);
   const mergeMap = new Map();
   for (const c of liveChildren) {
     if (!c.url) mergeMap.set(c.title, c.id);
   }
-  const [source] = await chrome.bookmarks.getSubTree(sourceId);
   const collector = mode === "common" ? [] : null;
-  for (const child of source.children || []) {
+  for (const child of sourceNode.children || []) {
     if (!child.url && mergeMap.has(child.title)) {
       const liveFolderId = mergeMap.get(child.title);
       if (mode === "x") commonIds.delete(liveFolderId);
@@ -162,14 +180,14 @@ async function copyChildrenMerging(sourceId, destId, commonIds, mode) {
 }
 
 /**
- * Copy children of `sourceId` into `destId`, skipping any descendant (at any
- * depth) whose ID is in `excludeIds`. A folder whose ID is in `excludeIds` is
- * skipped entirely; a folder whose ID is NOT in `excludeIds` is recreated in
- * `destId` and its children are recursed into with the same exclusion.
+ * Copy children of the already-read `sourceNode` into `destId`, skipping any
+ * descendant (at any depth) whose ID is in `excludeIds`. A folder whose ID is in
+ * `excludeIds` is skipped entirely; a folder whose ID is NOT in `excludeIds` is
+ * recreated in `destId` and its children are recursed into with the same
+ * exclusion.
  */
-async function copyChildrenIntoExcludingRecursive(sourceId, destId, excludeIds) {
-  const [source] = await chrome.bookmarks.getSubTree(sourceId);
-  for (const child of source.children || []) {
+async function copyChildrenOfExcludingRecursive(sourceNode, destId, excludeIds) {
+  for (const child of sourceNode.children || []) {
     await copyNodeWithExclusion(child, destId, excludeIds);
   }
 }
@@ -487,6 +505,10 @@ async function migrateLegacyCommon() {
  * True if the visible bar differs structurally from the loaded set.
  * Returns false when there is no loaded set (unknown baseline → not "dirty").
  *
+ * ⚠ false here does NOT mean "safe to wipe the bar". No baseline means nothing
+ * is captured, which is the MOST dangerous state, not the least — see
+ * isBarUnrecognised(), which every wipe-side caller must check as well.
+ *
  * Common-aware: if the loaded set is not itself the common bar, common-origin
  * items in the live bar are filtered out before the comparison.
  */
@@ -541,7 +563,13 @@ export async function autoDetectLoadedSet() {
  * Fast path (common case): bar still matches the currently loaded set.
  *   → 2 snapshots total (bar + loaded set), no walk over every set.
  * Slow path: bar differs from the loaded set.
- *   → walks remaining sets looking for a match, else flags as dirty.
+ *   → walks remaining sets looking for a match, else flags dirty or unknown.
+ *
+ * Returns THREE states, not two — `dirty` and `unknown` are never both true:
+ *   clean            the bar is a known set, nothing at risk
+ *   dirty            the bar drifted from a known set; the diff can be saved
+ *   unknown          the bar matches nothing and has no baseline; its contents
+ *                    exist nowhere else, so erasing it loses them for good
  */
 export async function getBarState() {
   let bars = await getBarFolders();
@@ -562,7 +590,7 @@ export async function getBarState() {
   if (loaded) {
     const loadedSnap = await snapshotChildren(loaded.id);
     if (JSON.stringify(loadedSnap) === barJson) {
-      return { bars, loaded, dirty: false, commonBarIds };
+      return { bars, loaded, dirty: false, unknown: false, commonBarIds };
     }
   }
 
@@ -574,11 +602,44 @@ export async function getBarState() {
     const setSnap = await snapshotChildren(set.id);
     if (JSON.stringify(setSnap) === barJson) {
       await setLoadedSet(set);
-      return { bars, loaded: set, dirty: false, commonBarIds };
+      return { bars, loaded: set, dirty: false, unknown: false, commonBarIds };
     }
   }
 
-  return { bars, loaded, dirty: !!loaded, commonBarIds };
+  // Nothing matched.
+  //   loaded  → the bar drifted from a KNOWN baseline: dirty, diffable, saveable.
+  //   !loaded → the bar belongs to NO baseline: whatever is on it exists in no
+  //             set, so an unprompted switch would destroy the only copy. An
+  //             empty bar has nothing to lose and is not flagged.
+  return {
+    bars,
+    loaded,
+    dirty: !!loaded,
+    unknown: !loaded && barSnap.length > 0,
+    commonBarIds,
+  };
+}
+
+/**
+ * True when the toolbar holds bookmarks that belong to no saved set — no
+ * loaded-set marker, and no set matches its contents.
+ *
+ * ⚠ This is NOT "isBarDirty() === false means safe". Dirty answers "does the bar
+ * differ from its baseline?" and returns false when there IS no baseline — the
+ * two questions have opposite safety meanings, and conflating them is what let a
+ * switch erase an uncaptured toolbar without asking. Any caller that is about to
+ * wipe the bar must check BOTH.
+ *
+ * Runs the same content-match auto-detect the popup does, so a bar that simply
+ * lost its marker (fresh install on a second PC, marker cleared) is recognised
+ * again rather than reported as unknown.
+ */
+export async function isBarUnrecognised() {
+  const loaded = await autoDetectLoadedSet();
+  if (loaded) return false;
+  const barId = await getBookmarkBarId();
+  const children = await chrome.bookmarks.getChildren(barId);
+  return children.length > 0;
 }
 
 // ---------------------------------------------------------------------------
@@ -588,6 +649,15 @@ export async function getBarState() {
 /**
  * Replace the visible bar with a copy of the target set. Destroys current bar
  * contents - the caller is responsible for saving first if needed.
+ *
+ * ⚠ CLAUDE: "if needed" has TWO cases and every caller must handle both, or it
+ * destroys bookmarks that exist nowhere else:
+ *   isBarDirty()         → the bar drifted from its known set. Save the diff.
+ *   isBarUnrecognised()  → the bar has NO known set. Nothing about it is stored
+ *                          anywhere; capture it (saveBarAsNewSet) or ask.
+ * Checking only the first was the original data-loss bug — `dirty` is false when
+ * there is no baseline, so the unrecognised case sailed straight through the
+ * guard and into the wipe. Both callers (popup switch, hotkey) check both now.
  */
 // ⚠ CLAUDE: single-flight — never let two switches run concurrently. Two
 // overlapping switches both wipe + rewrite the SAME toolbar (and on Firefox
@@ -606,7 +676,6 @@ async function _switchToBar(targetId) {
   const barId = await getBookmarkBarId();
   const [target] = await chrome.bookmarks.get(targetId);
   if (!target || target.url) return;
-  await wipeChildren(barId);
 
   const commonIds = new Set();
   const allCommons = new Set(await getCommonBarIds());
@@ -614,12 +683,34 @@ async function _switchToBar(targetId) {
   // target's selection only if the target is not itself common.
   const selection = allCommons.has(target.id) ? [] : await getBarCommons(target.id);
 
+  // ⚠ CLAUDE: READ EVERY SOURCE BEFORE THE WIPE. The toolbar is destroyed
+  // below and cannot be recovered, so anything that could fail — a removed
+  // set, an unreadable subtree, a Firefox round-trip error — has to fail
+  // while the toolbar is still intact. Never move a read past the wipe.
+  const sources = [];
   for (const commonId of selection) {
     if (commonId === target.id) continue;
     if (!allCommons.has(commonId)) continue;
-    await copyChildrenMerging(commonId, barId, commonIds, "common");
+    sources.push({ node: await readSubTree(commonId), mode: "common" });
   }
-  await copyChildrenMerging(target.id, barId, commonIds, "x");
+  sources.push({ node: await readSubTree(target.id), mode: "x" });
+
+  await wipeChildren(barId);
+
+  try {
+    for (const { node, mode } of sources) {
+      await copyChildrenMerging(node, barId, commonIds, mode);
+    }
+  } catch (e) {
+    // The toolbar is now partial and matches no set. Dropping the markers makes
+    // the popup treat it as UNRECOGNISED — so the next switch prompts before
+    // erasing it. Without this the marker would still name the previous set,
+    // the popup would call the wreckage "unsaved changes", and its Save button
+    // would write that wreckage over a good set.
+    await clearLoadedSet();
+    await clearCommonOriginIds();
+    throw e;
+  }
 
   if (commonIds.size > 0) {
     await setCommonOriginIds([...commonIds]);
@@ -640,14 +731,49 @@ export async function saveBarToSet(setId) {
   const barId = await getBookmarkBarId();
   const [set] = await chrome.bookmarks.get(setId);
   if (!set || set.url) return;
-  await wipeChildren(set.id);
   const commonIds = await getCommonOriginIds();
+  // Read the toolbar BEFORE wiping the set — this call destroys a saved set,
+  // so a read failure must not land after the destination is already gone.
+  const source = await readSubTree(barId);
+  await wipeChildren(set.id);
   if (commonIds.size > 0) {
-    await copyChildrenIntoExcludingRecursive(barId, set.id, commonIds);
+    await copyChildrenOfExcludingRecursive(source, set.id, commonIds);
   } else {
-    await copyChildrenInto(barId, set.id);
+    await copyChildrenOf(source, set.id);
   }
   await setLoadedSet(set); // refresh loadedAt, clears dirty state
+}
+
+/**
+ * Capture the visible bar into a NEW set and mark it loaded.
+ *
+ * This is the escape hatch for a toolbar that matches no known set: there is no
+ * baseline to diff against, so the user is offered "keep these as a new bar"
+ * rather than having them erased by the next switch.
+ *
+ * ⚠ Copies the toolbar VERBATIM — common-origin items are deliberately NOT
+ * stripped. Stripping relies on `loadedCommonIds`, which is per-PC and is
+ * exactly what is missing whenever this function is reachable. A faithful copy
+ * may duplicate a few common entries; a filtered one could silently drop the
+ * user's only copy of something. Duplicates are visible and fixable, loss isn't.
+ */
+export async function saveBarAsNewSet(baseName) {
+  const barId = await getBookmarkBarId();
+  const source = await readSubTree(barId);
+  const set = await createBar(await uniqueBarName(baseName));
+  await copyChildrenOf(source, set.id);
+  await setLoadedSet(set);
+  return set;
+}
+
+/** `base`, or `base (2)`, `base (3)`… — whichever is not already a set name. */
+async function uniqueBarName(base) {
+  const taken = new Set((await getBarFolders()).map(b => b.title));
+  if (!taken.has(base)) return base;
+  for (let n = 2; ; n++) {
+    const candidate = `${base} (${n})`;
+    if (!taken.has(candidate)) return candidate;
+  }
 }
 
 /** Save the bar back into the currently loaded set. No-op if nothing is loaded. */

@@ -1,298 +1,298 @@
 {
   "badgeUnknownBar": {
-    "message": "Växling avbruten – denna verktygsfält matchar ingen sparad fält. Klicka här för att välja vad du vill behålla.",
+    "message": "Η εναλλαγή ακυρώθηκε – αυτή η γραμμή εργαλείων δεν ταιριάζει με καμία αποθηκευμένη γραμμή. Κάντε κλικ εδώ για να επιλέξετε τι θα κρατήσετε.",
     "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
   },
   "btnCancel": {
-    "message": "Avbryt",
+    "message": "Ακύρωση",
     "description": "Generic dialog button - dismiss without acting."
   },
   "btnDiscard": {
-    "message": "Kassera",
+    "message": "Απόρριψη",
     "description": "Dialog button - drop unsaved changes."
   },
   "btnSave": {
-    "message": "Spara",
+    "message": "Αποθήκευση",
     "description": "Dialog button - save the current bar before switching."
   },
   "btnSaveAsNewBar": {
-    "message": "Spara som en ny fält",
+    "message": "Αποθήκευση ως νέα γραμμή",
     "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
   },
   "btnSwitchAnyway": {
-    "message": "Växla ändå",
+    "message": "Εναλλαγή ούτως ή άλλως",
     "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
   },
   "cmdNextBar": {
-    "message": "Växla till nästa bokmärkesfält.",
+    "message": "Μετάβαση στην επόμενη γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
   },
   "cmdPreviousBar": {
-    "message": "Växla till föregående bokmärkesfält.",
+    "message": "Μετάβαση στην προηγούμενη γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
   },
   "cmdSwitchTo1": {
-    "message": "Växla till 1. bokmärkesfält.",
+    "message": "Μετάβαση στην 1η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 1st bar."
   },
   "cmdSwitchTo10": {
-    "message": "Växla till 10. bokmärkesfält.",
+    "message": "Μετάβαση στην 10η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 10th bar."
   },
   "cmdSwitchTo2": {
-    "message": "Växla till 2. bokmärkesfält.",
+    "message": "Μετάβαση στην 2η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 2nd bar."
   },
   "cmdSwitchTo3": {
-    "message": "Växla till 3. bokmärkesfält.",
+    "message": "Μετάβαση στην 3η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 3rd bar."
   },
   "cmdSwitchTo4": {
-    "message": "Växla till 4. bokmärkesfält.",
+    "message": "Μετάβαση στην 4η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 4th bar."
   },
   "cmdSwitchTo5": {
-    "message": "Växla till 5. bokmärkesfält.",
+    "message": "Μετάβαση στην 5η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 5th bar."
   },
   "cmdSwitchTo6": {
-    "message": "Växla till 6. bokmärkesfält.",
+    "message": "Μετάβαση στην 6η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 6th bar."
   },
   "cmdSwitchTo7": {
-    "message": "Växla till 7. bokmärkesfält.",
+    "message": "Μετάβαση στην 7η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 7th bar."
   },
   "cmdSwitchTo8": {
-    "message": "Växla till 8. bokmärkesfält.",
+    "message": "Μετάβαση στην 8η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 8th bar."
   },
   "cmdSwitchTo9": {
-    "message": "Växla till 9. bokmärkesfält.",
+    "message": "Μετάβαση στην 9η γραμμή σελιδοδεικτών.",
     "description": "Keyboard-shortcut description - jump to the 9th bar."
   },
   "errorMissingSets": {
-    "message": "Saknar 'sets'-array",
+    "message": "Λείπει ο πίνακας 'sets'",
     "description": "Error thrown when an imported JSON file has no top-level sets array."
   },
   "errorNoBars": {
-    "message": "Filen innehåller inga fält",
+    "message": "Το αρχείο δεν περιέχει γραμμές",
     "description": "Error thrown when a single-bar import file contains zero bars."
   },
   "errorUnknownFormat": {
-    "message": "Okänd filtyp. Stöds: {list}",
+    "message": "Μη αναγνωρισμένος τύπος αρχείου. Υποστηριζόμενοι: {list}",
     "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
   },
   "extDescription": {
-    "message": "Växla mellan flera bokmärkesfält - håll separata uppsättningar bokmärken och byt dem in och ut ur fältet direkt.",
+    "message": "Εναλλαγή μεταξύ πολλαπλών γραμμών σελιδοδεικτών – διατηρήστε ξεχωριστά σύνολα σελιδοδεικτών και εναλλάξτε τα άμεσα μέσα και έξω από τη γραμμή.",
     "description": "Browser store description; must remain under 132 characters."
   },
   "optionsAddBar": {
-    "message": "+ Lägg till fält",
+    "message": "+ Προσθήκη γραμμής",
     "description": "Label of the button that creates a new bar."
   },
   "optionsAddBarTitle": {
-    "message": "Lägg till",
+    "message": "Προσθήκη",
     "description": "Tooltip on the create-bar button."
   },
   "optionsAddCommonBtn": {
-    "message": "Lägg till",
+    "message": "Προσθήκη",
     "description": "Button that confirms adding the selected common to the bar."
   },
   "optionsAddCommonOption": {
-    "message": "Lägg till ett gemensamt fält…",
+    "message": "Προσθήκη κοινής γραμμής…",
     "description": "Placeholder option in the dropdown that adds a common to a bar."
   },
   "optionsAddToAll": {
-    "message": "Lägg till detta gemensamma fält till alla andra fält",
+    "message": "Προσθήκη αυτής της κοινής γραμμής σε κάθε άλλη γραμμή",
     "description": "Tooltip on the + button of a common bar card."
   },
   "optionsBarsHeading": {
-    "message": "Bokmärkesfält",
+    "message": "Γραμμές σελιδοδεικτών",
     "description": "Heading of the bars-management section in settings."
   },
   "optionsBarsHint": {
-    "message": "Dra ett fält för att ändra ordning. Markera ett fält som gemensamt för att göra dess bokmärken tillgängliga för andra fält. För varje icke-gemensamt fält, välj vilka gemensamma fält som ska läggas till i början och i vilken ordning.",
+    "message": "Σύρετε μια γραμμή για αναδιάταξη. Σημειώστε μια γραμμή ως κοινή για να είναι οι σελιδοδείκτες της διαθέσιμοι σε άλλες γραμμές. Για κάθε μη κοινή γραμμή, επιλέξτε ποιες κοινές θα προστεθούν στην αρχή και με ποια σειρά.",
     "description": "Explanatory hint under the Bookmark bars heading."
   },
   "optionsCannotDeleteLast": {
-    "message": "Kan inte ta bort det sista fältet",
+    "message": "Δεν είναι δυνατή η διαγραφή της τελευταίας γραμμής",
     "description": "Tooltip on the delete icon when only one bar remains (disabled)."
   },
   "optionsCommonSet": {
-    "message": "Markera som gemensamt fält (dess bokmärken kan läggas till i början av andra fält)",
+    "message": "Σήμανση ως κοινή γραμμή (οι σελιδοδείκτες της μπορούν να προστεθούν στην αρχή άλλων γραμμών)",
     "description": "Tooltip on the common toggle when the bar is not yet common."
   },
   "optionsCommonUnset": {
-    "message": "Gemensamt fält - klicka för att avmarkera",
+    "message": "Κοινή γραμμή - κάντε κλικ για κατάργηση σήμανσης",
     "description": "Tooltip on the common toggle when the bar is already common."
   },
   "optionsCommonsLabel": {
-    "message": "Gemensamma",
+    "message": "Κοινές",
     "description": "Label above the per-bar list of selected common bars."
   },
   "optionsDeleteBar": {
-    "message": "Ta bort detta fält",
+    "message": "Διαγραφή αυτής της γραμμής",
     "description": "Tooltip on the per-bar delete icon."
   },
   "optionsDeleteConfirm": {
-    "message": "Ta bort detta bokmärkesfält och alla dess bokmärken?",
+    "message": "Να αφαιρεθεί αυτή η γραμμή σελιδοδεικτών και όλοι οι σελιδοδείκτες της;",
     "description": "Body of the delete-confirmation modal."
   },
   "optionsDeleteRemove": {
-    "message": "Ta bort",
+    "message": "Αφαίρεση",
     "description": "Confirm button of the delete-confirmation modal."
   },
   "optionsDirtyDiscardApply": {
-    "message": "Kassera & tillämpa",
+    "message": "Απόρριψη & εφαρμογή",
     "description": "Button that discards unsaved edits and applies the config change."
   },
   "optionsDirtySaveApply": {
-    "message": "Spara & tillämpa",
+    "message": "Αποθήκευση & εφαρμογή",
     "description": "Button that saves unsaved edits then applies the config change."
   },
   "optionsExportFailed": {
-    "message": "Export misslyckades: ",
+    "message": "Η εξαγωγή απέτυχε: ",
     "description": "Alert prefix when a JSON export fails; followed by the error detail."
   },
   "optionsExportOne": {
-    "message": "Exportera denna stapel till en fil",
+    "message": "Εξαγωγή αυτής της γραμμής σε αρχείο",
     "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
   },
   "optionsFileFormatLabel": {
-    "message": "Filformat",
+    "message": "Μορφή αρχείου",
     "description": "Label beside the dropdown that selects the export file format."
   },
   "optionsFileFormatTitle": {
-    "message": "Format som används vid export av ett fält. Importer upptäcker formatet från filen själv.",
+    "message": "Μορφή που χρησιμοποιείται κατά την εξαγωγή μιας γραμμής. Οι εισαγωγές ανιχνεύουν τη μορφή από το ίδιο το αρχείο.",
     "description": "Tooltip on the file-format dropdown."
   },
   "optionsGripTitle": {
-    "message": "Dra för att ändra ordning på fält",
+    "message": "Σύρετε για αναδιάταξη γραμμών",
     "description": "Tooltip on the drag handle of a bar card."
   },
   "optionsHeaderSuffix": {
-    "message": "- Inställningar",
+    "message": "- Ρυθμίσεις",
     "description": "Suffix after the app name in the settings page header and tab title."
   },
   "optionsImportFailed": {
-    "message": "Import misslyckades: ",
+    "message": "Η εισαγωγή απέτυχε: ",
     "description": "Alert prefix when applying an import fails; followed by the error detail."
   },
   "optionsImportNewBar": {
-    "message": "Importera fält…",
+    "message": "Εισαγωγή γραμμής…",
     "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
   },
   "optionsImportNewBarTitle": {
-    "message": "Importera ett fält från en fil som en ny kopia — det ersätter aldrig ett befintligt fält.",
+    "message": "Εισαγωγή μιας γραμμής από αρχείο ως νέο αντίγραφο — δεν αντικαθιστά ποτέ μια υπάρχουσα γραμμή.",
     "description": "Tooltip on the Import bar button beside Add bar."
   },
   "optionsIoHeading": {
-    "message": "Importera och exportera",
+    "message": "Εισαγωγή & εξαγωγή",
     "description": "Heading of the settings section holding the file-format picker and the Import button."
   },
   "optionsIoHint": {
-    "message": "Välj det filformat som används av exportknappen på varje fält. JSON är en komplett säkerhetskopia — den återställer även fältets länkar till dess gemensamma fält. De andra formaten är läsbar text som du kan klistra in var som helst, och behåller endast mappar och länkar. Import accepterar alla dessa format och upptäcker det rätta från filen.",
+    "message": "Επιλέξτε τη μορφή αρχείου που χρησιμοποιείται από το κουμπί εξαγωγής σε κάθε γραμμή. Το JSON είναι ένα πλήρες αντίγραφο ασφαλείας — αποκαθιστά επίσης τους συνδέσμους της γραμμής με τις κοινές γραμμές της. Οι άλλες μορφές είναι αναγνώσιμο κείμενο που μπορείτε να επικολλήσετε οπουδήποτε και διατηρούν μόνο φακέλους και συνδέσμους. Η εισαγωγή δέχεται οποιαδήποτε από αυτές τις μορφές και ανιχνεύει τη σωστή από το αρχείο.",
     "description": "Explanatory hint under the Import & export heading."
   },
   "optionsLanguageAuto": {
-    "message": "Auto (webbläsarspråk)",
+    "message": "Αυτόματη (γλώσσα περιηγητή)",
     "description": "First option in the language picker - follow the browser's language."
   },
   "optionsLanguageLabel": {
-    "message": "Språk",
+    "message": "Γλώσσα",
     "description": "Label for the UI-language picker in settings."
   },
   "optionsLoadedTag": {
-    "message": "Laddat",
+    "message": "Φορτωμένη",
     "description": "Tag shown on the bar card that is currently active in the bar."
   },
   "optionsNewBarPlaceholder": {
-    "message": "Nytt fältnamn…",
+    "message": "Όνομα νέας γραμμής…",
     "description": "Placeholder in the create-bar text input."
   },
   "optionsNoCommons": {
-    "message": "Inga gemensamma fält ännu. Markera ett fält som gemensamt för att använda det här.",
+    "message": "Δεν υπάρχουν κοινές γραμμές ακόμα. Σημειώστε μια γραμμή ως κοινή για να τη χρησιμοποιήσετε εδώ.",
     "description": "Empty-state text in a bar's commons picker when no common bars exist."
   },
   "optionsRemergeDirty": {
-    "message": "Det aktuellt laddade fältet \"{title}\" har osparade ändringar. Spara dem, kassera dem, eller avbryt denna konfigurationsändring?",
+    "message": "Η τρέχουσα φορτωμένη γραμμή \"{title}\" έχει μη αποθηκευμένες αλλαγές. Να αποθηκευτούν, να απορριφθούν ή να ακυρωθεί αυτή η αλλαγή διαμόρφωσης;",
     "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
   },
   "optionsRemoveFromAll": {
-    "message": "Ta bort detta gemensamma fält från alla andra fält",
+    "message": "Αφαίρεση αυτής της κοινής γραμμής από κάθε άλλη γραμμή",
     "description": "Tooltip on the − button of a common bar card."
   },
   "optionsRemoveFromBar": {
-    "message": "Ta bort från detta fält",
+    "message": "Αφαίρεση από αυτή τη γραμμή",
     "description": "Tooltip on the ✕ that removes a common from a bar's selection."
   },
   "popupCapturedBarName": {
-    "message": "Verktygsfält {date}",
+    "message": "Γραμμή εργαλείων {date}",
     "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
   },
   "popupCommonBar": {
-    "message": "Gemensamt fält",
+    "message": "Κοινή γραμμή",
     "description": "Tooltip on the icon marking a row as a common bar."
   },
   "popupDirtySave": {
-    "message": "Spara ändringar i \"{loaded}\"?",
+    "message": "Αποθήκευση αλλαγών στο \"{loaded}\";",
     "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
   },
   "popupDirtySwitch": {
-    "message": "Spara ändringar i \"{loaded}\" innan du växlar till \"{target}\"?",
+    "message": "Αποθήκευση αλλαγών στο \"{loaded}\" πριν την εναλλαγή στο \"{target}\";",
     "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed} av {visited} ikoner uppdaterade",
+    "message": "{fixed} από {visited} εικονίδια ανανεώθηκαν",
     "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   },
   "popupRefreshingIcons": {
-    "message": "Uppdaterar ikoner... {done}/{total}",
+    "message": "Ανανέωση εικονιδίων... {done}/{total}",
     "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
   },
   "popupRowLoaded": {
-    "message": "Aktuellt laddat",
+    "message": "Τρέχουσα φορτωμένη",
     "description": "Tooltip on the bar row that is currently active in the bookmark bar."
   },
   "popupRowSwitch": {
-    "message": "Klicka för att växla",
+    "message": "Κάντε κλικ για εναλλαγή",
     "description": "Tooltip on an inactive bar row - click it to load that bar."
   },
   "popupSaveInPlace": {
-    "message": "Spara fältändringar till denna uppsättning",
+    "message": "Αποθήκευση αλλαγών γραμμής σε αυτό το σύνολο",
     "description": "Tooltip on the save icon shown on the dirty loaded row."
   },
   "popupShowCommons": {
-    "message": "Visa gemensamma fält",
+    "message": "Εμφάνιση κοινών γραμμών",
     "description": "Popup checkbox label - also list bars marked as common in the switcher."
   },
   "popupUnknownStatus": {
-    "message": "Denna verktygsfält matchar ingen sparad fält.",
+    "message": "Αυτή η γραμμή εργαλείων δεν ταιριάζει με καμία αποθηκευμένη γραμμή.",
     "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
   },
   "popupUnknownSwitch": {
-    "message": "Bokmärkena på din verktygsfält matchar inte någon av dina sparade fält. Att växla till ”{target}” kommer att ersätta dem.",
+    "message": "Οι σελιδοδείκτες στη γραμμή εργαλείων σας δεν ταιριάζουν με καμία από τις αποθηκευμένες γραμμές σας. Η εναλλαγή σε «{target}» θα τους αντικαταστήσει.",
     "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
   },
   "popupUnsavedChanges": {
-    "message": "Osparade ändringar",
+    "message": "Μη αποθηκευμένες αλλαγές",
     "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
   },
   "tooltipGithub": {
-    "message": "Källa på GitHub",
+    "message": "Πηγαίος κώδικας στο GitHub",
     "description": "Footer icon tooltip - link to the source repository."
   },
   "tooltipHelp": {
-    "message": "Hjälp",
+    "message": "Βοήθεια",
     "description": "Footer icon tooltip - opens the online help page."
   },
   "tooltipRefreshIcons": {
-    "message": "Uppdatera saknade bokmärkesikoner (Shift-klick: alla)",
+    "message": "Ανανέωση εικονιδίων σελιδοδεικτών που λείπουν (Shift-κλικ: όλα)",
     "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
   },
   "tooltipSettings": {
-    "message": "Inställningar",
+    "message": "Ρυθμίσεις",
     "description": "Footer gear-icon tooltip - opens the settings page."
   }
 }

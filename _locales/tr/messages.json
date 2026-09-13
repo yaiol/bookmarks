@@ -1,7 +1,27 @@
 {
-  "extDescription": {
-    "message": "Birden fazla yer imi çubuğu arasında geçiş yapın - ayrı yer imi setlerini tutun ve anında çubuğa ekleyip çıkarın.",
-    "description": "Browser store description; must remain under 132 characters."
+  "badgeUnknownBar": {
+    "message": "Geçiş iptal edildi – bu araç çubuğu kayıtlı hiçbir çubukla eşleşmiyor. Ne tutacağınızı seçmek için buraya tıklayın.",
+    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+  },
+  "btnCancel": {
+    "message": "İptal",
+    "description": "Generic dialog button - dismiss without acting."
+  },
+  "btnDiscard": {
+    "message": "Vazgeç",
+    "description": "Dialog button - drop unsaved changes."
+  },
+  "btnSave": {
+    "message": "Kaydet",
+    "description": "Dialog button - save the current bar before switching."
+  },
+  "btnSaveAsNewBar": {
+    "message": "Yeni bir çubuk olarak kaydet",
+    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+  },
+  "btnSwitchAnyway": {
+    "message": "Yine de değiştir",
+    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
   },
   "cmdNextBar": {
     "message": "Sonraki yer imi çubuğuna geç.",
@@ -14,6 +34,10 @@
   "cmdSwitchTo1": {
     "message": "1. yer imi çubuğuna geç.",
     "description": "Keyboard-shortcut description - jump to the 1st bar."
+  },
+  "cmdSwitchTo10": {
+    "message": "10. yer imi çubuğuna geç.",
+    "description": "Keyboard-shortcut description - jump to the 10th bar."
   },
   "cmdSwitchTo2": {
     "message": "2. yer imi çubuğuna geç.",
@@ -47,89 +71,21 @@
     "message": "9. yer imi çubuğuna geç.",
     "description": "Keyboard-shortcut description - jump to the 9th bar."
   },
-  "cmdSwitchTo10": {
-    "message": "10. yer imi çubuğuna geç.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+  "errorMissingSets": {
+    "message": "'sets' dizisi eksik",
+    "description": "Error thrown when an imported JSON file has no top-level sets array."
   },
-  "tooltipGithub": {
-    "message": "GitHub'da kaynak",
-    "description": "Footer icon tooltip - link to the source repository."
+  "errorNoBars": {
+    "message": "Dosya çubuk içermiyor",
+    "description": "Error thrown when a single-bar import file contains zero bars."
   },
-  "tooltipHelp": {
-    "message": "Yardım",
-    "description": "Footer icon tooltip - opens the online help page."
+  "errorUnknownFormat": {
+    "message": "Tanınmayan dosya türü. Desteklenenler: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
   },
-  "tooltipSettings": {
-    "message": "Ayarlar",
-    "description": "Footer gear-icon tooltip - opens the settings page."
-  },
-  "btnCancel": {
-    "message": "İptal",
-    "description": "Generic dialog button - dismiss without acting."
-  },
-  "btnSave": {
-    "message": "Kaydet",
-    "description": "Dialog button - save the current bar before switching."
-  },
-  "btnDiscard": {
-    "message": "Vazgeç",
-    "description": "Dialog button - drop unsaved changes."
-  },
-  "popupShowCommons": {
-    "message": "Ortak çubukları göster",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
-  },
-  "popupRowLoaded": {
-    "message": "Şu anda yüklü",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
-  },
-  "popupRowSwitch": {
-    "message": "Geçiş yapmak için tıklayın",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
-  },
-  "popupUnsavedChanges": {
-    "message": "Kaydedilmemiş değişiklikler",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
-  },
-  "popupCommonBar": {
-    "message": "Ortak çubuk",
-    "description": "Tooltip on the icon marking a row as a common bar."
-  },
-  "popupSaveInPlace": {
-    "message": "Çubuk değişikliklerini bu sete kaydet",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
-  },
-  "popupDirtySwitch": {
-    "message": "\"{target}\" çubuğuna geçmeden önce \"{loaded}\" çubuğundaki değişiklikleri kaydet?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
-  },
-  "popupDirtySave": {
-    "message": "\"{loaded}\" çubuğundaki değişiklikleri kaydet?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
-  },
-  "optionsHeaderSuffix": {
-    "message": "- Ayarlar",
-    "description": "Suffix after the app name in the settings page header and tab title."
-  },
-  "optionsLanguageLabel": {
-    "message": "Dil",
-    "description": "Label for the UI-language picker in settings."
-  },
-  "optionsLanguageAuto": {
-    "message": "Otomatik (tarayıcı dili)",
-    "description": "First option in the language picker - follow the browser's language."
-  },
-  "optionsBarsHeading": {
-    "message": "Yer imi çubukları",
-    "description": "Heading of the bars-management section in settings."
-  },
-  "optionsBarsHint": {
-    "message": "Çubukları yeniden sıralamak için sürükleyin. Yer imlerini diğer çubuklara erişilebilir kılmak için bir çubuğu ortak olarak işaretleyin. Ortak olmayan her çubuk için, hangi ortakların öne ekleneceğini ve sırasını seçin.",
-    "description": "Explanatory hint under the Bookmark bars heading."
-  },
-  "optionsNewBarPlaceholder": {
-    "message": "Yeni çubuk adı…",
-    "description": "Placeholder in the create-bar text input."
+  "extDescription": {
+    "message": "Birden fazla yer imi çubuğu arasında geçiş yapın - ayrı yer imi setlerini tutun ve anında çubuğa ekleyip çıkarın.",
+    "description": "Browser store description; must remain under 132 characters."
   },
   "optionsAddBar": {
     "message": "+ Çubuk ekle",
@@ -139,13 +95,29 @@
     "message": "Ekle",
     "description": "Tooltip on the create-bar button."
   },
-  "optionsGripTitle": {
-    "message": "Çubukları yeniden sıralamak için sürükle",
-    "description": "Tooltip on the drag handle of a bar card."
+  "optionsAddCommonBtn": {
+    "message": "Ekle",
+    "description": "Button that confirms adding the selected common to the bar."
   },
-  "optionsLoadedTag": {
-    "message": "Yüklü",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+  "optionsAddCommonOption": {
+    "message": "Ortak çubuk ekle…",
+    "description": "Placeholder option in the dropdown that adds a common to a bar."
+  },
+  "optionsAddToAll": {
+    "message": "Bu ortak çubuğu diğer tüm çubuklara ekle",
+    "description": "Tooltip on the + button of a common bar card."
+  },
+  "optionsBarsHeading": {
+    "message": "Yer imi çubukları",
+    "description": "Heading of the bars-management section in settings."
+  },
+  "optionsBarsHint": {
+    "message": "Çubukları yeniden sıralamak için sürükleyin. Yer imlerini diğer çubuklara erişilebilir kılmak için bir çubuğu ortak olarak işaretleyin. Ortak olmayan her çubuk için, hangi ortakların öne ekleneceğini ve sırasını seçin.",
+    "description": "Explanatory hint under the Bookmark bars heading."
+  },
+  "optionsCannotDeleteLast": {
+    "message": "Son çubuk silinemez",
+    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
   },
   "optionsCommonSet": {
     "message": "Ortak çubuk olarak işaretle (yer imleri diğer çubuklara öne eklenebilir)",
@@ -155,45 +127,13 @@
     "message": "Ortak çubuk - işareti kaldırmak için tıklayın",
     "description": "Tooltip on the common toggle when the bar is already common."
   },
-  "optionsAddToAll": {
-    "message": "Bu ortak çubuğu diğer tüm çubuklara ekle",
-    "description": "Tooltip on the + button of a common bar card."
-  },
-  "optionsRemoveFromAll": {
-    "message": "Bu ortak çubuğu diğer tüm çubuklardan kaldır",
-    "description": "Tooltip on the − button of a common bar card."
-  },
-  "optionsExportOne": {
-    "message": "Bu çubuğu bir dosyaya aktar",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
-  },
-  "optionsDeleteBar": {
-    "message": "Bu çubuğu sil",
-    "description": "Tooltip on the per-bar delete icon."
-  },
-  "optionsCannotDeleteLast": {
-    "message": "Son çubuk silinemez",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
-  },
-  "optionsNoCommons": {
-    "message": "Henüz ortak çubuk yok. Burada kullanmak için bir çubuğu ortak olarak işaretleyin.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
-  },
   "optionsCommonsLabel": {
     "message": "Ortaklar",
     "description": "Label above the per-bar list of selected common bars."
   },
-  "optionsRemoveFromBar": {
-    "message": "Bu çubuktan kaldır",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
-  },
-  "optionsAddCommonOption": {
-    "message": "Ortak çubuk ekle…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
-  },
-  "optionsAddCommonBtn": {
-    "message": "Ekle",
-    "description": "Button that confirms adding the selected common to the bar."
+  "optionsDeleteBar": {
+    "message": "Bu çubuğu sil",
+    "description": "Tooltip on the per-bar delete icon."
   },
   "optionsDeleteConfirm": {
     "message": "Bu yer imi çubuğunu ve tüm yer imlerini sil?",
@@ -211,25 +151,33 @@
     "message": "Kaydet ve uygula",
     "description": "Button that saves unsaved edits then applies the config change."
   },
-  "optionsRemergeDirty": {
-    "message": "Şu anda yüklü olan \"{title}\" çubuğunda kaydedilmemiş değişiklikler var. Bunları kaydet, vazgeç veya bu yapılandırma değişikliğini iptal et?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
-  },
   "optionsExportFailed": {
     "message": "Dışa aktarma başarısız: ",
     "description": "Alert prefix when a JSON export fails; followed by the error detail."
   },
+  "optionsExportOne": {
+    "message": "Bu çubuğu bir dosyaya aktar",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Dosya biçimi",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Bir çubuğu dışa aktarırken kullanılan biçim. İçe aktarmalar, biçimi dosyanın kendisinden algılar.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "optionsGripTitle": {
+    "message": "Çubukları yeniden sıralamak için sürükle",
+    "description": "Tooltip on the drag handle of a bar card."
+  },
+  "optionsHeaderSuffix": {
+    "message": "- Ayarlar",
+    "description": "Suffix after the app name in the settings page header and tab title."
+  },
   "optionsImportFailed": {
     "message": "İçe aktarma başarısız: ",
     "description": "Alert prefix when applying an import fails; followed by the error detail."
-  },
-  "errorMissingSets": {
-    "message": "'sets' dizisi eksik",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
-  },
-  "errorNoBars": {
-    "message": "Dosya çubuk içermiyor",
-    "description": "Error thrown when a single-bar import file contains zero bars."
   },
   "optionsImportNewBar": {
     "message": "Çubuğu İçe Aktar…",
@@ -247,28 +195,104 @@
     "message": "Her çubuktaki dışa aktarma düğmesi tarafından kullanılan dosya biçimini seçin. JSON tam bir yedeklemedir — ayrıca çubuğun ortak çubuklarına olan bağlantılarını da geri yükler. Diğer biçimler, herhangi bir yere yapıştırabileceğiniz okunabilir metinlerdir ve yalnızca klasörleri ve bağlantıları korur. İçe aktarma, bu biçimlerden herhangi birini kabul eder ve dosyadan doğru olanı algılar.",
     "description": "Explanatory hint under the Import & export heading."
   },
-  "optionsFileFormatLabel": {
-    "message": "Dosya biçimi",
-    "description": "Label beside the dropdown that selects the export file format."
+  "optionsLanguageAuto": {
+    "message": "Otomatik (tarayıcı dili)",
+    "description": "First option in the language picker - follow the browser's language."
   },
-  "optionsFileFormatTitle": {
-    "message": "Bir çubuğu dışa aktarırken kullanılan biçim. İçe aktarmalar, biçimi dosyanın kendisinden algılar.",
-    "description": "Tooltip on the file-format dropdown."
+  "optionsLanguageLabel": {
+    "message": "Dil",
+    "description": "Label for the UI-language picker in settings."
   },
-  "errorUnknownFormat": {
-    "message": "Tanınmayan dosya türü. Desteklenenler: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  "optionsLoadedTag": {
+    "message": "Yüklü",
+    "description": "Tag shown on the bar card that is currently active in the bar."
   },
-  "tooltipRefreshIcons": {
-    "message": "Eksik yer işareti simgelerini yenile (Shift+tıkla: tümü)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  "optionsNewBarPlaceholder": {
+    "message": "Yeni çubuk adı…",
+    "description": "Placeholder in the create-bar text input."
+  },
+  "optionsNoCommons": {
+    "message": "Henüz ortak çubuk yok. Burada kullanmak için bir çubuğu ortak olarak işaretleyin.",
+    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+  },
+  "optionsRemergeDirty": {
+    "message": "Şu anda yüklü olan \"{title}\" çubuğunda kaydedilmemiş değişiklikler var. Bunları kaydet, vazgeç veya bu yapılandırma değişikliğini iptal et?",
+    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+  },
+  "optionsRemoveFromAll": {
+    "message": "Bu ortak çubuğu diğer tüm çubuklardan kaldır",
+    "description": "Tooltip on the − button of a common bar card."
+  },
+  "optionsRemoveFromBar": {
+    "message": "Bu çubuktan kaldır",
+    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+  },
+  "popupCapturedBarName": {
+    "message": "Araç Çubuğu {date}",
+    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+  },
+  "popupCommonBar": {
+    "message": "Ortak çubuk",
+    "description": "Tooltip on the icon marking a row as a common bar."
+  },
+  "popupDirtySave": {
+    "message": "\"{loaded}\" çubuğundaki değişiklikleri kaydet?",
+    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+  },
+  "popupDirtySwitch": {
+    "message": "\"{target}\" çubuğuna geçmeden önce \"{loaded}\" çubuğundaki değişiklikleri kaydet?",
+    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed}/{visited} simge yenilendi",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   },
   "popupRefreshingIcons": {
     "message": "Simgeler yenileniyor... {done}/{total}",
     "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
   },
-  "popupRefreshIconsDone": {
-    "message": "{fixed}/{visited} simge yenilendi",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+  "popupRowLoaded": {
+    "message": "Şu anda yüklü",
+    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+  },
+  "popupRowSwitch": {
+    "message": "Geçiş yapmak için tıklayın",
+    "description": "Tooltip on an inactive bar row - click it to load that bar."
+  },
+  "popupSaveInPlace": {
+    "message": "Çubuk değişikliklerini bu sete kaydet",
+    "description": "Tooltip on the save icon shown on the dirty loaded row."
+  },
+  "popupShowCommons": {
+    "message": "Ortak çubukları göster",
+    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+  },
+  "popupUnknownStatus": {
+    "message": "Bu araç çubuğu, kayıtlı çubuklardan hiçbiriyle eşleşmiyor.",
+    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+  },
+  "popupUnknownSwitch": {
+    "message": "Araç çubuğunuzdaki yer imleri, kayıtlı çubuklarınızdan hiçbiriyle eşleşmiyor. “{target}” öğesine geçmek, bunları değiştirecektir.",
+    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+  },
+  "popupUnsavedChanges": {
+    "message": "Kaydedilmemiş değişiklikler",
+    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+  },
+  "tooltipGithub": {
+    "message": "GitHub'da kaynak",
+    "description": "Footer icon tooltip - link to the source repository."
+  },
+  "tooltipHelp": {
+    "message": "Yardım",
+    "description": "Footer icon tooltip - opens the online help page."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Eksik yer işareti simgelerini yenile (Shift+tıkla: tümü)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "tooltipSettings": {
+    "message": "Ayarlar",
+    "description": "Footer gear-icon tooltip - opens the settings page."
   }
 }

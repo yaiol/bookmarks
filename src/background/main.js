@@ -5,9 +5,12 @@
  * Background responsibilities:
  *   - Run init() on install / startup so the container and loaded-set marker
  *     are consistent with what's currently in the bar.
- *   - Handle keyboard command switching. Keyboard switches auto-save the bar
- *     back into the currently loaded set first, so a hotkey press can never
- *     silently lose unsaved edits. The popup has the explicit save prompt.
+ *   - Handle keyboard command switching. A hotkey has no UI to ask with, so it
+ *     protects the bar in the only two ways available: it auto-saves edits back
+ *     into the loaded set when there IS a baseline, and when there is NONE (the
+ *     bar matches no set, so nothing on it is stored anywhere) it REFUSES to
+ *     switch and raises a badge, because switching would erase the only copy.
+ *     The popup is where that case gets a real choice.
  */
 
 import {
@@ -17,10 +20,31 @@ import {
   switchToBar,
   saveBarToLoadedSet,
   isBarDirty,
+  isBarUnrecognised,
   refreshBarFavicons,
 } from "../core.js";
+import * as i18n from "../lib/i18n.js";
 
 const DEBOUNCE_MS = 100;
+
+// ---------------------------------------------------------------------------
+// Badge — the worker's only way to say something
+// ---------------------------------------------------------------------------
+
+/**
+ * Flag a switch the hotkey refused to perform. The popup clears it on open,
+ * where the same situation is explained in full and the user gets a choice.
+ */
+async function flagRefusedSwitch() {
+  try {
+    await i18n.init();   // no DOM in a worker; the loader tolerates that
+    await chrome.action.setBadgeText({ text: "!" });
+    await chrome.action.setBadgeBackgroundColor({ color: "#c0392b" });
+    await chrome.action.setTitle({ title: i18n.t("badgeUnknownBar") });
+  } catch (e) {
+    console.warn("[BBS] could not raise the badge:", e);
+  }
+}
 
 // ---------------------------------------------------------------------------
 // Keyboard command handling
@@ -51,9 +75,17 @@ async function handleCommand(command) {
 
   if (!target) return;
 
-  // Auto-save before switching away if the bar has unsaved edits
+  // Auto-save before switching away if the bar has unsaved edits.
   if (await isBarDirty()) {
     await saveBarToLoadedSet();
+  } else if (await isBarUnrecognised()) {
+    // No baseline: the toolbar's contents are in no set, so there is nothing to
+    // auto-save them INTO and switchToBar would erase the only copy. A hotkey
+    // cannot ask, and inventing a set behind the user's back is not ours to do
+    // — so refuse, and say so on the badge. Recoverable and visible; a wipe is
+    // neither.
+    await flagRefusedSwitch();
+    return;
   }
 
   const loaded = await getLoadedSet();

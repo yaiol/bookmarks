@@ -1,7 +1,27 @@
 {
-  "extDescription": {
-    "message": "Wechseln Sie zwischen mehreren Lesezeichenleisten - verwalten Sie separate Lesezeichensets und tauschen Sie diese sofort in die Leiste ein und aus.",
-    "description": "Browser store description; must remain under 132 characters."
+  "badgeUnknownBar": {
+    "message": "Wechsel abgebrochen – diese Symbolleiste stimmt mit keiner gespeicherten Leiste überein. Klicken Sie hier, um auszuwählen, was Sie behalten möchten.",
+    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+  },
+  "btnCancel": {
+    "message": "Abbrechen",
+    "description": "Generic dialog button - dismiss without acting."
+  },
+  "btnDiscard": {
+    "message": "Verwerfen",
+    "description": "Dialog button - drop unsaved changes."
+  },
+  "btnSave": {
+    "message": "Speichern",
+    "description": "Dialog button - save the current bar before switching."
+  },
+  "btnSaveAsNewBar": {
+    "message": "Als neue Leiste speichern",
+    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+  },
+  "btnSwitchAnyway": {
+    "message": "Trotzdem wechseln",
+    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
   },
   "cmdNextBar": {
     "message": "Zur nächsten Lesezeichenleiste wechseln.",
@@ -14,6 +34,10 @@
   "cmdSwitchTo1": {
     "message": "Zur 1. Lesezeichenleiste wechseln.",
     "description": "Keyboard-shortcut description - jump to the 1st bar."
+  },
+  "cmdSwitchTo10": {
+    "message": "Zur 10. Lesezeichenleiste wechseln.",
+    "description": "Keyboard-shortcut description - jump to the 10th bar."
   },
   "cmdSwitchTo2": {
     "message": "Zur 2. Lesezeichenleiste wechseln.",
@@ -47,89 +71,21 @@
     "message": "Zur 9. Lesezeichenleiste wechseln.",
     "description": "Keyboard-shortcut description - jump to the 9th bar."
   },
-  "cmdSwitchTo10": {
-    "message": "Zur 10. Lesezeichenleiste wechseln.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+  "errorMissingSets": {
+    "message": "Fehlendes 'sets'-Array",
+    "description": "Error thrown when an imported JSON file has no top-level sets array."
   },
-  "tooltipGithub": {
-    "message": "Quelle auf GitHub",
-    "description": "Footer icon tooltip - link to the source repository."
+  "errorNoBars": {
+    "message": "Datei enthält keine Leisten",
+    "description": "Error thrown when a single-bar import file contains zero bars."
   },
-  "tooltipHelp": {
-    "message": "Hilfe",
-    "description": "Footer icon tooltip - opens the online help page."
+  "errorUnknownFormat": {
+    "message": "Unbekannter Dateityp. Unterstützt: {list}",
+    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
   },
-  "tooltipSettings": {
-    "message": "Einstellungen",
-    "description": "Footer gear-icon tooltip - opens the settings page."
-  },
-  "btnCancel": {
-    "message": "Abbrechen",
-    "description": "Generic dialog button - dismiss without acting."
-  },
-  "btnSave": {
-    "message": "Speichern",
-    "description": "Dialog button - save the current bar before switching."
-  },
-  "btnDiscard": {
-    "message": "Verwerfen",
-    "description": "Dialog button - drop unsaved changes."
-  },
-  "popupShowCommons": {
-    "message": "Gemeinsame Leisten anzeigen",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
-  },
-  "popupRowLoaded": {
-    "message": "Aktuell geladen",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
-  },
-  "popupRowSwitch": {
-    "message": "Klicken zum Wechseln",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
-  },
-  "popupUnsavedChanges": {
-    "message": "Ungespeicherte Änderungen",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
-  },
-  "popupCommonBar": {
-    "message": "Gemeinsame Leiste",
-    "description": "Tooltip on the icon marking a row as a common bar."
-  },
-  "popupSaveInPlace": {
-    "message": "Leistenänderungen in diesem Set speichern",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
-  },
-  "popupDirtySwitch": {
-    "message": "Änderungen an „{loaded}“ speichern, bevor zu „{target}“ gewechselt wird?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
-  },
-  "popupDirtySave": {
-    "message": "Änderungen an „{loaded}“ speichern?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
-  },
-  "optionsHeaderSuffix": {
-    "message": "- Einstellungen",
-    "description": "Suffix after the app name in the settings page header and tab title."
-  },
-  "optionsLanguageLabel": {
-    "message": "Sprache",
-    "description": "Label for the UI-language picker in settings."
-  },
-  "optionsLanguageAuto": {
-    "message": "Automatisch (Browsersprache)",
-    "description": "First option in the language picker - follow the browser's language."
-  },
-  "optionsBarsHeading": {
-    "message": "Lesezeichenleisten",
-    "description": "Heading of the bars-management section in settings."
-  },
-  "optionsBarsHint": {
-    "message": "Ziehen Sie eine Leiste, um sie neu anzuordnen. Markieren Sie eine Leiste als gemeinsam, um ihre Lesezeichen für andere Leisten verfügbar zu machen. Wählen Sie für jede nicht-gemeinsame Leiste aus, welche gemeinsamen Leisten vorangestellt werden sollen und in welcher Reihenfolge.",
-    "description": "Explanatory hint under the Bookmark bars heading."
-  },
-  "optionsNewBarPlaceholder": {
-    "message": "Name der neuen Leiste…",
-    "description": "Placeholder in the create-bar text input."
+  "extDescription": {
+    "message": "Wechseln Sie zwischen mehreren Lesezeichenleisten - verwalten Sie separate Lesezeichensets und tauschen Sie diese sofort in die Leiste ein und aus.",
+    "description": "Browser store description; must remain under 132 characters."
   },
   "optionsAddBar": {
     "message": "+ Leiste hinzufügen",
@@ -139,13 +95,29 @@
     "message": "Hinzufügen",
     "description": "Tooltip on the create-bar button."
   },
-  "optionsGripTitle": {
-    "message": "Ziehen, um Leisten neu anzuordnen",
-    "description": "Tooltip on the drag handle of a bar card."
+  "optionsAddCommonBtn": {
+    "message": "Hinzufügen",
+    "description": "Button that confirms adding the selected common to the bar."
   },
-  "optionsLoadedTag": {
-    "message": "Geladen",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+  "optionsAddCommonOption": {
+    "message": "Eine gemeinsame Leiste hinzufügen…",
+    "description": "Placeholder option in the dropdown that adds a common to a bar."
+  },
+  "optionsAddToAll": {
+    "message": "Diese gemeinsame Leiste zu allen anderen Leisten hinzufügen",
+    "description": "Tooltip on the + button of a common bar card."
+  },
+  "optionsBarsHeading": {
+    "message": "Lesezeichenleisten",
+    "description": "Heading of the bars-management section in settings."
+  },
+  "optionsBarsHint": {
+    "message": "Ziehen Sie eine Leiste, um sie neu anzuordnen. Markieren Sie eine Leiste als gemeinsam, um ihre Lesezeichen für andere Leisten verfügbar zu machen. Wählen Sie für jede nicht-gemeinsame Leiste aus, welche gemeinsamen Leisten vorangestellt werden sollen und in welcher Reihenfolge.",
+    "description": "Explanatory hint under the Bookmark bars heading."
+  },
+  "optionsCannotDeleteLast": {
+    "message": "Die letzte Leiste kann nicht gelöscht werden",
+    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
   },
   "optionsCommonSet": {
     "message": "Als gemeinsame Leiste markieren (ihre Lesezeichen können anderen Leisten vorangestellt werden)",
@@ -155,45 +127,13 @@
     "message": "Gemeinsame Leiste - klicken zum Aufheben",
     "description": "Tooltip on the common toggle when the bar is already common."
   },
-  "optionsAddToAll": {
-    "message": "Diese gemeinsame Leiste zu allen anderen Leisten hinzufügen",
-    "description": "Tooltip on the + button of a common bar card."
-  },
-  "optionsRemoveFromAll": {
-    "message": "Diese gemeinsame Leiste aus allen anderen Leisten entfernen",
-    "description": "Tooltip on the − button of a common bar card."
-  },
-  "optionsExportOne": {
-    "message": "Diese Leiste in eine Datei exportieren",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
-  },
-  "optionsDeleteBar": {
-    "message": "Diese Leiste löschen",
-    "description": "Tooltip on the per-bar delete icon."
-  },
-  "optionsCannotDeleteLast": {
-    "message": "Die letzte Leiste kann nicht gelöscht werden",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
-  },
-  "optionsNoCommons": {
-    "message": "Noch keine gemeinsamen Leisten. Markieren Sie eine Leiste als gemeinsam, um sie hier zu verwenden.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
-  },
   "optionsCommonsLabel": {
     "message": "Gemeinsame",
     "description": "Label above the per-bar list of selected common bars."
   },
-  "optionsRemoveFromBar": {
-    "message": "Aus dieser Leiste entfernen",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
-  },
-  "optionsAddCommonOption": {
-    "message": "Eine gemeinsame Leiste hinzufügen…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
-  },
-  "optionsAddCommonBtn": {
-    "message": "Hinzufügen",
-    "description": "Button that confirms adding the selected common to the bar."
+  "optionsDeleteBar": {
+    "message": "Diese Leiste löschen",
+    "description": "Tooltip on the per-bar delete icon."
   },
   "optionsDeleteConfirm": {
     "message": "Diese Lesezeichenleiste und alle ihre Lesezeichen entfernen?",
@@ -211,25 +151,33 @@
     "message": "Speichern & anwenden",
     "description": "Button that saves unsaved edits then applies the config change."
   },
-  "optionsRemergeDirty": {
-    "message": "Die aktuell geladene Leiste „{title}“ hat ungespeicherte Änderungen. Speichern, verwerfen oder diese Konfigurationsänderung abbrechen?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
-  },
   "optionsExportFailed": {
     "message": "Export fehlgeschlagen: ",
     "description": "Alert prefix when a JSON export fails; followed by the error detail."
   },
+  "optionsExportOne": {
+    "message": "Diese Leiste in eine Datei exportieren",
+    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+  },
+  "optionsFileFormatLabel": {
+    "message": "Dateiformat",
+    "description": "Label beside the dropdown that selects the export file format."
+  },
+  "optionsFileFormatTitle": {
+    "message": "Format, das beim Exportieren einer Leiste verwendet wird. Importe erkennen das Format aus der Datei selbst.",
+    "description": "Tooltip on the file-format dropdown."
+  },
+  "optionsGripTitle": {
+    "message": "Ziehen, um Leisten neu anzuordnen",
+    "description": "Tooltip on the drag handle of a bar card."
+  },
+  "optionsHeaderSuffix": {
+    "message": "- Einstellungen",
+    "description": "Suffix after the app name in the settings page header and tab title."
+  },
   "optionsImportFailed": {
     "message": "Import fehlgeschlagen: ",
     "description": "Alert prefix when applying an import fails; followed by the error detail."
-  },
-  "errorMissingSets": {
-    "message": "Fehlendes 'sets'-Array",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
-  },
-  "errorNoBars": {
-    "message": "Datei enthält keine Leisten",
-    "description": "Error thrown when a single-bar import file contains zero bars."
   },
   "optionsImportNewBar": {
     "message": "Leiste importieren…",
@@ -247,28 +195,104 @@
     "message": "Wählen Sie das Dateiformat, das vom Export-Button auf jeder Leiste verwendet wird. JSON ist ein vollständiges Backup – es stellt auch die Verknüpfungen der Leiste zu ihren gemeinsamen Leisten wieder her. Die anderen Formate sind lesbarer Text, den Sie überall einfügen können, und behalten nur Ordner und Verknüpfungen bei. Der Import akzeptiert jedes dieser Formate und erkennt das richtige aus der Datei.",
     "description": "Explanatory hint under the Import & export heading."
   },
-  "optionsFileFormatLabel": {
-    "message": "Dateiformat",
-    "description": "Label beside the dropdown that selects the export file format."
+  "optionsLanguageAuto": {
+    "message": "Automatisch (Browsersprache)",
+    "description": "First option in the language picker - follow the browser's language."
   },
-  "optionsFileFormatTitle": {
-    "message": "Format, das beim Exportieren einer Leiste verwendet wird. Importe erkennen das Format aus der Datei selbst.",
-    "description": "Tooltip on the file-format dropdown."
+  "optionsLanguageLabel": {
+    "message": "Sprache",
+    "description": "Label for the UI-language picker in settings."
   },
-  "errorUnknownFormat": {
-    "message": "Unbekannter Dateityp. Unterstützt: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+  "optionsLoadedTag": {
+    "message": "Geladen",
+    "description": "Tag shown on the bar card that is currently active in the bar."
   },
-  "tooltipRefreshIcons": {
-    "message": "Fehlende Lesezeichen-Symbole aktualisieren (Shift+Klick: alle)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  "optionsNewBarPlaceholder": {
+    "message": "Name der neuen Leiste…",
+    "description": "Placeholder in the create-bar text input."
+  },
+  "optionsNoCommons": {
+    "message": "Noch keine gemeinsamen Leisten. Markieren Sie eine Leiste als gemeinsam, um sie hier zu verwenden.",
+    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+  },
+  "optionsRemergeDirty": {
+    "message": "Die aktuell geladene Leiste „{title}“ hat ungespeicherte Änderungen. Speichern, verwerfen oder diese Konfigurationsänderung abbrechen?",
+    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+  },
+  "optionsRemoveFromAll": {
+    "message": "Diese gemeinsame Leiste aus allen anderen Leisten entfernen",
+    "description": "Tooltip on the − button of a common bar card."
+  },
+  "optionsRemoveFromBar": {
+    "message": "Aus dieser Leiste entfernen",
+    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+  },
+  "popupCapturedBarName": {
+    "message": "Symbolleiste {date}",
+    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+  },
+  "popupCommonBar": {
+    "message": "Gemeinsame Leiste",
+    "description": "Tooltip on the icon marking a row as a common bar."
+  },
+  "popupDirtySave": {
+    "message": "Änderungen an „{loaded}“ speichern?",
+    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+  },
+  "popupDirtySwitch": {
+    "message": "Änderungen an „{loaded}“ speichern, bevor zu „{target}“ gewechselt wird?",
+    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+  },
+  "popupRefreshIconsDone": {
+    "message": "{fixed} von {visited} Icons aktualisiert",
+    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
   },
   "popupRefreshingIcons": {
     "message": "Symbole werden aktualisiert... {done}/{total}",
     "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
   },
-  "popupRefreshIconsDone": {
-    "message": "{fixed} von {visited} Icons aktualisiert",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+  "popupRowLoaded": {
+    "message": "Aktuell geladen",
+    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+  },
+  "popupRowSwitch": {
+    "message": "Klicken zum Wechseln",
+    "description": "Tooltip on an inactive bar row - click it to load that bar."
+  },
+  "popupSaveInPlace": {
+    "message": "Leistenänderungen in diesem Set speichern",
+    "description": "Tooltip on the save icon shown on the dirty loaded row."
+  },
+  "popupShowCommons": {
+    "message": "Gemeinsame Leisten anzeigen",
+    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+  },
+  "popupUnknownStatus": {
+    "message": "Diese Symbolleiste stimmt mit keiner gespeicherten Leiste überein.",
+    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+  },
+  "popupUnknownSwitch": {
+    "message": "Die Lesezeichen in Ihrer Symbolleiste stimmen mit keiner Ihrer gespeicherten Leisten überein. Das Wechseln zu „{target}“ wird sie ersetzen.",
+    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+  },
+  "popupUnsavedChanges": {
+    "message": "Ungespeicherte Änderungen",
+    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+  },
+  "tooltipGithub": {
+    "message": "Quelle auf GitHub",
+    "description": "Footer icon tooltip - link to the source repository."
+  },
+  "tooltipHelp": {
+    "message": "Hilfe",
+    "description": "Footer icon tooltip - opens the online help page."
+  },
+  "tooltipRefreshIcons": {
+    "message": "Fehlende Lesezeichen-Symbole aktualisieren (Shift+Klick: alle)",
+    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+  },
+  "tooltipSettings": {
+    "message": "Einstellungen",
+    "description": "Footer gear-icon tooltip - opens the settings page."
   }
 }
