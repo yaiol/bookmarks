@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Wisselen geannuleerd – deze werkbalk komt niet overeen met een opgeslagen balk. Klik hier om te kiezen wat u wilt behouden.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Wisselen geannuleerd – deze werkbalk komt niet overeen met een opgeslagen balk. Klik hier om te kiezen wat u wilt behouden."
   },
   "btnCancel": {
-    "message": "Annuleren",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Annuleren"
   },
   "btnDiscard": {
-    "message": "Verwerpen",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Verwerpen"
   },
   "btnSave": {
-    "message": "Opslaan",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Opslaan"
   },
   "btnSaveAsNewBar": {
-    "message": "Opslaan als nieuwe balk",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Opslaan als nieuwe balk"
   },
   "btnSwitchAnyway": {
-    "message": "Toch wisselen",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Toch wisselen"
   },
   "cmdNextBar": {
-    "message": "Schakel naar volgende bladwijzerbalk.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Schakel naar volgende bladwijzerbalk."
   },
   "cmdPreviousBar": {
-    "message": "Schakel naar vorige bladwijzerbalk.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Schakel naar vorige bladwijzerbalk."
   },
   "cmdSwitchTo1": {
-    "message": "Schakel naar 1e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Schakel naar 1e bladwijzerbalk."
   },
   "cmdSwitchTo10": {
-    "message": "Schakel naar 10e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Schakel naar 10e bladwijzerbalk."
   },
   "cmdSwitchTo2": {
-    "message": "Schakel naar 2e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Schakel naar 2e bladwijzerbalk."
   },
   "cmdSwitchTo3": {
-    "message": "Schakel naar 3e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Schakel naar 3e bladwijzerbalk."
   },
   "cmdSwitchTo4": {
-    "message": "Schakel naar 4e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Schakel naar 4e bladwijzerbalk."
   },
   "cmdSwitchTo5": {
-    "message": "Schakel naar 5e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Schakel naar 5e bladwijzerbalk."
   },
   "cmdSwitchTo6": {
-    "message": "Schakel naar 6e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Schakel naar 6e bladwijzerbalk."
   },
   "cmdSwitchTo7": {
-    "message": "Schakel naar 7e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Schakel naar 7e bladwijzerbalk."
   },
   "cmdSwitchTo8": {
-    "message": "Schakel naar 8e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Schakel naar 8e bladwijzerbalk."
   },
   "cmdSwitchTo9": {
-    "message": "Schakel naar 9e bladwijzerbalk.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Schakel naar 9e bladwijzerbalk."
   },
   "errorMissingSets": {
-    "message": "Ontbrekende 'sets'-array",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Ontbrekende 'sets'-array"
   },
   "errorNoBars": {
-    "message": "Bestand bevat geen balken",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Bestand bevat geen balken"
   },
   "errorUnknownFormat": {
-    "message": "Onbekend bestandstype. Ondersteund: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Onbekend bestandstype. Ondersteund: {list}"
   },
   "extDescription": {
-    "message": "Schakel tussen meerdere bladwijzerbalken - houd afzonderlijke sets bladwijzers bij en wissel ze direct in en uit de balk.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Houd meerdere bladwijzerbalken – één per project of context – en schakel met één klik."
   },
   "optionsAddBar": {
-    "message": "+ Balk toevoegen",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Balk toevoegen"
   },
   "optionsAddBarTitle": {
-    "message": "Toevoegen",
-    "description": "Tooltip on the create-bar button."
+    "message": "Toevoegen"
   },
   "optionsAddCommonBtn": {
-    "message": "Toevoegen",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Toevoegen"
   },
   "optionsAddCommonOption": {
-    "message": "Een gemeenschappelijke balk toevoegen…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Een gemeenschappelijke balk toevoegen…"
   },
   "optionsAddToAll": {
-    "message": "Deze gemeenschappelijke balk toevoegen aan elke andere balk",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Deze gemeenschappelijke balk toevoegen aan elke andere balk"
   },
   "optionsBarsHeading": {
-    "message": "Bladwijzerbalken",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Bladwijzerbalken"
   },
   "optionsBarsHint": {
-    "message": "Sleep een balk om de volgorde te wijzigen. Markeer een balk als gemeenschappelijk om de bladwijzers beschikbaar te maken voor andere balken. Kies voor elke niet-gemeenschappelijke balk welke gemeenschappelijke balken moeten worden toegevoegd en in welke volgorde.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Sleep een balk om de volgorde te wijzigen. Markeer een balk als gemeenschappelijk om de bladwijzers beschikbaar te maken voor andere balken. Kies voor elke niet-gemeenschappelijke balk welke gemeenschappelijke balken moeten worden toegevoegd en in welke volgorde."
   },
   "optionsCannotDeleteLast": {
-    "message": "Kan de laatste balk niet verwijderen",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Kan de laatste balk niet verwijderen"
   },
   "optionsCommonSet": {
-    "message": "Markeren als gemeenschappelijke balk (de bladwijzers kunnen aan andere balken worden toegevoegd)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Markeren als gemeenschappelijke balk (de bladwijzers kunnen aan andere balken worden toegevoegd)"
   },
   "optionsCommonUnset": {
-    "message": "Gemeenschappelijke balk - klik om te deactiveren",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Gemeenschappelijke balk - klik om te deactiveren"
   },
   "optionsCommonsLabel": {
-    "message": "Gemeenschappelijke balken",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Gemeenschappelijke balken"
   },
   "optionsDeleteBar": {
-    "message": "Deze balk verwijderen",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Deze balk verwijderen"
   },
   "optionsDeleteConfirm": {
-    "message": "Deze bladwijzerbalk en al zijn bladwijzers verwijderen?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Deze bladwijzerbalk en al zijn bladwijzers verwijderen?"
   },
   "optionsDeleteRemove": {
-    "message": "Verwijderen",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Verwijderen"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Verwerpen & toepassen",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Verwerpen & toepassen"
   },
   "optionsDirtySaveApply": {
-    "message": "Opslaan & toepassen",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Opslaan & toepassen"
   },
   "optionsExportFailed": {
-    "message": "Exporteren mislukt: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Exporteren mislukt: "
   },
   "optionsExportOne": {
-    "message": "Deze balk naar een bestand exporteren",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Deze balk naar een bestand exporteren"
   },
   "optionsFileFormatLabel": {
-    "message": "Bestandsformaat",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Bestandsformaat"
   },
   "optionsFileFormatTitle": {
-    "message": "Formaat gebruikt bij het exporteren van een balk. Imports detecteren het formaat uit het bestand zelf.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Formaat gebruikt bij het exporteren van een balk. Imports detecteren het formaat uit het bestand zelf."
   },
   "optionsGripTitle": {
-    "message": "Slepen om balken te herordenen",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Slepen om balken te herordenen"
   },
   "optionsHeaderSuffix": {
-    "message": "- Instellingen",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Instellingen"
   },
   "optionsImportFailed": {
-    "message": "Importeren mislukt: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Importeren mislukt: "
   },
   "optionsImportNewBar": {
-    "message": "Balk importeren…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Balk importeren…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Importeer een balk uit een bestand als een nieuwe kopie — het vervangt nooit een bestaande balk.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Importeer een balk uit een bestand als een nieuwe kopie — het vervangt nooit een bestaande balk."
   },
   "optionsIoHeading": {
-    "message": "Importeren en exporteren",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Importeren en exporteren"
   },
   "optionsIoHint": {
-    "message": "Kies het bestandsformaat dat wordt gebruikt door de exportknop op elke balk. JSON is een complete back-up — het herstelt ook de links van de balk naar de gemeenschappelijke balken. De andere formaten zijn leesbare tekst die u overal kunt plakken en bewaren alleen mappen en links. Importeren accepteert elk van deze formaten en detecteert het juiste uit het bestand.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Kies het bestandsformaat dat wordt gebruikt door de exportknop op elke balk. JSON is een complete back-up — het herstelt ook de links van de balk naar de gemeenschappelijke balken. De andere formaten zijn leesbare tekst die u overal kunt plakken en bewaren alleen mappen en links. Importeren accepteert elk van deze formaten en detecteert het juiste uit het bestand."
   },
   "optionsLanguageAuto": {
-    "message": "Auto (browsertaal)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Auto (browsertaal)"
   },
   "optionsLanguageLabel": {
-    "message": "Taal",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Taal"
   },
   "optionsLoadedTag": {
-    "message": "Geladen",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Geladen"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Naam nieuwe balk…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Naam nieuwe balk…"
   },
   "optionsNoCommons": {
-    "message": "Nog geen gemeenschappelijke balken. Markeer een balk als gemeenschappelijk om deze hier te gebruiken.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Nog geen gemeenschappelijke balken. Markeer een balk als gemeenschappelijk om deze hier te gebruiken."
   },
   "optionsRemergeDirty": {
-    "message": "De momenteel geladen balk \"{title}\" heeft niet-opgeslagen wijzigingen. Wilt u deze opslaan, verwerpen of deze configuratiewijziging annuleren?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "De momenteel geladen balk \"{title}\" heeft niet-opgeslagen wijzigingen. Wilt u deze opslaan, verwerpen of deze configuratiewijziging annuleren?"
   },
   "optionsRemoveFromAll": {
-    "message": "Deze gemeenschappelijke balk verwijderen uit elke andere balk",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Deze gemeenschappelijke balk verwijderen uit elke andere balk"
   },
   "optionsRemoveFromBar": {
-    "message": "Verwijderen uit deze balk",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Verwijderen uit deze balk"
   },
   "popupCapturedBarName": {
-    "message": "Werkbalk {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Werkbalk {date}"
   },
   "popupCommonBar": {
-    "message": "Gemeenschappelijke balk",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Gemeenschappelijke balk"
   },
   "popupDirtySave": {
-    "message": "Wijzigingen opslaan in \"{loaded}\"?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Wijzigingen opslaan in \"{loaded}\"?"
   },
   "popupDirtySwitch": {
-    "message": "Wijzigingen opslaan in \"{loaded}\" voordat u overschakelt naar \"{target}\"?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Wijzigingen opslaan in \"{loaded}\" voordat u overschakelt naar \"{target}\"?"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed} van {visited} pictogrammen vernieuwd",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed} van {visited} pictogrammen vernieuwd"
   },
   "popupRefreshingIcons": {
-    "message": "Pictogrammen vernieuwen... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Pictogrammen vernieuwen... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Momenteel geladen",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Momenteel geladen"
   },
   "popupRowSwitch": {
-    "message": "Klik om te wisselen",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Klik om te wisselen"
   },
   "popupSaveInPlace": {
-    "message": "Balkwijzigingen opslaan in deze set",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Balkwijzigingen opslaan in deze set"
   },
   "popupShowCommons": {
-    "message": "Toon gemeenschappelijke balken",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Toon gemeenschappelijke balken"
   },
   "popupUnknownStatus": {
-    "message": "Deze werkbalk komt niet overeen met een opgeslagen balk.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Deze werkbalk komt niet overeen met een opgeslagen balk."
   },
   "popupUnknownSwitch": {
-    "message": "De bladwijzers op uw werkbalk komen niet overeen met een van uw opgeslagen balken. Overschakelen naar „{target}” zal ze vervangen.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "De bladwijzers op uw werkbalk komen niet overeen met een van uw opgeslagen balken. Overschakelen naar „{target}” zal ze vervangen."
   },
   "popupUnsavedChanges": {
-    "message": "Niet-opgeslagen wijzigingen",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Niet-opgeslagen wijzigingen"
   },
   "tooltipGithub": {
-    "message": "Bron op GitHub",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Bron op GitHub"
   },
   "tooltipHelp": {
-    "message": "Help",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Help"
   },
   "tooltipRefreshIcons": {
-    "message": "Ontbrekende bladwijzerpictogrammen vernieuwen (Shift-klik: alles)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Ontbrekende bladwijzerpictogrammen vernieuwen (Shift-klik: alles)"
   },
   "tooltipSettings": {
-    "message": "Instellingen",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Instellingen"
   }
 }

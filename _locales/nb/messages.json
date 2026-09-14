@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Bytte avbrutt – denne verktøylinjen samsvarer ikke med noen lagret linje. Klikk her for å velge hva du vil beholde.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Bytte avbrutt – denne verktøylinjen samsvarer ikke med noen lagret linje. Klikk her for å velge hva du vil beholde."
   },
   "btnCancel": {
-    "message": "Avbryt",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Avbryt"
   },
   "btnDiscard": {
-    "message": "Forkast",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Forkast"
   },
   "btnSave": {
-    "message": "Lagre",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Lagre"
   },
   "btnSaveAsNewBar": {
-    "message": "Lagre som en ny linje",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Lagre som en ny linje"
   },
   "btnSwitchAnyway": {
-    "message": "Bytt likevel",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Bytt likevel"
   },
   "cmdNextBar": {
-    "message": "Bytt til neste bokmerkelinje.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Bytt til neste bokmerkelinje."
   },
   "cmdPreviousBar": {
-    "message": "Bytt til forrige bokmerkelinje.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Bytt til forrige bokmerkelinje."
   },
   "cmdSwitchTo1": {
-    "message": "Bytt til 1. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Bytt til 1. bokmerkelinje."
   },
   "cmdSwitchTo10": {
-    "message": "Bytt til 10. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Bytt til 10. bokmerkelinje."
   },
   "cmdSwitchTo2": {
-    "message": "Bytt til 2. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Bytt til 2. bokmerkelinje."
   },
   "cmdSwitchTo3": {
-    "message": "Bytt til 3. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Bytt til 3. bokmerkelinje."
   },
   "cmdSwitchTo4": {
-    "message": "Bytt til 4. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Bytt til 4. bokmerkelinje."
   },
   "cmdSwitchTo5": {
-    "message": "Bytt til 5. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Bytt til 5. bokmerkelinje."
   },
   "cmdSwitchTo6": {
-    "message": "Bytt til 6. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Bytt til 6. bokmerkelinje."
   },
   "cmdSwitchTo7": {
-    "message": "Bytt til 7. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Bytt til 7. bokmerkelinje."
   },
   "cmdSwitchTo8": {
-    "message": "Bytt til 8. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Bytt til 8. bokmerkelinje."
   },
   "cmdSwitchTo9": {
-    "message": "Bytt til 9. bokmerkelinje.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Bytt til 9. bokmerkelinje."
   },
   "errorMissingSets": {
-    "message": "Manglende 'sets'-array",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Manglende 'sets'-array"
   },
   "errorNoBars": {
-    "message": "Filen inneholder ingen linjer",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Filen inneholder ingen linjer"
   },
   "errorUnknownFormat": {
-    "message": "Ukjent filtype. Støttede: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Ukjent filtype. Støttede: {list}"
   },
   "extDescription": {
-    "message": "Bytt mellom flere bokmerkelinjer - hold separate sett med bokmerker og bytt dem inn og ut av linjen umiddelbart.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Behold flere bokmerkelinjer – én per prosjekt eller kontekst – og bytt med ett klikk."
   },
   "optionsAddBar": {
-    "message": "+ Legg til linje",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Legg til linje"
   },
   "optionsAddBarTitle": {
-    "message": "Legg til",
-    "description": "Tooltip on the create-bar button."
+    "message": "Legg til"
   },
   "optionsAddCommonBtn": {
-    "message": "Legg til",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Legg til"
   },
   "optionsAddCommonOption": {
-    "message": "Legg til en felleslinje…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Legg til en felleslinje…"
   },
   "optionsAddToAll": {
-    "message": "Legg til denne felleslinjen til alle andre linjer",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Legg til denne felleslinjen til alle andre linjer"
   },
   "optionsBarsHeading": {
-    "message": "Bokmerkelinjer",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Bokmerkelinjer"
   },
   "optionsBarsHint": {
-    "message": "Dra en linje for å endre rekkefølge. Merk en linje som felles for å gjøre bokmerkene tilgjengelige for andre linjer. For hver ikke-felles linje, velg hvilke felleslinjer som skal forhåndsfylles og i hvilken rekkefølge.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Dra en linje for å endre rekkefølge. Merk en linje som felles for å gjøre bokmerkene tilgjengelige for andre linjer. For hver ikke-felles linje, velg hvilke felleslinjer som skal forhåndsfylles og i hvilken rekkefølge."
   },
   "optionsCannotDeleteLast": {
-    "message": "Kan ikke slette den siste linjen",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Kan ikke slette den siste linjen"
   },
   "optionsCommonSet": {
-    "message": "Merk som felleslinje (bokmerkene kan forhåndsfylles til andre linjer)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Merk som felleslinje (bokmerkene kan forhåndsfylles til andre linjer)"
   },
   "optionsCommonUnset": {
-    "message": "Felleslinje - klikk for å fjerne merking",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Felleslinje - klikk for å fjerne merking"
   },
   "optionsCommonsLabel": {
-    "message": "Felleslinjer",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Felleslinjer"
   },
   "optionsDeleteBar": {
-    "message": "Slett denne linjen",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Slett denne linjen"
   },
   "optionsDeleteConfirm": {
-    "message": "Fjern denne bokmerkelinjen og alle dens bokmerker?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Fjern denne bokmerkelinjen og alle dens bokmerker?"
   },
   "optionsDeleteRemove": {
-    "message": "Fjern",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Fjern"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Forkast og bruk",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Forkast og bruk"
   },
   "optionsDirtySaveApply": {
-    "message": "Lagre og bruk",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Lagre og bruk"
   },
   "optionsExportFailed": {
-    "message": "Eksport mislyktes: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Eksport mislyktes: "
   },
   "optionsExportOne": {
-    "message": "Eksporter denne linjen til en fil",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Eksporter denne linjen til en fil"
   },
   "optionsFileFormatLabel": {
-    "message": "Filformat",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Filformat"
   },
   "optionsFileFormatTitle": {
-    "message": "Format brukt ved eksport av en linje. Import oppdager formatet fra selve filen.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Format brukt ved eksport av en linje. Import oppdager formatet fra selve filen."
   },
   "optionsGripTitle": {
-    "message": "Dra for å endre rekkefølge på linjer",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Dra for å endre rekkefølge på linjer"
   },
   "optionsHeaderSuffix": {
-    "message": "- Innstillinger",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Innstillinger"
   },
   "optionsImportFailed": {
-    "message": "Import mislyktes: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Import mislyktes: "
   },
   "optionsImportNewBar": {
-    "message": "Importer linje…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Importer linje…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Importer en linje fra en fil som en ny kopi — den erstatter aldri en eksisterende linje.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Importer en linje fra en fil som en ny kopi — den erstatter aldri en eksisterende linje."
   },
   "optionsIoHeading": {
-    "message": "Importer og eksporter",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Importer og eksporter"
   },
   "optionsIoHint": {
-    "message": "Velg filformatet som brukes av eksportknappen på hver linje. JSON er en komplett sikkerhetskopi — den gjenoppretter også linjens lenker til dens felles linjer. De andre formatene er lesbar tekst du kan lime inn hvor som helst, og beholder kun mapper og lenker. Import aksepterer alle disse formatene og oppdager det riktige fra filen.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Velg filformatet som brukes av eksportknappen på hver linje. JSON er en komplett sikkerhetskopi — den gjenoppretter også linjens lenker til dens felles linjer. De andre formatene er lesbar tekst du kan lime inn hvor som helst, og beholder kun mapper og lenker. Import aksepterer alle disse formatene og oppdager det riktige fra filen."
   },
   "optionsLanguageAuto": {
-    "message": "Automatisk (nettleserspråk)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Automatisk (nettleserspråk)"
   },
   "optionsLanguageLabel": {
-    "message": "Språk",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Språk"
   },
   "optionsLoadedTag": {
-    "message": "Lastet",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Lastet"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Nytt linjenavn…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Nytt linjenavn…"
   },
   "optionsNoCommons": {
-    "message": "Ingen felleslinjer ennå. Merk en linje som felles for å bruke den her.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Ingen felleslinjer ennå. Merk en linje som felles for å bruke den her."
   },
   "optionsRemergeDirty": {
-    "message": "Den nåværende innlastede linjen «{title}» har ulagrede endringer. Vil du lagre dem, forkaste dem, eller avbryte denne konfigurasjonsendringen?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "Den nåværende innlastede linjen «{title}» har ulagrede endringer. Vil du lagre dem, forkaste dem, eller avbryte denne konfigurasjonsendringen?"
   },
   "optionsRemoveFromAll": {
-    "message": "Fjern denne felleslinjen fra alle andre linjer",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Fjern denne felleslinjen fra alle andre linjer"
   },
   "optionsRemoveFromBar": {
-    "message": "Fjern fra denne linjen",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Fjern fra denne linjen"
   },
   "popupCapturedBarName": {
-    "message": "Verktøylinje {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Verktøylinje {date}"
   },
   "popupCommonBar": {
-    "message": "Felleslinje",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Felleslinje"
   },
   "popupDirtySave": {
-    "message": "Lagre endringer i «{loaded}»?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Lagre endringer i «{loaded}»?"
   },
   "popupDirtySwitch": {
-    "message": "Lagre endringer i «{loaded}» før du bytter til «{target}»?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Lagre endringer i «{loaded}» før du bytter til «{target}»?"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed} av {visited} ikoner oppdatert",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed} av {visited} ikoner oppdatert"
   },
   "popupRefreshingIcons": {
-    "message": "Oppdaterer ikoner... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Oppdaterer ikoner... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Lastet inn nå",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Lastet inn nå"
   },
   "popupRowSwitch": {
-    "message": "Klikk for å bytte",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Klikk for å bytte"
   },
   "popupSaveInPlace": {
-    "message": "Lagre linjeendringer til dette settet",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Lagre linjeendringer til dette settet"
   },
   "popupShowCommons": {
-    "message": "Vis felleslinjer",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Vis felleslinjer"
   },
   "popupUnknownStatus": {
-    "message": "Denne verktøylinjen samsvarer ikke med noen lagret linje.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Denne verktøylinjen samsvarer ikke med noen lagret linje."
   },
   "popupUnknownSwitch": {
-    "message": "Bokmerkene på verktøylinjen din samsvarer ikke med noen av de lagrede linjene dine. Bytte til «{target}» vil erstatte dem.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "Bokmerkene på verktøylinjen din samsvarer ikke med noen av de lagrede linjene dine. Bytte til «{target}» vil erstatte dem."
   },
   "popupUnsavedChanges": {
-    "message": "Ulagrede endringer",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Ulagrede endringer"
   },
   "tooltipGithub": {
-    "message": "Kildekode på GitHub",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Kildekode på GitHub"
   },
   "tooltipHelp": {
-    "message": "Hjelp",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Hjelp"
   },
   "tooltipRefreshIcons": {
-    "message": "Oppdater manglende bokmerkeikoner (Shift-klikk: alle)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Oppdater manglende bokmerkeikoner (Shift-klikk: alle)"
   },
   "tooltipSettings": {
-    "message": "Innstillinger",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Innstillinger"
   }
 }

@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "切換已取消 - 此工具列與任何已儲存的工具列不符。點擊此處選擇要保留的內容。",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "切換已取消 - 此工具列與任何已儲存的工具列不符。點擊此處選擇要保留的內容。"
   },
   "btnCancel": {
-    "message": "取消",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "取消"
   },
   "btnDiscard": {
-    "message": "捨棄",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "捨棄"
   },
   "btnSave": {
-    "message": "儲存",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "儲存"
   },
   "btnSaveAsNewBar": {
-    "message": "另存為新書籤列",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "另存為新書籤列"
   },
   "btnSwitchAnyway": {
-    "message": "仍要切換",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "仍要切換"
   },
   "cmdNextBar": {
-    "message": "切換至下一個書籤列。",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "切換至下一個書籤列。"
   },
   "cmdPreviousBar": {
-    "message": "切換至上一個書籤列。",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "切換至上一個書籤列。"
   },
   "cmdSwitchTo1": {
-    "message": "切換至第 1 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "切換至第 1 個書籤列。"
   },
   "cmdSwitchTo10": {
-    "message": "切換至第 10 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "切換至第 10 個書籤列。"
   },
   "cmdSwitchTo2": {
-    "message": "切換至第 2 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "切換至第 2 個書籤列。"
   },
   "cmdSwitchTo3": {
-    "message": "切換至第 3 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "切換至第 3 個書籤列。"
   },
   "cmdSwitchTo4": {
-    "message": "切換至第 4 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "切換至第 4 個書籤列。"
   },
   "cmdSwitchTo5": {
-    "message": "切換至第 5 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "切換至第 5 個書籤列。"
   },
   "cmdSwitchTo6": {
-    "message": "切換至第 6 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "切換至第 6 個書籤列。"
   },
   "cmdSwitchTo7": {
-    "message": "切換至第 7 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "切換至第 7 個書籤列。"
   },
   "cmdSwitchTo8": {
-    "message": "切換至第 8 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "切換至第 8 個書籤列。"
   },
   "cmdSwitchTo9": {
-    "message": "切換至第 9 個書籤列。",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "切換至第 9 個書籤列。"
   },
   "errorMissingSets": {
-    "message": "缺少「sets」陣列",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "缺少「sets」陣列"
   },
   "errorNoBars": {
-    "message": "檔案不包含任何書籤列",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "檔案不包含任何書籤列"
   },
   "errorUnknownFormat": {
-    "message": "無法辨識的檔案類型。支援：{list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "無法辨識的檔案類型。支援：{list}"
   },
   "extDescription": {
-    "message": "在多個書籤列之間切換 - 維持多組獨立書籤，並即時在書籤列中切換進出。",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "保留多個書籤列 – 每個專案或情境一個 – 一鍵切換。"
   },
   "optionsAddBar": {
-    "message": "+ 新增書籤列",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ 新增書籤列"
   },
   "optionsAddBarTitle": {
-    "message": "新增",
-    "description": "Tooltip on the create-bar button."
+    "message": "新增"
   },
   "optionsAddCommonBtn": {
-    "message": "新增",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "新增"
   },
   "optionsAddCommonOption": {
-    "message": "新增共用書籤列…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "新增共用書籤列…"
   },
   "optionsAddToAll": {
-    "message": "將此共用書籤列新增至所有其他書籤列",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "將此共用書籤列新增至所有其他書籤列"
   },
   "optionsBarsHeading": {
-    "message": "書籤列",
-    "description": "Heading of the bars-management section in settings."
+    "message": "書籤列"
   },
   "optionsBarsHint": {
-    "message": "拖曳書籤列以重新排序。將書籤列標記為共用，以使其書籤可供其他書籤列使用。對於每個非共用書籤列，選擇要預先加入哪些共用書籤列以及其順序。",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "拖曳書籤列以重新排序。將書籤列標記為共用，以使其書籤可供其他書籤列使用。對於每個非共用書籤列，選擇要預先加入哪些共用書籤列以及其順序。"
   },
   "optionsCannotDeleteLast": {
-    "message": "無法刪除最後一個書籤列",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "無法刪除最後一個書籤列"
   },
   "optionsCommonSet": {
-    "message": "標記為共用書籤列 (其書籤可預先加入其他書籤列)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "標記為共用書籤列 (其書籤可預先加入其他書籤列)"
   },
   "optionsCommonUnset": {
-    "message": "共用書籤列 - 點擊以取消設定",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "共用書籤列 - 點擊以取消設定"
   },
   "optionsCommonsLabel": {
-    "message": "共用書籤列",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "共用書籤列"
   },
   "optionsDeleteBar": {
-    "message": "刪除此書籤列",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "刪除此書籤列"
   },
   "optionsDeleteConfirm": {
-    "message": "是否要移除此書籤列及其所有書籤？",
-    "description": "Body of the delete-confirmation modal."
+    "message": "是否要移除此書籤列及其所有書籤？"
   },
   "optionsDeleteRemove": {
-    "message": "移除",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "移除"
   },
   "optionsDirtyDiscardApply": {
-    "message": "捨棄並套用",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "捨棄並套用"
   },
   "optionsDirtySaveApply": {
-    "message": "儲存並套用",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "儲存並套用"
   },
   "optionsExportFailed": {
-    "message": "匯出失敗：",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "匯出失敗："
   },
   "optionsExportOne": {
-    "message": "將此列匯出到檔案",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "將此列匯出到檔案"
   },
   "optionsFileFormatLabel": {
-    "message": "檔案格式",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "檔案格式"
   },
   "optionsFileFormatTitle": {
-    "message": "匯出列時使用的格式。匯入會從檔案本身偵測格式。",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "匯出列時使用的格式。匯入會從檔案本身偵測格式。"
   },
   "optionsGripTitle": {
-    "message": "拖曳以重新排序書籤列",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "拖曳以重新排序書籤列"
   },
   "optionsHeaderSuffix": {
-    "message": "- 設定",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- 設定"
   },
   "optionsImportFailed": {
-    "message": "匯入失敗：",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "匯入失敗："
   },
   "optionsImportNewBar": {
-    "message": "匯入列…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "匯入列…"
   },
   "optionsImportNewBarTitle": {
-    "message": "從檔案匯入一個列作為新副本 — 它絕不會取代現有列。",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "從檔案匯入一個列作為新副本 — 它絕不會取代現有列。"
   },
   "optionsIoHeading": {
-    "message": "匯入與匯出",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "匯入與匯出"
   },
   "optionsIoHint": {
-    "message": "選擇每個列上匯出按鈕使用的檔案格式。JSON 是一個完整的備份 — 它還會還原列與其常用列的連結。其他格式是可讀文字，您可以貼到任何地方，並且只保留資料夾和連結。匯入接受任何這些格式，並從檔案中偵測出正確的格式。",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "選擇每個列上匯出按鈕使用的檔案格式。JSON 是一個完整的備份 — 它還會還原列與其常用列的連結。其他格式是可讀文字，您可以貼到任何地方，並且只保留資料夾和連結。匯入接受任何這些格式，並從檔案中偵測出正確的格式。"
   },
   "optionsLanguageAuto": {
-    "message": "自動 (瀏覽器語言)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "自動 (瀏覽器語言)"
   },
   "optionsLanguageLabel": {
-    "message": "語言",
-    "description": "Label for the UI-language picker in settings."
+    "message": "語言"
   },
   "optionsLoadedTag": {
-    "message": "已載入",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "已載入"
   },
   "optionsNewBarPlaceholder": {
-    "message": "新書籤列名稱…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "新書籤列名稱…"
   },
   "optionsNoCommons": {
-    "message": "尚無共用書籤列。將書籤列標記為共用即可在此處使用。",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "尚無共用書籤列。將書籤列標記為共用即可在此處使用。"
   },
   "optionsRemergeDirty": {
-    "message": "目前已載入的書籤列「{title}」有未儲存的變更。是否要儲存、捨棄或取消此設定變更？",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "目前已載入的書籤列「{title}」有未儲存的變更。是否要儲存、捨棄或取消此設定變更？"
   },
   "optionsRemoveFromAll": {
-    "message": "從所有其他書籤列中移除此共用書籤列",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "從所有其他書籤列中移除此共用書籤列"
   },
   "optionsRemoveFromBar": {
-    "message": "從此書籤列中移除",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "從此書籤列中移除"
   },
   "popupCapturedBarName": {
-    "message": "書籤列 {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "書籤列 {date}"
   },
   "popupCommonBar": {
-    "message": "共用書籤列",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "共用書籤列"
   },
   "popupDirtySave": {
-    "message": "是否要儲存「{loaded}」的變更？",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "是否要儲存「{loaded}」的變更？"
   },
   "popupDirtySwitch": {
-    "message": "在切換至「{target}」之前，是否要儲存「{loaded}」的變更？",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "在切換至「{target}」之前，是否要儲存「{loaded}」的變更？"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed}/{visited} 個圖示已重新整理",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed}/{visited} 個圖示已重新整理"
   },
   "popupRefreshingIcons": {
-    "message": "正在重新整理圖示... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "正在重新整理圖示... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "目前已載入",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "目前已載入"
   },
   "popupRowSwitch": {
-    "message": "點擊以切換",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "點擊以切換"
   },
   "popupSaveInPlace": {
-    "message": "將書籤列變更儲存至此組",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "將書籤列變更儲存至此組"
   },
   "popupShowCommons": {
-    "message": "顯示共用書籤列",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "顯示共用書籤列"
   },
   "popupUnknownStatus": {
-    "message": "此書籤列與任何已儲存的書籤列都不匹配。",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "此書籤列與任何已儲存的書籤列都不匹配。"
   },
   "popupUnknownSwitch": {
-    "message": "您的書籤列中的書籤與任何已儲存的書籤列都不匹配。切換到「{target}」將取代它們。",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "您的書籤列中的書籤與任何已儲存的書籤列都不匹配。切換到「{target}」將取代它們。"
   },
   "popupUnsavedChanges": {
-    "message": "未儲存的變更",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "未儲存的變更"
   },
   "tooltipGithub": {
-    "message": "GitHub 上的原始碼",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "GitHub 上的原始碼"
   },
   "tooltipHelp": {
-    "message": "說明",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "說明"
   },
   "tooltipRefreshIcons": {
-    "message": "重新整理遺失的書籤圖示 (Shift+點擊: 全部)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "重新整理遺失的書籤圖示 (Shift+點擊: 全部)"
   },
   "tooltipSettings": {
-    "message": "設定",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "設定"
   }
 }

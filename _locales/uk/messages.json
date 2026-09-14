@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Перемикання скасовано – ця панель інструментів не відповідає жодній збереженій панелі. Натисніть тут, щоб вибрати, що зберегти.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Перемикання скасовано – ця панель інструментів не відповідає жодній збереженій панелі. Натисніть тут, щоб вибрати, що зберегти."
   },
   "btnCancel": {
-    "message": "Скасувати",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Скасувати"
   },
   "btnDiscard": {
-    "message": "Відхилити",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Відхилити"
   },
   "btnSave": {
-    "message": "Зберегти",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Зберегти"
   },
   "btnSaveAsNewBar": {
-    "message": "Зберегти як нову панель",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Зберегти як нову панель"
   },
   "btnSwitchAnyway": {
-    "message": "Все одно перемкнути",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Все одно перемкнути"
   },
   "cmdNextBar": {
-    "message": "Перемкнутися на наступну панель закладок.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Перемкнутися на наступну панель закладок."
   },
   "cmdPreviousBar": {
-    "message": "Перемкнутися на попередню панель закладок.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Перемкнутися на попередню панель закладок."
   },
   "cmdSwitchTo1": {
-    "message": "Перемкнутися на 1-шу панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Перемкнутися на 1-шу панель закладок."
   },
   "cmdSwitchTo10": {
-    "message": "Перемкнутися на 10-ту панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Перемкнутися на 10-ту панель закладок."
   },
   "cmdSwitchTo2": {
-    "message": "Перемкнутися на 2-гу панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Перемкнутися на 2-гу панель закладок."
   },
   "cmdSwitchTo3": {
-    "message": "Перемкнутися на 3-тю панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Перемкнутися на 3-тю панель закладок."
   },
   "cmdSwitchTo4": {
-    "message": "Перемкнутися на 4-ту панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Перемкнутися на 4-ту панель закладок."
   },
   "cmdSwitchTo5": {
-    "message": "Перемкнутися на 5-ту панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Перемкнутися на 5-ту панель закладок."
   },
   "cmdSwitchTo6": {
-    "message": "Перемкнутися на 6-ту панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Перемкнутися на 6-ту панель закладок."
   },
   "cmdSwitchTo7": {
-    "message": "Перемкнутися на 7-му панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Перемкнутися на 7-му панель закладок."
   },
   "cmdSwitchTo8": {
-    "message": "Перемкнутися на 8-му панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Перемкнутися на 8-му панель закладок."
   },
   "cmdSwitchTo9": {
-    "message": "Перемкнутися на 9-ту панель закладок.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Перемкнутися на 9-ту панель закладок."
   },
   "errorMissingSets": {
-    "message": "Відсутній масив «sets»",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Відсутній масив «sets»"
   },
   "errorNoBars": {
-    "message": "Файл не містить панелей",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Файл не містить панелей"
   },
   "errorUnknownFormat": {
-    "message": "Нерозпізнаний тип файлу. Підтримувані: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Нерозпізнаний тип файлу. Підтримувані: {list}"
   },
   "extDescription": {
-    "message": "Перемикайтеся між кількома панелями закладок - зберігайте окремі набори закладок та миттєво змінюйте їх на панелі.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Зберігайте кілька панелей закладок – по одній на проєкт або контекст – і перемикайтеся одним кліком."
   },
   "optionsAddBar": {
-    "message": "+ Додати панель",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Додати панель"
   },
   "optionsAddBarTitle": {
-    "message": "Додати",
-    "description": "Tooltip on the create-bar button."
+    "message": "Додати"
   },
   "optionsAddCommonBtn": {
-    "message": "Додати",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Додати"
   },
   "optionsAddCommonOption": {
-    "message": "Додати спільну панель…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Додати спільну панель…"
   },
   "optionsAddToAll": {
-    "message": "Додати цю спільну панель до кожної іншої панелі",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Додати цю спільну панель до кожної іншої панелі"
   },
   "optionsBarsHeading": {
-    "message": "Панелі закладок",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Панелі закладок"
   },
   "optionsBarsHint": {
-    "message": "Перетягніть панель, щоб змінити порядок. Позначте панель як спільну, щоб її закладки були доступні іншим панелям. Для кожної неспільної панелі виберіть, які спільні панелі додати на початок і в якому порядку.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Перетягніть панель, щоб змінити порядок. Позначте панель як спільну, щоб її закладки були доступні іншим панелям. Для кожної неспільної панелі виберіть, які спільні панелі додати на початок і в якому порядку."
   },
   "optionsCannotDeleteLast": {
-    "message": "Неможливо видалити останню панель",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Неможливо видалити останню панель"
   },
   "optionsCommonSet": {
-    "message": "Позначити як спільну панель (її закладки можна додавати на початок інших панелей)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Позначити як спільну панель (її закладки можна додавати на початок інших панелей)"
   },
   "optionsCommonUnset": {
-    "message": "Спільна панель - натисніть, щоб скасувати позначку",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Спільна панель - натисніть, щоб скасувати позначку"
   },
   "optionsCommonsLabel": {
-    "message": "Спільні",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Спільні"
   },
   "optionsDeleteBar": {
-    "message": "Видалити цю панель",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Видалити цю панель"
   },
   "optionsDeleteConfirm": {
-    "message": "Видалити цю панель закладок та всі її закладки?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Видалити цю панель закладок та всі її закладки?"
   },
   "optionsDeleteRemove": {
-    "message": "Видалити",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Видалити"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Відхилити та застосувати",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Відхилити та застосувати"
   },
   "optionsDirtySaveApply": {
-    "message": "Зберегти та застосувати",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Зберегти та застосувати"
   },
   "optionsExportFailed": {
-    "message": "Експорт не вдався: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Експорт не вдався: "
   },
   "optionsExportOne": {
-    "message": "Експортувати цю панель у файл",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Експортувати цю панель у файл"
   },
   "optionsFileFormatLabel": {
-    "message": "Формат файлу",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Формат файлу"
   },
   "optionsFileFormatTitle": {
-    "message": "Формат, що використовується при експорті панелі. Імпорт визначає формат із самого файлу.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Формат, що використовується при експорті панелі. Імпорт визначає формат із самого файлу."
   },
   "optionsGripTitle": {
-    "message": "Перетягніть, щоб змінити порядок панелей",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Перетягніть, щоб змінити порядок панелей"
   },
   "optionsHeaderSuffix": {
-    "message": "- Налаштування",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Налаштування"
   },
   "optionsImportFailed": {
-    "message": "Імпорт не вдався: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Імпорт не вдався: "
   },
   "optionsImportNewBar": {
-    "message": "Імпортувати панель…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Імпортувати панель…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Імпортувати панель із файлу як нову копію — вона ніколи не замінює наявну панель.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Імпортувати панель із файлу як нову копію — вона ніколи не замінює наявну панель."
   },
   "optionsIoHeading": {
-    "message": "Імпорт та експорт",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Імпорт та експорт"
   },
   "optionsIoHint": {
-    "message": "Виберіть формат файлу, який використовується кнопкою експорту на кожній панелі. JSON — це повна резервна копія, яка також відновлює посилання панелі на її спільні панелі. Інші формати — це читабельний текст, який можна вставити куди завгодно, і вони зберігають лише папки та посилання. Імпорт приймає будь-який з цих форматів і визначає правильний з файлу.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Виберіть формат файлу, який використовується кнопкою експорту на кожній панелі. JSON — це повна резервна копія, яка також відновлює посилання панелі на її спільні панелі. Інші формати — це читабельний текст, який можна вставити куди завгодно, і вони зберігають лише папки та посилання. Імпорт приймає будь-який з цих форматів і визначає правильний з файлу."
   },
   "optionsLanguageAuto": {
-    "message": "Автоматично (мова браузера)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Автоматично (мова браузера)"
   },
   "optionsLanguageLabel": {
-    "message": "Мова",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Мова"
   },
   "optionsLoadedTag": {
-    "message": "Завантажено",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Завантажено"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Назва нової панелі…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Назва нової панелі…"
   },
   "optionsNoCommons": {
-    "message": "Спільних панелей ще немає. Позначте панель як спільну, щоб використовувати її тут.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Спільних панелей ще немає. Позначте панель як спільну, щоб використовувати її тут."
   },
   "optionsRemergeDirty": {
-    "message": "Поточна завантажена панель «{title}» має незбережені зміни. Зберегти їх, відхилити чи скасувати цю зміну конфігурації?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "Поточна завантажена панель «{title}» має незбережені зміни. Зберегти їх, відхилити чи скасувати цю зміну конфігурації?"
   },
   "optionsRemoveFromAll": {
-    "message": "Видалити цю спільну панель з кожної іншої панелі",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Видалити цю спільну панель з кожної іншої панелі"
   },
   "optionsRemoveFromBar": {
-    "message": "Видалити з цієї панелі",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Видалити з цієї панелі"
   },
   "popupCapturedBarName": {
-    "message": "Панель інструментів {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Панель інструментів {date}"
   },
   "popupCommonBar": {
-    "message": "Спільна панель",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Спільна панель"
   },
   "popupDirtySave": {
-    "message": "Зберегти зміни до «{loaded}»?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Зберегти зміни до «{loaded}»?"
   },
   "popupDirtySwitch": {
-    "message": "Зберегти зміни до «{loaded}» перед перемиканням на «{target}»?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Зберегти зміни до «{loaded}» перед перемиканням на «{target}»?"
   },
   "popupRefreshIconsDone": {
-    "message": "Оновлено {fixed} з {visited} значків",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "Оновлено {fixed} з {visited} значків"
   },
   "popupRefreshingIcons": {
-    "message": "Оновлення значків... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Оновлення значків... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Завантажено",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Завантажено"
   },
   "popupRowSwitch": {
-    "message": "Натисніть, щоб перемкнути",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Натисніть, щоб перемкнути"
   },
   "popupSaveInPlace": {
-    "message": "Зберегти зміни панелі до цього набору",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Зберегти зміни панелі до цього набору"
   },
   "popupShowCommons": {
-    "message": "Показати спільні панелі",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Показати спільні панелі"
   },
   "popupUnknownStatus": {
-    "message": "Ця панель інструментів не відповідає жодній збереженій панелі.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Ця панель інструментів не відповідає жодній збереженій панелі."
   },
   "popupUnknownSwitch": {
-    "message": "Закладки на вашій панелі інструментів не відповідають жодній із збережених панелей. Перемикання на «{target}» замінить їх.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "Закладки на вашій панелі інструментів не відповідають жодній із збережених панелей. Перемикання на «{target}» замінить їх."
   },
   "popupUnsavedChanges": {
-    "message": "Незбережені зміни",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Незбережені зміни"
   },
   "tooltipGithub": {
-    "message": "Джерело на GitHub",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Джерело на GitHub"
   },
   "tooltipHelp": {
-    "message": "Довідка",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Довідка"
   },
   "tooltipRefreshIcons": {
-    "message": "Оновити відсутні значки закладок (Shift+клік: усі)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Оновити відсутні значки закладок (Shift+клік: усі)"
   },
   "tooltipSettings": {
-    "message": "Налаштування",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Налаштування"
   }
 }

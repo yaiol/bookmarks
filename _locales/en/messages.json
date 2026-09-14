@@ -84,8 +84,8 @@
     "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
   },
   "extDescription": {
-    "message": "Switch between multiple bookmark bars - keep separate sets of bookmarks and swap them in and out of the bar instantly.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Keep several bookmark bars - one per project or context - and switch in a click.",
+    "description": "Browser store description; 132 chars max IN EVERY LOCALE, so keep EN under ~95. No enumerated site/format lists. (see CLAUDE.md -> Store copy)"
   },
   "optionsAddBar": {
     "message": "+ Add bar",

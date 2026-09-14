@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "切り替えがキャンセルされました - このツールバーは保存されているバーと一致しません。保持するものを選択するにはここをクリックしてください。",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "切り替えがキャンセルされました - このツールバーは保存されているバーと一致しません。保持するものを選択するにはここをクリックしてください。"
   },
   "btnCancel": {
-    "message": "キャンセル",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "キャンセル"
   },
   "btnDiscard": {
-    "message": "破棄",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "破棄"
   },
   "btnSave": {
-    "message": "保存",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "保存"
   },
   "btnSaveAsNewBar": {
-    "message": "新しいバーとして保存",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "新しいバーとして保存"
   },
   "btnSwitchAnyway": {
-    "message": "とにかく切り替える",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "とにかく切り替える"
   },
   "cmdNextBar": {
-    "message": "次のブックマークバーへ切り替え",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "次のブックマークバーへ切り替え"
   },
   "cmdPreviousBar": {
-    "message": "前のブックマークバーへ切り替え",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "前のブックマークバーへ切り替え"
   },
   "cmdSwitchTo1": {
-    "message": "1. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "1. ブックマークバーに切り替え"
   },
   "cmdSwitchTo10": {
-    "message": "10. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "10. ブックマークバーに切り替え"
   },
   "cmdSwitchTo2": {
-    "message": "2. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "2. ブックマークバーに切り替え"
   },
   "cmdSwitchTo3": {
-    "message": "3. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "3. ブックマークバーに切り替え"
   },
   "cmdSwitchTo4": {
-    "message": "4. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "4. ブックマークバーに切り替え"
   },
   "cmdSwitchTo5": {
-    "message": "5. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "5. ブックマークバーに切り替え"
   },
   "cmdSwitchTo6": {
-    "message": "6. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "6. ブックマークバーに切り替え"
   },
   "cmdSwitchTo7": {
-    "message": "7. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "7. ブックマークバーに切り替え"
   },
   "cmdSwitchTo8": {
-    "message": "8. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "8. ブックマークバーに切り替え"
   },
   "cmdSwitchTo9": {
-    "message": "9. ブックマークバーに切り替え",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "9. ブックマークバーに切り替え"
   },
   "errorMissingSets": {
-    "message": "'sets'配列がありません",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "'sets'配列がありません"
   },
   "errorNoBars": {
-    "message": "ファイルにバーが含まれていません",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "ファイルにバーが含まれていません"
   },
   "errorUnknownFormat": {
-    "message": "未認識のファイルタイプ。サポートされている形式: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "未認識のファイルタイプ。サポートされている形式: {list}"
   },
   "extDescription": {
-    "message": "複数のブックマークバーを切り替え - ブックマークのセットを個別に管理し、バーに瞬時に出し入れできます。",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "複数のブックマークバーを保持 – プロジェクトやコンテキストごとに1つ – ワンクリックで切り替え。"
   },
   "optionsAddBar": {
-    "message": "+ バーを追加",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ バーを追加"
   },
   "optionsAddBarTitle": {
-    "message": "追加",
-    "description": "Tooltip on the create-bar button."
+    "message": "追加"
   },
   "optionsAddCommonBtn": {
-    "message": "追加",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "追加"
   },
   "optionsAddCommonOption": {
-    "message": "共通バーを追加…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "共通バーを追加…"
   },
   "optionsAddToAll": {
-    "message": "この共通バーを他のすべてのバーに追加",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "この共通バーを他のすべてのバーに追加"
   },
   "optionsBarsHeading": {
-    "message": "ブックマークバー",
-    "description": "Heading of the bars-management section in settings."
+    "message": "ブックマークバー"
   },
   "optionsBarsHint": {
-    "message": "バーをドラッグして並べ替え。バーを共通としてマークすると、そのブックマークを他のバーで利用可能に。共通ではない各バーについて、どの共通バーをどの順序で先頭に追加するかを選択します。",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "バーをドラッグして並べ替え。バーを共通としてマークすると、そのブックマークを他のバーで利用可能に。共通ではない各バーについて、どの共通バーをどの順序で先頭に追加するかを選択します。"
   },
   "optionsCannotDeleteLast": {
-    "message": "最後のバーは削除できません",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "最後のバーは削除できません"
   },
   "optionsCommonSet": {
-    "message": "共通バーとしてマーク (そのブックマークは他のバーの先頭に追加できます)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "共通バーとしてマーク (そのブックマークは他のバーの先頭に追加できます)"
   },
   "optionsCommonUnset": {
-    "message": "共通バー - クリックして解除",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "共通バー - クリックして解除"
   },
   "optionsCommonsLabel": {
-    "message": "共通",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "共通"
   },
   "optionsDeleteBar": {
-    "message": "このバーを削除",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "このバーを削除"
   },
   "optionsDeleteConfirm": {
-    "message": "このブックマークバーとすべてのブックマークを削除しますか？",
-    "description": "Body of the delete-confirmation modal."
+    "message": "このブックマークバーとすべてのブックマークを削除しますか？"
   },
   "optionsDeleteRemove": {
-    "message": "削除",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "削除"
   },
   "optionsDirtyDiscardApply": {
-    "message": "破棄して適用",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "破棄して適用"
   },
   "optionsDirtySaveApply": {
-    "message": "保存して適用",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "保存して適用"
   },
   "optionsExportFailed": {
-    "message": "エクスポートに失敗しました: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "エクスポートに失敗しました: "
   },
   "optionsExportOne": {
-    "message": "このバーをファイルにエクスポート",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "このバーをファイルにエクスポート"
   },
   "optionsFileFormatLabel": {
-    "message": "ファイル形式",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "ファイル形式"
   },
   "optionsFileFormatTitle": {
-    "message": "バーをエクスポートする際に使用される形式。インポートはファイル自体から形式を検出します。",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "バーをエクスポートする際に使用される形式。インポートはファイル自体から形式を検出します。"
   },
   "optionsGripTitle": {
-    "message": "ドラッグしてバーを並べ替え",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "ドラッグしてバーを並べ替え"
   },
   "optionsHeaderSuffix": {
-    "message": "- 設定",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- 設定"
   },
   "optionsImportFailed": {
-    "message": "インポートに失敗しました: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "インポートに失敗しました: "
   },
   "optionsImportNewBar": {
-    "message": "バーをインポート…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "バーをインポート…"
   },
   "optionsImportNewBarTitle": {
-    "message": "ファイルからバーを新しいコピーとしてインポートします — 既存のバーを置き換えることはありません。",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "ファイルからバーを新しいコピーとしてインポートします — 既存のバーを置き換えることはありません。"
   },
   "optionsIoHeading": {
-    "message": "インポートとエクスポート",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "インポートとエクスポート"
   },
   "optionsIoHint": {
-    "message": "各バーのエクスポートボタンで使用されるファイル形式を選択します。JSONは完全なバックアップであり、バーの共通バーへのリンクも復元します。他の形式はどこにでも貼り付けられる読み取り可能なテキストであり、フォルダーとリンクのみを保持します。インポートはこれらのどの形式でも受け入れ、ファイルから正しいものを検出します。",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "各バーのエクスポートボタンで使用されるファイル形式を選択します。JSONは完全なバックアップであり、バーの共通バーへのリンクも復元します。他の形式はどこにでも貼り付けられる読み取り可能なテキストであり、フォルダーとリンクのみを保持します。インポートはこれらのどの形式でも受け入れ、ファイルから正しいものを検出します。"
   },
   "optionsLanguageAuto": {
-    "message": "自動 (ブラウザの言語)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "自動 (ブラウザの言語)"
   },
   "optionsLanguageLabel": {
-    "message": "言語",
-    "description": "Label for the UI-language picker in settings."
+    "message": "言語"
   },
   "optionsLoadedTag": {
-    "message": "読み込み済み",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "読み込み済み"
   },
   "optionsNewBarPlaceholder": {
-    "message": "新しいバーの名前…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "新しいバーの名前…"
   },
   "optionsNoCommons": {
-    "message": "共通バーはまだありません。ここで使用するには、バーを共通としてマークしてください。",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "共通バーはまだありません。ここで使用するには、バーを共通としてマークしてください。"
   },
   "optionsRemergeDirty": {
-    "message": "現在読み込まれているバー「{title}」には未保存の変更があります。保存しますか、破棄しますか、それともこの設定変更をキャンセルしますか？",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "現在読み込まれているバー「{title}」には未保存の変更があります。保存しますか、破棄しますか、それともこの設定変更をキャンセルしますか？"
   },
   "optionsRemoveFromAll": {
-    "message": "この共通バーを他のすべてのバーから削除",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "この共通バーを他のすべてのバーから削除"
   },
   "optionsRemoveFromBar": {
-    "message": "このバーから削除",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "このバーから削除"
   },
   "popupCapturedBarName": {
-    "message": "ツールバー {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "ツールバー {date}"
   },
   "popupCommonBar": {
-    "message": "共通バー",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "共通バー"
   },
   "popupDirtySave": {
-    "message": "「{loaded}」への変更を保存しますか？",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "「{loaded}」への変更を保存しますか？"
   },
   "popupDirtySwitch": {
-    "message": "「{loaded}」への変更を保存してから「{target}」に切り替えますか？",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "「{loaded}」への変更を保存してから「{target}」に切り替えますか？"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed}/{visited}個のアイコンを更新しました",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed}/{visited}個のアイコンを更新しました"
   },
   "popupRefreshingIcons": {
-    "message": "アイコンを更新中... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "アイコンを更新中... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "現在読み込み中",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "現在読み込み中"
   },
   "popupRowSwitch": {
-    "message": "クリックして切り替え",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "クリックして切り替え"
   },
   "popupSaveInPlace": {
-    "message": "バーの変更をこのセットに保存",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "バーの変更をこのセットに保存"
   },
   "popupShowCommons": {
-    "message": "共通バーを表示",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "共通バーを表示"
   },
   "popupUnknownStatus": {
-    "message": "このツールバーは、保存されているどのバーとも一致しません。",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "このツールバーは、保存されているどのバーとも一致しません。"
   },
   "popupUnknownSwitch": {
-    "message": "ツールバーのブックマークは、保存されているどのバーとも一致しません。「{target}」に切り替えると、それらは置き換えられます。",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "ツールバーのブックマークは、保存されているどのバーとも一致しません。「{target}」に切り替えると、それらは置き換えられます。"
   },
   "popupUnsavedChanges": {
-    "message": "未保存の変更",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "未保存の変更"
   },
   "tooltipGithub": {
-    "message": "GitHubでソース",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "GitHubでソース"
   },
   "tooltipHelp": {
-    "message": "ヘルプ",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "ヘルプ"
   },
   "tooltipRefreshIcons": {
-    "message": "不足しているブックマークアイコンを更新 (Shift+クリック: すべて)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "不足しているブックマークアイコンを更新 (Shift+クリック: すべて)"
   },
   "tooltipSettings": {
-    "message": "設定",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "設定"
   }
 }

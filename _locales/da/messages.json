@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Skift annulleret – denne værktøjslinje matcher ikke nogen gemt linje. Klik her for at vælge, hvad du vil beholde.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Skift annulleret – denne værktøjslinje matcher ikke nogen gemt linje. Klik her for at vælge, hvad du vil beholde."
   },
   "btnCancel": {
-    "message": "Annuller",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Annuller"
   },
   "btnDiscard": {
-    "message": "Kassér",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Kassér"
   },
   "btnSave": {
-    "message": "Gem",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Gem"
   },
   "btnSaveAsNewBar": {
-    "message": "Gem som en ny bjælke",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Gem som en ny bjælke"
   },
   "btnSwitchAnyway": {
-    "message": "Skift alligevel",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Skift alligevel"
   },
   "cmdNextBar": {
-    "message": "Skift til næste bogmærkepanel.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Skift til næste bogmærkepanel."
   },
   "cmdPreviousBar": {
-    "message": "Skift til forrige bogmærkepanel.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Skift til forrige bogmærkepanel."
   },
   "cmdSwitchTo1": {
-    "message": "Skift til 1. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Skift til 1. bogmærkepanel."
   },
   "cmdSwitchTo10": {
-    "message": "Skift til 10. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Skift til 10. bogmærkepanel."
   },
   "cmdSwitchTo2": {
-    "message": "Skift til 2. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Skift til 2. bogmærkepanel."
   },
   "cmdSwitchTo3": {
-    "message": "Skift til 3. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Skift til 3. bogmærkepanel."
   },
   "cmdSwitchTo4": {
-    "message": "Skift til 4. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Skift til 4. bogmærkepanel."
   },
   "cmdSwitchTo5": {
-    "message": "Skift til 5. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Skift til 5. bogmærkepanel."
   },
   "cmdSwitchTo6": {
-    "message": "Skift til 6. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Skift til 6. bogmærkepanel."
   },
   "cmdSwitchTo7": {
-    "message": "Skift til 7. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Skift til 7. bogmærkepanel."
   },
   "cmdSwitchTo8": {
-    "message": "Skift til 8. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Skift til 8. bogmærkepanel."
   },
   "cmdSwitchTo9": {
-    "message": "Skift til 9. bogmærkepanel.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Skift til 9. bogmærkepanel."
   },
   "errorMissingSets": {
-    "message": "Manglende 'sets'-array",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Manglende 'sets'-array"
   },
   "errorNoBars": {
-    "message": "Filen indeholder ingen paneler",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Filen indeholder ingen paneler"
   },
   "errorUnknownFormat": {
-    "message": "Ukendt filtype. Understøttede: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Ukendt filtype. Understøttede: {list}"
   },
   "extDescription": {
-    "message": "Skift mellem flere bogmærkepaneler - hold separate sæt bogmærker og skift dem ind og ud af panelet med det samme.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Hav flere bogmærkelinjer – én pr. projekt eller kontekst – og skift med et klik."
   },
   "optionsAddBar": {
-    "message": "+ Tilføj panel",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Tilføj panel"
   },
   "optionsAddBarTitle": {
-    "message": "Tilføj",
-    "description": "Tooltip on the create-bar button."
+    "message": "Tilføj"
   },
   "optionsAddCommonBtn": {
-    "message": "Tilføj",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Tilføj"
   },
   "optionsAddCommonOption": {
-    "message": "Tilføj et fælles panel…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Tilføj et fælles panel…"
   },
   "optionsAddToAll": {
-    "message": "Tilføj dette fælles panel til alle andre paneler",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Tilføj dette fælles panel til alle andre paneler"
   },
   "optionsBarsHeading": {
-    "message": "Bogmærkepaneler",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Bogmærkepaneler"
   },
   "optionsBarsHint": {
-    "message": "Træk et panel for at omarrangere. Marker et panel som fælles for at gøre dets bogmærker tilgængelige for andre paneler. For hvert ikke-fælles panel, vælg hvilke fælles paneler der skal foranstilles og i hvilken rækkefølge.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Træk et panel for at omarrangere. Marker et panel som fælles for at gøre dets bogmærker tilgængelige for andre paneler. For hvert ikke-fælles panel, vælg hvilke fælles paneler der skal foranstilles og i hvilken rækkefølge."
   },
   "optionsCannotDeleteLast": {
-    "message": "Kan ikke slette det sidste panel",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Kan ikke slette det sidste panel"
   },
   "optionsCommonSet": {
-    "message": "Marker som fælles panel (dets bogmærker kan foranstilles andre paneler)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Marker som fælles panel (dets bogmærker kan foranstilles andre paneler)"
   },
   "optionsCommonUnset": {
-    "message": "Fælles panel - klik for at fjerne markering",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Fælles panel - klik for at fjerne markering"
   },
   "optionsCommonsLabel": {
-    "message": "Fælles",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Fælles"
   },
   "optionsDeleteBar": {
-    "message": "Slet dette panel",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Slet dette panel"
   },
   "optionsDeleteConfirm": {
-    "message": "Fjern dette bogmærkepanel og alle dets bogmærker?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Fjern dette bogmærkepanel og alle dets bogmærker?"
   },
   "optionsDeleteRemove": {
-    "message": "Fjern",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Fjern"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Kassér og anvend",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Kassér og anvend"
   },
   "optionsDirtySaveApply": {
-    "message": "Gem og anvend",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Gem og anvend"
   },
   "optionsExportFailed": {
-    "message": "Eksport mislykkedes: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Eksport mislykkedes: "
   },
   "optionsExportOne": {
-    "message": "Eksporter denne bjælke til en fil",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Eksporter denne bjælke til en fil"
   },
   "optionsFileFormatLabel": {
-    "message": "Filformat",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Filformat"
   },
   "optionsFileFormatTitle": {
-    "message": "Format brugt ved eksport af en bjælke. Import registrerer formatet fra selve filen.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Format brugt ved eksport af en bjælke. Import registrerer formatet fra selve filen."
   },
   "optionsGripTitle": {
-    "message": "Træk for at omarrangere paneler",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Træk for at omarrangere paneler"
   },
   "optionsHeaderSuffix": {
-    "message": "- Indstillinger",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Indstillinger"
   },
   "optionsImportFailed": {
-    "message": "Import mislykkedes: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Import mislykkedes: "
   },
   "optionsImportNewBar": {
-    "message": "Importer bjælke…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Importer bjælke…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Importer en bjælke fra en fil som en ny kopi — den erstatter aldrig en eksisterende bjælke.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Importer en bjælke fra en fil som en ny kopi — den erstatter aldrig en eksisterende bjælke."
   },
   "optionsIoHeading": {
-    "message": "Importér og eksportér",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Importér og eksportér"
   },
   "optionsIoHint": {
-    "message": "Vælg det filformat, der bruges af eksportknappen på hver bjælke. JSON er en komplet sikkerhedskopi — den gendanner også bjælkens links til dens fælles bjælker. De andre formater er læsbar tekst, du kan indsætte hvor som helst, og bevarer kun mapper og links. Import accepterer ethvert af disse formater og registrerer det rigtige fra filen.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Vælg det filformat, der bruges af eksportknappen på hver bjælke. JSON er en komplet sikkerhedskopi — den gendanner også bjælkens links til dens fælles bjælker. De andre formater er læsbar tekst, du kan indsætte hvor som helst, og bevarer kun mapper og links. Import accepterer ethvert af disse formater og registrerer det rigtige fra filen."
   },
   "optionsLanguageAuto": {
-    "message": "Auto (browsersprog)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Auto (browsersprog)"
   },
   "optionsLanguageLabel": {
-    "message": "Sprog",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Sprog"
   },
   "optionsLoadedTag": {
-    "message": "Indlæst",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Indlæst"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Nyt panelnavn…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Nyt panelnavn…"
   },
   "optionsNoCommons": {
-    "message": "Ingen fælles paneler endnu. Marker et panel som fælles for at bruge det her.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Ingen fælles paneler endnu. Marker et panel som fælles for at bruge det her."
   },
   "optionsRemergeDirty": {
-    "message": "Det aktuelt indlæste panel \"{title}\" har ugemte ændringer. Gem dem, kassér dem, eller annuller denne konfigurationsændring?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "Det aktuelt indlæste panel \"{title}\" har ugemte ændringer. Gem dem, kassér dem, eller annuller denne konfigurationsændring?"
   },
   "optionsRemoveFromAll": {
-    "message": "Fjern dette fælles panel fra alle andre paneler",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Fjern dette fælles panel fra alle andre paneler"
   },
   "optionsRemoveFromBar": {
-    "message": "Fjern fra dette panel",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Fjern fra dette panel"
   },
   "popupCapturedBarName": {
-    "message": "Værktøjslinje {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Værktøjslinje {date}"
   },
   "popupCommonBar": {
-    "message": "Fælles panel",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Fælles panel"
   },
   "popupDirtySave": {
-    "message": "Gem ændringer til \"{loaded}\"?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Gem ændringer til \"{loaded}\"?"
   },
   "popupDirtySwitch": {
-    "message": "Gem ændringer til \"{loaded}\" før du skifter til \"{target}\"?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Gem ændringer til \"{loaded}\" før du skifter til \"{target}\"?"
   },
   "popupRefreshIconsDone": {
-    "message": "Opdateret {fixed} af {visited} ikoner",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "Opdateret {fixed} af {visited} ikoner"
   },
   "popupRefreshingIcons": {
-    "message": "Opdaterer ikoner... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Opdaterer ikoner... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Aktuelt indlæst",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Aktuelt indlæst"
   },
   "popupRowSwitch": {
-    "message": "Klik for at skifte",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Klik for at skifte"
   },
   "popupSaveInPlace": {
-    "message": "Gem panelændringer til dette sæt",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Gem panelændringer til dette sæt"
   },
   "popupShowCommons": {
-    "message": "Vis fælles paneler",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Vis fælles paneler"
   },
   "popupUnknownStatus": {
-    "message": "Denne værktøjslinje matcher ikke nogen gemt bjælke.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Denne værktøjslinje matcher ikke nogen gemt bjælke."
   },
   "popupUnknownSwitch": {
-    "message": "Bogmærkerne på din værktøjslinje matcher ikke nogen af dine gemte bjælker. Skift til „{target}“ vil erstatte dem.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "Bogmærkerne på din værktøjslinje matcher ikke nogen af dine gemte bjælker. Skift til „{target}“ vil erstatte dem."
   },
   "popupUnsavedChanges": {
-    "message": "Ugemte ændringer",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Ugemte ændringer"
   },
   "tooltipGithub": {
-    "message": "Kilde på GitHub",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Kilde på GitHub"
   },
   "tooltipHelp": {
-    "message": "Hjælp",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Hjælp"
   },
   "tooltipRefreshIcons": {
-    "message": "Opdater manglende bogmærkeikoner (Shift-klik: alle)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Opdater manglende bogmærkeikoner (Shift-klik: alle)"
   },
   "tooltipSettings": {
-    "message": "Indstillinger",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Indstillinger"
   }
 }

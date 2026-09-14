@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "स्विच रद्द किया गया - यह टूलबार किसी भी सहेजे गए बार से मेल नहीं खाता। क्या रखना है, यह चुनने के लिए यहां क्लिक करें।",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "स्विच रद्द किया गया - यह टूलबार किसी भी सहेजे गए बार से मेल नहीं खाता। क्या रखना है, यह चुनने के लिए यहां क्लिक करें।"
   },
   "btnCancel": {
-    "message": "रद्द करें",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "रद्द करें"
   },
   "btnDiscard": {
-    "message": "छोड़ें",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "छोड़ें"
   },
   "btnSave": {
-    "message": "सहेजें",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "सहेजें"
   },
   "btnSaveAsNewBar": {
-    "message": "नई बार के रूप में सहेजें",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "नई बार के रूप में सहेजें"
   },
   "btnSwitchAnyway": {
-    "message": "फिर भी स्विच करें",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "फिर भी स्विच करें"
   },
   "cmdNextBar": {
-    "message": "अगले बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "अगले बुकमार्क बार पर स्विच करें।"
   },
   "cmdPreviousBar": {
-    "message": "पिछले बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "पिछले बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo1": {
-    "message": "1. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "1. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo10": {
-    "message": "10. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "10. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo2": {
-    "message": "2. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "2. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo3": {
-    "message": "3. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "3. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo4": {
-    "message": "4. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "4. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo5": {
-    "message": "5. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "5. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo6": {
-    "message": "6. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "6. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo7": {
-    "message": "7. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "7. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo8": {
-    "message": "8. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "8. बुकमार्क बार पर स्विच करें।"
   },
   "cmdSwitchTo9": {
-    "message": "9. बुकमार्क बार पर स्विच करें।",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "9. बुकमार्क बार पर स्विच करें।"
   },
   "errorMissingSets": {
-    "message": "'सेट्स' सरणी गायब है",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "'सेट्स' सरणी गायब है"
   },
   "errorNoBars": {
-    "message": "फ़ाइल में कोई बार नहीं है",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "फ़ाइल में कोई बार नहीं है"
   },
   "errorUnknownFormat": {
-    "message": "अज्ञात फ़ाइल प्रकार। समर्थित: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "अज्ञात फ़ाइल प्रकार। समर्थित: {list}"
   },
   "extDescription": {
-    "message": "कई बुकमार्क बार के बीच स्विच करें - बुकमार्क के अलग-अलग सेट रखें और उन्हें तुरंत बार में या बार से बाहर बदलें।",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "कई बुकमार्क बार रखें – प्रत्येक प्रोजेक्ट या संदर्भ के लिए एक – और एक क्लिक में स्विच करें।"
   },
   "optionsAddBar": {
-    "message": "+ बार जोड़ें",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ बार जोड़ें"
   },
   "optionsAddBarTitle": {
-    "message": "जोड़ें",
-    "description": "Tooltip on the create-bar button."
+    "message": "जोड़ें"
   },
   "optionsAddCommonBtn": {
-    "message": "जोड़ें",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "जोड़ें"
   },
   "optionsAddCommonOption": {
-    "message": "एक सामान्य बार जोड़ें…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "एक सामान्य बार जोड़ें…"
   },
   "optionsAddToAll": {
-    "message": "इस सामान्य बार को हर दूसरे बार में जोड़ें",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "इस सामान्य बार को हर दूसरे बार में जोड़ें"
   },
   "optionsBarsHeading": {
-    "message": "बुकमार्क बार",
-    "description": "Heading of the bars-management section in settings."
+    "message": "बुकमार्क बार"
   },
   "optionsBarsHint": {
-    "message": "बार को पुनर्व्यवस्थित करने के लिए खींचें। किसी बार को सामान्य के रूप में चिह्नित करें ताकि उसके बुकमार्क अन्य बार के लिए उपलब्ध हों। प्रत्येक गैर-सामान्य बार के लिए, चुनें कि कौन से सामान्य बार को पहले जोड़ना है और किस क्रम में।",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "बार को पुनर्व्यवस्थित करने के लिए खींचें। किसी बार को सामान्य के रूप में चिह्नित करें ताकि उसके बुकमार्क अन्य बार के लिए उपलब्ध हों। प्रत्येक गैर-सामान्य बार के लिए, चुनें कि कौन से सामान्य बार को पहले जोड़ना है और किस क्रम में।"
   },
   "optionsCannotDeleteLast": {
-    "message": "अंतिम बार को हटाया नहीं जा सकता",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "अंतिम बार को हटाया नहीं जा सकता"
   },
   "optionsCommonSet": {
-    "message": "सामान्य बार के रूप में चिह्नित करें (इसके बुकमार्क अन्य बार में पहले जोड़े जा सकते हैं)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "सामान्य बार के रूप में चिह्नित करें (इसके बुकमार्क अन्य बार में पहले जोड़े जा सकते हैं)"
   },
   "optionsCommonUnset": {
-    "message": "सामान्य बार - हटाने के लिए क्लिक करें",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "सामान्य बार - हटाने के लिए क्लिक करें"
   },
   "optionsCommonsLabel": {
-    "message": "सामान्य",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "सामान्य"
   },
   "optionsDeleteBar": {
-    "message": "इस बार को हटाएँ",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "इस बार को हटाएँ"
   },
   "optionsDeleteConfirm": {
-    "message": "इस बुकमार्क बार और इसके सभी बुकमार्क हटाएँ?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "इस बुकमार्क बार और इसके सभी बुकमार्क हटाएँ?"
   },
   "optionsDeleteRemove": {
-    "message": "हटाएँ",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "हटाएँ"
   },
   "optionsDirtyDiscardApply": {
-    "message": "छोड़ें और लागू करें",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "छोड़ें और लागू करें"
   },
   "optionsDirtySaveApply": {
-    "message": "सहेजें और लागू करें",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "सहेजें और लागू करें"
   },
   "optionsExportFailed": {
-    "message": "निर्यात विफल: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "निर्यात विफल: "
   },
   "optionsExportOne": {
-    "message": "इस बार को एक फ़ाइल में निर्यात करें",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "इस बार को एक फ़ाइल में निर्यात करें"
   },
   "optionsFileFormatLabel": {
-    "message": "फ़ाइल स्वरूप",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "फ़ाइल स्वरूप"
   },
   "optionsFileFormatTitle": {
-    "message": "बार निर्यात करते समय उपयोग किया जाने वाला प्रारूप। आयात फ़ाइल से ही प्रारूप का पता लगाते हैं।",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "बार निर्यात करते समय उपयोग किया जाने वाला प्रारूप। आयात फ़ाइल से ही प्रारूप का पता लगाते हैं।"
   },
   "optionsGripTitle": {
-    "message": "बार को पुनर्व्यवस्थित करने के लिए खींचें",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "बार को पुनर्व्यवस्थित करने के लिए खींचें"
   },
   "optionsHeaderSuffix": {
-    "message": "- सेटिंग्स",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- सेटिंग्स"
   },
   "optionsImportFailed": {
-    "message": "आयात विफल: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "आयात विफल: "
   },
   "optionsImportNewBar": {
-    "message": "बार आयात करें…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "बार आयात करें…"
   },
   "optionsImportNewBarTitle": {
-    "message": "फ़ाइल से एक बार को नई कॉपी के रूप में आयात करें — यह कभी भी मौजूदा बार को प्रतिस्थापित नहीं करता है।",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "फ़ाइल से एक बार को नई कॉपी के रूप में आयात करें — यह कभी भी मौजूदा बार को प्रतिस्थापित नहीं करता है।"
   },
   "optionsIoHeading": {
-    "message": "आयात और निर्यात",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "आयात और निर्यात"
   },
   "optionsIoHint": {
-    "message": "प्रत्येक बार पर निर्यात बटन द्वारा उपयोग किए जाने वाले फ़ाइल स्वरूप का चयन करें। JSON एक पूर्ण बैकअप है — यह बार के लिंक को उसके सामान्य बार में भी पुनर्स्थापित करता है। अन्य प्रारूप पठनीय टेक्स्ट हैं जिन्हें आप कहीं भी पेस्ट कर सकते हैं, और केवल फ़ोल्डर और लिंक रखते हैं। आयात इनमें से किसी भी प्रारूप को स्वीकार करता है और फ़ाइल से सही प्रारूप का पता लगाता है।",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "प्रत्येक बार पर निर्यात बटन द्वारा उपयोग किए जाने वाले फ़ाइल स्वरूप का चयन करें। JSON एक पूर्ण बैकअप है — यह बार के लिंक को उसके सामान्य बार में भी पुनर्स्थापित करता है। अन्य प्रारूप पठनीय टेक्स्ट हैं जिन्हें आप कहीं भी पेस्ट कर सकते हैं, और केवल फ़ोल्डर और लिंक रखते हैं। आयात इनमें से किसी भी प्रारूप को स्वीकार करता है और फ़ाइल से सही प्रारूप का पता लगाता है।"
   },
   "optionsLanguageAuto": {
-    "message": "स्वचालित (ब्राउज़र भाषा)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "स्वचालित (ब्राउज़र भाषा)"
   },
   "optionsLanguageLabel": {
-    "message": "भाषा",
-    "description": "Label for the UI-language picker in settings."
+    "message": "भाषा"
   },
   "optionsLoadedTag": {
-    "message": "लोड किया गया",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "लोड किया गया"
   },
   "optionsNewBarPlaceholder": {
-    "message": "नए बार का नाम…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "नए बार का नाम…"
   },
   "optionsNoCommons": {
-    "message": "अभी तक कोई सामान्य बार नहीं है। इसे यहाँ उपयोग करने के लिए किसी बार को सामान्य के रूप में चिह्नित करें।",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "अभी तक कोई सामान्य बार नहीं है। इसे यहाँ उपयोग करने के लिए किसी बार को सामान्य के रूप में चिह्नित करें।"
   },
   "optionsRemergeDirty": {
-    "message": "वर्तमान में लोड किए गए बार \"{title}\" में असुरक्षित परिवर्तन हैं। उन्हें सहेजें, छोड़ें, या इस कॉन्फ़िगरेशन परिवर्तन को रद्द करें?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "वर्तमान में लोड किए गए बार \"{title}\" में असुरक्षित परिवर्तन हैं। उन्हें सहेजें, छोड़ें, या इस कॉन्फ़िगरेशन परिवर्तन को रद्द करें?"
   },
   "optionsRemoveFromAll": {
-    "message": "इस सामान्य बार को हर दूसरे बार से हटाएँ",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "इस सामान्य बार को हर दूसरे बार से हटाएँ"
   },
   "optionsRemoveFromBar": {
-    "message": "इस बार से हटाएँ",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "इस बार से हटाएँ"
   },
   "popupCapturedBarName": {
-    "message": "टूलबार {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "टूलबार {date}"
   },
   "popupCommonBar": {
-    "message": "सामान्य बार",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "सामान्य बार"
   },
   "popupDirtySave": {
-    "message": "\"{loaded}\" में परिवर्तन सहेजें?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "\"{loaded}\" में परिवर्तन सहेजें?"
   },
   "popupDirtySwitch": {
-    "message": "{target} पर स्विच करने से पहले \"{loaded}\" में परिवर्तन सहेजें?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "{target} पर स्विच करने से पहले \"{loaded}\" में परिवर्तन सहेजें?"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed} में से {visited} आइकन ताज़ा किए गए",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed} में से {visited} आइकन ताज़ा किए गए"
   },
   "popupRefreshingIcons": {
-    "message": "आइकन रीफ़्रेश हो रहे हैं... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "आइकन रीफ़्रेश हो रहे हैं... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "वर्तमान में लोड किया गया",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "वर्तमान में लोड किया गया"
   },
   "popupRowSwitch": {
-    "message": "स्विच करने के लिए क्लिक करें",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "स्विच करने के लिए क्लिक करें"
   },
   "popupSaveInPlace": {
-    "message": "बार परिवर्तनों को इस सेट में सहेजें",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "बार परिवर्तनों को इस सेट में सहेजें"
   },
   "popupShowCommons": {
-    "message": "सामान्य बार दिखाएँ",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "सामान्य बार दिखाएँ"
   },
   "popupUnknownStatus": {
-    "message": "यह टूलबार किसी भी सहेजी गई बार से मेल नहीं खाता है।",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "यह टूलबार किसी भी सहेजी गई बार से मेल नहीं खाता है।"
   },
   "popupUnknownSwitch": {
-    "message": "आपके टूलबार पर मौजूद बुकमार्क आपकी किसी भी सहेजी गई बार से मेल नहीं खाते हैं। “{target}” पर स्विच करने से वे बदल जाएंगे।",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "आपके टूलबार पर मौजूद बुकमार्क आपकी किसी भी सहेजी गई बार से मेल नहीं खाते हैं। “{target}” पर स्विच करने से वे बदल जाएंगे।"
   },
   "popupUnsavedChanges": {
-    "message": "असुरक्षित परिवर्तन",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "असुरक्षित परिवर्तन"
   },
   "tooltipGithub": {
-    "message": "गिटहब पर स्रोत",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "गिटहब पर स्रोत"
   },
   "tooltipHelp": {
-    "message": "सहायता",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "सहायता"
   },
   "tooltipRefreshIcons": {
-    "message": "लापता बुकमार्क आइकन ताज़ा करें (Shift-क्लिक: सभी)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "लापता बुकमार्क आइकन ताज़ा करें (Shift-क्लिक: सभी)"
   },
   "tooltipSettings": {
-    "message": "सेटिंग्स",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "सेटिंग्स"
   }
 }

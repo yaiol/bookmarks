@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.6 — 2026-09-14
+
+- Shorten the Chrome Web Store summary to "Keep several bookmark bars - one per project or context - and switch in a click". The previous line ran 118 characters in English and reached 147 in German and 142 in Greek; the store's page description trims around 128, so those two ended mid-sentence in search results. Every language now fits, the longest at 102
+- Stop duplicating the English translator notes into the other 27 locale files. The `description` field is context about a string, never a translated value — Chrome ignores it at runtime and every tooling script reads it from English — so the copies were write-only. The locale files are roughly half the size; no translated text changed
+
 ## 1.0.5 — 2026-09-13
 
 - Switching to another bar no longer erases a toolbar it does not recognise. The extension only asked before replacing the toolbar when it could tell which saved bar was loaded — a marker kept per computer. On a second machine, or any fresh install, there was no marker, so a toolbar holding bookmarks that were in no saved bar was replaced with no prompt, and browser sync then carried the emptied toolbar to every other machine

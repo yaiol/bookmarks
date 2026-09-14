@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "切换已取消 - 此工具栏与任何已保存的工具栏不匹配。点击此处选择要保留的内容。",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "切换已取消 - 此工具栏与任何已保存的工具栏不匹配。点击此处选择要保留的内容。"
   },
   "btnCancel": {
-    "message": "取消",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "取消"
   },
   "btnDiscard": {
-    "message": "放弃",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "放弃"
   },
   "btnSave": {
-    "message": "保存",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "保存"
   },
   "btnSaveAsNewBar": {
-    "message": "另存为新书签栏",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "另存为新书签栏"
   },
   "btnSwitchAnyway": {
-    "message": "仍要切换",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "仍要切换"
   },
   "cmdNextBar": {
-    "message": "切换到下一个书签栏。",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "切换到下一个书签栏。"
   },
   "cmdPreviousBar": {
-    "message": "切换到上一个书签栏。",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "切换到上一个书签栏。"
   },
   "cmdSwitchTo1": {
-    "message": "切换到第 1 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "切换到第 1 个书签栏。"
   },
   "cmdSwitchTo10": {
-    "message": "切换到第 10 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "切换到第 10 个书签栏。"
   },
   "cmdSwitchTo2": {
-    "message": "切换到第 2 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "切换到第 2 个书签栏。"
   },
   "cmdSwitchTo3": {
-    "message": "切换到第 3 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "切换到第 3 个书签栏。"
   },
   "cmdSwitchTo4": {
-    "message": "切换到第 4 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "切换到第 4 个书签栏。"
   },
   "cmdSwitchTo5": {
-    "message": "切换到第 5 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "切换到第 5 个书签栏。"
   },
   "cmdSwitchTo6": {
-    "message": "切换到第 6 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "切换到第 6 个书签栏。"
   },
   "cmdSwitchTo7": {
-    "message": "切换到第 7 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "切换到第 7 个书签栏。"
   },
   "cmdSwitchTo8": {
-    "message": "切换到第 8 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "切换到第 8 个书签栏。"
   },
   "cmdSwitchTo9": {
-    "message": "切换到第 9 个书签栏。",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "切换到第 9 个书签栏。"
   },
   "errorMissingSets": {
-    "message": "缺少“sets”数组",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "缺少“sets”数组"
   },
   "errorNoBars": {
-    "message": "文件不包含书签栏",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "文件不包含书签栏"
   },
   "errorUnknownFormat": {
-    "message": "无法识别的文件类型。支持：{list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "无法识别的文件类型。支持：{list}"
   },
   "extDescription": {
-    "message": "在多个书签栏之间切换 - 保持独立的书签集，并即时切换它们。",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "保留多个书签栏 – 每个项目或上下文一个 – 一键切换。"
   },
   "optionsAddBar": {
-    "message": "+ 添加书签栏",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ 添加书签栏"
   },
   "optionsAddBarTitle": {
-    "message": "添加",
-    "description": "Tooltip on the create-bar button."
+    "message": "添加"
   },
   "optionsAddCommonBtn": {
-    "message": "添加",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "添加"
   },
   "optionsAddCommonOption": {
-    "message": "添加通用书签栏…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "添加通用书签栏…"
   },
   "optionsAddToAll": {
-    "message": "将此通用书签栏添加到所有其他书签栏",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "将此通用书签栏添加到所有其他书签栏"
   },
   "optionsBarsHeading": {
-    "message": "书签栏",
-    "description": "Heading of the bars-management section in settings."
+    "message": "书签栏"
   },
   "optionsBarsHint": {
-    "message": "拖动书签栏以重新排序。将书签栏标记为通用，以使其书签可用于其他书签栏。对于每个非通用书签栏，选择要预置哪些通用书签栏以及它们的顺序。",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "拖动书签栏以重新排序。将书签栏标记为通用，以使其书签可用于其他书签栏。对于每个非通用书签栏，选择要预置哪些通用书签栏以及它们的顺序。"
   },
   "optionsCannotDeleteLast": {
-    "message": "无法删除最后一个书签栏",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "无法删除最后一个书签栏"
   },
   "optionsCommonSet": {
-    "message": "标记为通用书签栏（其书签可预置到其他书签栏）",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "标记为通用书签栏（其书签可预置到其他书签栏）"
   },
   "optionsCommonUnset": {
-    "message": "通用书签栏 - 点击取消设置",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "通用书签栏 - 点击取消设置"
   },
   "optionsCommonsLabel": {
-    "message": "通用书签栏",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "通用书签栏"
   },
   "optionsDeleteBar": {
-    "message": "删除此书签栏",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "删除此书签栏"
   },
   "optionsDeleteConfirm": {
-    "message": "移除此书签栏及其所有书签吗？",
-    "description": "Body of the delete-confirmation modal."
+    "message": "移除此书签栏及其所有书签吗？"
   },
   "optionsDeleteRemove": {
-    "message": "移除",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "移除"
   },
   "optionsDirtyDiscardApply": {
-    "message": "放弃并应用",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "放弃并应用"
   },
   "optionsDirtySaveApply": {
-    "message": "保存并应用",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "保存并应用"
   },
   "optionsExportFailed": {
-    "message": "导出失败：",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "导出失败："
   },
   "optionsExportOne": {
-    "message": "将此栏导出到文件",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "将此栏导出到文件"
   },
   "optionsFileFormatLabel": {
-    "message": "文件格式",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "文件格式"
   },
   "optionsFileFormatTitle": {
-    "message": "导出栏时使用的格式。导入会从文件本身检测格式。",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "导出栏时使用的格式。导入会从文件本身检测格式。"
   },
   "optionsGripTitle": {
-    "message": "拖动以重新排序书签栏",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "拖动以重新排序书签栏"
   },
   "optionsHeaderSuffix": {
-    "message": "- 设置",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- 设置"
   },
   "optionsImportFailed": {
-    "message": "导入失败：",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "导入失败："
   },
   "optionsImportNewBar": {
-    "message": "导入栏…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "导入栏…"
   },
   "optionsImportNewBarTitle": {
-    "message": "从文件导入一个栏作为新副本 — 它绝不会替换现有栏。",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "从文件导入一个栏作为新副本 — 它绝不会替换现有栏。"
   },
   "optionsIoHeading": {
-    "message": "导入与导出",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "导入与导出"
   },
   "optionsIoHint": {
-    "message": "选择每个栏上导出按钮使用的文件格式。JSON 是一个完整的备份 — 它还会恢复栏与其常用栏的链接。其他格式是可读文本，您可以粘贴到任何地方，并且只保留文件夹和链接。导入接受任何这些格式，并从文件中检测出正确的格式。",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "选择每个栏上导出按钮使用的文件格式。JSON 是一个完整的备份 — 它还会恢复栏与其常用栏的链接。其他格式是可读文本，您可以粘贴到任何地方，并且只保留文件夹和链接。导入接受任何这些格式，并从文件中检测出正确的格式。"
   },
   "optionsLanguageAuto": {
-    "message": "自动（浏览器语言）",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "自动（浏览器语言）"
   },
   "optionsLanguageLabel": {
-    "message": "语言",
-    "description": "Label for the UI-language picker in settings."
+    "message": "语言"
   },
   "optionsLoadedTag": {
-    "message": "已加载",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "已加载"
   },
   "optionsNewBarPlaceholder": {
-    "message": "新书签栏名称…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "新书签栏名称…"
   },
   "optionsNoCommons": {
-    "message": "尚无通用书签栏。将书签栏标记为通用即可在此处使用。",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "尚无通用书签栏。将书签栏标记为通用即可在此处使用。"
   },
   "optionsRemergeDirty": {
-    "message": "当前加载的书签栏“{title}”有未保存的更改。保存、放弃或取消此配置更改？",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "当前加载的书签栏“{title}”有未保存的更改。保存、放弃或取消此配置更改？"
   },
   "optionsRemoveFromAll": {
-    "message": "从所有其他书签栏中移除此通用书签栏",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "从所有其他书签栏中移除此通用书签栏"
   },
   "optionsRemoveFromBar": {
-    "message": "从此书签栏中移除",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "从此书签栏中移除"
   },
   "popupCapturedBarName": {
-    "message": "书签栏 {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "书签栏 {date}"
   },
   "popupCommonBar": {
-    "message": "通用书签栏",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "通用书签栏"
   },
   "popupDirtySave": {
-    "message": "保存对“{loaded}”的更改吗？",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "保存对“{loaded}”的更改吗？"
   },
   "popupDirtySwitch": {
-    "message": "在切换到“{target}”之前，保存对“{loaded}”的更改吗？",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "在切换到“{target}”之前，保存对“{loaded}”的更改吗？"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed}/{visited} 个图标已刷新",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed}/{visited} 个图标已刷新"
   },
   "popupRefreshingIcons": {
-    "message": "正在刷新图标... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "正在刷新图标... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "当前已加载",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "当前已加载"
   },
   "popupRowSwitch": {
-    "message": "点击切换",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "点击切换"
   },
   "popupSaveInPlace": {
-    "message": "将书签栏更改保存到此集",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "将书签栏更改保存到此集"
   },
   "popupShowCommons": {
-    "message": "显示通用书签栏",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "显示通用书签栏"
   },
   "popupUnknownStatus": {
-    "message": "此书签栏与任何已保存的书签栏都不匹配。",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "此书签栏与任何已保存的书签栏都不匹配。"
   },
   "popupUnknownSwitch": {
-    "message": "您的书签栏中的书签与任何已保存的书签栏都不匹配。切换到“{target}”将替换它们。",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "您的书签栏中的书签与任何已保存的书签栏都不匹配。切换到“{target}”将替换它们。"
   },
   "popupUnsavedChanges": {
-    "message": "未保存的更改",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "未保存的更改"
   },
   "tooltipGithub": {
-    "message": "GitHub 上的源代码",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "GitHub 上的源代码"
   },
   "tooltipHelp": {
-    "message": "帮助",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "帮助"
   },
   "tooltipRefreshIcons": {
-    "message": "刷新缺失的书签图标 (Shift+点击: 全部)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "刷新缺失的书签图标 (Shift+点击: 全部)"
   },
   "tooltipSettings": {
-    "message": "设置",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "设置"
   }
 }

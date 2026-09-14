@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "전환 취소됨 - 이 도구 모음은 저장된 도구 모음과 일치하지 않습니다. 유지할 항목을 선택하려면 여기를 클릭하세요.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "전환 취소됨 - 이 도구 모음은 저장된 도구 모음과 일치하지 않습니다. 유지할 항목을 선택하려면 여기를 클릭하세요."
   },
   "btnCancel": {
-    "message": "취소",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "취소"
   },
   "btnDiscard": {
-    "message": "버리기",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "버리기"
   },
   "btnSave": {
-    "message": "저장",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "저장"
   },
   "btnSaveAsNewBar": {
-    "message": "새 막대로 저장",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "새 막대로 저장"
   },
   "btnSwitchAnyway": {
-    "message": "그래도 전환",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "그래도 전환"
   },
   "cmdNextBar": {
-    "message": "다음 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "다음 북마크 바로 전환."
   },
   "cmdPreviousBar": {
-    "message": "이전 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "이전 북마크 바로 전환."
   },
   "cmdSwitchTo1": {
-    "message": "1. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "1. 북마크 바로 전환."
   },
   "cmdSwitchTo10": {
-    "message": "10. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "10. 북마크 바로 전환."
   },
   "cmdSwitchTo2": {
-    "message": "2. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "2. 북마크 바로 전환."
   },
   "cmdSwitchTo3": {
-    "message": "3. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "3. 북마크 바로 전환."
   },
   "cmdSwitchTo4": {
-    "message": "4. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "4. 북마크 바로 전환."
   },
   "cmdSwitchTo5": {
-    "message": "5. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "5. 북마크 바로 전환."
   },
   "cmdSwitchTo6": {
-    "message": "6. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "6. 북마크 바로 전환."
   },
   "cmdSwitchTo7": {
-    "message": "7. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "7. 북마크 바로 전환."
   },
   "cmdSwitchTo8": {
-    "message": "8. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "8. 북마크 바로 전환."
   },
   "cmdSwitchTo9": {
-    "message": "9. 북마크 바로 전환.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "9. 북마크 바로 전환."
   },
   "errorMissingSets": {
-    "message": "'sets' 배열이 없습니다",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "'sets' 배열이 없습니다"
   },
   "errorNoBars": {
-    "message": "파일에 바가 없습니다",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "파일에 바가 없습니다"
   },
   "errorUnknownFormat": {
-    "message": "인식할 수 없는 파일 형식. 지원됨: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "인식할 수 없는 파일 형식. 지원됨: {list}"
   },
   "extDescription": {
-    "message": "여러 북마크 바를 전환하세요. 북마크 세트를 분리하여 관리하고 바에 즉시 로드할 수 있습니다.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "여러 북마크 바를 유지 – 프로젝트 또는 컨텍스트별로 하나씩 – 클릭 한 번으로 전환."
   },
   "optionsAddBar": {
-    "message": "+ 바 추가",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ 바 추가"
   },
   "optionsAddBarTitle": {
-    "message": "추가",
-    "description": "Tooltip on the create-bar button."
+    "message": "추가"
   },
   "optionsAddCommonBtn": {
-    "message": "추가",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "추가"
   },
   "optionsAddCommonOption": {
-    "message": "공통 바 추가…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "공통 바 추가…"
   },
   "optionsAddToAll": {
-    "message": "이 공통 바를 다른 모든 바에 추가",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "이 공통 바를 다른 모든 바에 추가"
   },
   "optionsBarsHeading": {
-    "message": "북마크 바",
-    "description": "Heading of the bars-management section in settings."
+    "message": "북마크 바"
   },
   "optionsBarsHint": {
-    "message": "바를 드래그하여 순서를 변경하세요. 바를 공통으로 표시하면 해당 북마크를 다른 바에서 사용할 수 있습니다. 공통이 아닌 각 바에 대해 어떤 공통 바를 어떤 순서로 앞에 추가할지 선택하세요.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "바를 드래그하여 순서를 변경하세요. 바를 공통으로 표시하면 해당 북마크를 다른 바에서 사용할 수 있습니다. 공통이 아닌 각 바에 대해 어떤 공통 바를 어떤 순서로 앞에 추가할지 선택하세요."
   },
   "optionsCannotDeleteLast": {
-    "message": "마지막 바는 삭제할 수 없습니다",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "마지막 바는 삭제할 수 없습니다"
   },
   "optionsCommonSet": {
-    "message": "공통 바로 표시 (해당 북마크를 다른 바 앞에 추가할 수 있습니다)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "공통 바로 표시 (해당 북마크를 다른 바 앞에 추가할 수 있습니다)"
   },
   "optionsCommonUnset": {
-    "message": "공통 바 - 클릭하여 해제",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "공통 바 - 클릭하여 해제"
   },
   "optionsCommonsLabel": {
-    "message": "공통 바",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "공통 바"
   },
   "optionsDeleteBar": {
-    "message": "이 바 삭제",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "이 바 삭제"
   },
   "optionsDeleteConfirm": {
-    "message": "이 북마크 바와 모든 북마크를 제거하시겠습니까?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "이 북마크 바와 모든 북마크를 제거하시겠습니까?"
   },
   "optionsDeleteRemove": {
-    "message": "제거",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "제거"
   },
   "optionsDirtyDiscardApply": {
-    "message": "버리고 적용",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "버리고 적용"
   },
   "optionsDirtySaveApply": {
-    "message": "저장하고 적용",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "저장하고 적용"
   },
   "optionsExportFailed": {
-    "message": "내보내기 실패: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "내보내기 실패: "
   },
   "optionsExportOne": {
-    "message": "이 바를 파일로 내보내기",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "이 바를 파일로 내보내기"
   },
   "optionsFileFormatLabel": {
-    "message": "파일 형식",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "파일 형식"
   },
   "optionsFileFormatTitle": {
-    "message": "바를 내보낼 때 사용되는 형식. 가져오기는 파일 자체에서 형식을 감지합니다.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "바를 내보낼 때 사용되는 형식. 가져오기는 파일 자체에서 형식을 감지합니다."
   },
   "optionsGripTitle": {
-    "message": "바 순서 변경을 위해 드래그",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "바 순서 변경을 위해 드래그"
   },
   "optionsHeaderSuffix": {
-    "message": "- 설정",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- 설정"
   },
   "optionsImportFailed": {
-    "message": "가져오기 실패: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "가져오기 실패: "
   },
   "optionsImportNewBar": {
-    "message": "바 가져오기…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "바 가져오기…"
   },
   "optionsImportNewBarTitle": {
-    "message": "파일에서 바를 새 복사본으로 가져옵니다 — 기존 바를 대체하지 않습니다.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "파일에서 바를 새 복사본으로 가져옵니다 — 기존 바를 대체하지 않습니다."
   },
   "optionsIoHeading": {
-    "message": "가져오기 및 내보내기",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "가져오기 및 내보내기"
   },
   "optionsIoHint": {
-    "message": "각 바의 내보내기 버튼에서 사용되는 파일 형식을 선택하세요. JSON은 완전한 백업이며, 바의 공통 바 링크도 복원합니다. 다른 형식은 어디든 붙여넣을 수 있는 읽기 가능한 텍스트이며, 폴더와 링크만 유지합니다. 가져오기는 이 형식들 중 어떤 것이든 허용하며 파일에서 올바른 형식을 감지합니다.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "각 바의 내보내기 버튼에서 사용되는 파일 형식을 선택하세요. JSON은 완전한 백업이며, 바의 공통 바 링크도 복원합니다. 다른 형식은 어디든 붙여넣을 수 있는 읽기 가능한 텍스트이며, 폴더와 링크만 유지합니다. 가져오기는 이 형식들 중 어떤 것이든 허용하며 파일에서 올바른 형식을 감지합니다."
   },
   "optionsLanguageAuto": {
-    "message": "자동 (브라우저 언어)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "자동 (브라우저 언어)"
   },
   "optionsLanguageLabel": {
-    "message": "언어",
-    "description": "Label for the UI-language picker in settings."
+    "message": "언어"
   },
   "optionsLoadedTag": {
-    "message": "로드됨",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "로드됨"
   },
   "optionsNewBarPlaceholder": {
-    "message": "새 바 이름…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "새 바 이름…"
   },
   "optionsNoCommons": {
-    "message": "아직 공통 바가 없습니다. 바를 공통으로 표시하여 여기서 사용하세요.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "아직 공통 바가 없습니다. 바를 공통으로 표시하여 여기서 사용하세요."
   },
   "optionsRemergeDirty": {
-    "message": "현재 로드된 바 \"{title}\"에 저장되지 않은 변경 사항이 있습니다. 변경 사항을 저장하거나, 버리거나, 이 구성 변경을 취소하시겠습니까?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "현재 로드된 바 \"{title}\"에 저장되지 않은 변경 사항이 있습니다. 변경 사항을 저장하거나, 버리거나, 이 구성 변경을 취소하시겠습니까?"
   },
   "optionsRemoveFromAll": {
-    "message": "이 공통 바를 다른 모든 바에서 제거",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "이 공통 바를 다른 모든 바에서 제거"
   },
   "optionsRemoveFromBar": {
-    "message": "이 바에서 제거",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "이 바에서 제거"
   },
   "popupCapturedBarName": {
-    "message": "도구 모음 {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "도구 모음 {date}"
   },
   "popupCommonBar": {
-    "message": "공통 바",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "공통 바"
   },
   "popupDirtySave": {
-    "message": "\"{loaded}\"의 변경 사항을 저장하시겠습니까?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "\"{loaded}\"의 변경 사항을 저장하시겠습니까?"
   },
   "popupDirtySwitch": {
-    "message": "{target}(으)로 전환하기 전에 \"{loaded}\"의 변경 사항을 저장하시겠습니까?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "{target}(으)로 전환하기 전에 \"{loaded}\"의 변경 사항을 저장하시겠습니까?"
   },
   "popupRefreshIconsDone": {
-    "message": "{visited}개 중 {fixed}개 아이콘 새로고침됨",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{visited}개 중 {fixed}개 아이콘 새로고침됨"
   },
   "popupRefreshingIcons": {
-    "message": "아이콘 새로 고치는 중... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "아이콘 새로 고치는 중... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "현재 로드됨",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "현재 로드됨"
   },
   "popupRowSwitch": {
-    "message": "클릭하여 전환",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "클릭하여 전환"
   },
   "popupSaveInPlace": {
-    "message": "이 세트에 바 변경 사항 저장",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "이 세트에 바 변경 사항 저장"
   },
   "popupShowCommons": {
-    "message": "공통 바 표시",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "공통 바 표시"
   },
   "popupUnknownStatus": {
-    "message": "이 도구 모음은 저장된 막대와 일치하지 않습니다.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "이 도구 모음은 저장된 막대와 일치하지 않습니다."
   },
   "popupUnknownSwitch": {
-    "message": "도구 모음의 북마크가 저장된 막대와 일치하지 않습니다. “{target}”(으)로 전환하면 현재 북마크가 교체됩니다.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "도구 모음의 북마크가 저장된 막대와 일치하지 않습니다. “{target}”(으)로 전환하면 현재 북마크가 교체됩니다."
   },
   "popupUnsavedChanges": {
-    "message": "저장되지 않은 변경 사항",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "저장되지 않은 변경 사항"
   },
   "tooltipGithub": {
-    "message": "GitHub에서 소스 보기",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "GitHub에서 소스 보기"
   },
   "tooltipHelp": {
-    "message": "도움말",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "도움말"
   },
   "tooltipRefreshIcons": {
-    "message": "누락된 북마크 아이콘 새로 고침 (Shift+클릭: 모두)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "누락된 북마크 아이콘 새로 고침 (Shift+클릭: 모두)"
   },
   "tooltipSettings": {
-    "message": "설정",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "설정"
   }
 }

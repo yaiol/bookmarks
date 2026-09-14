@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Η εναλλαγή ακυρώθηκε – αυτή η γραμμή εργαλείων δεν ταιριάζει με καμία αποθηκευμένη γραμμή. Κάντε κλικ εδώ για να επιλέξετε τι θα κρατήσετε.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Η εναλλαγή ακυρώθηκε – αυτή η γραμμή εργαλείων δεν ταιριάζει με καμία αποθηκευμένη γραμμή. Κάντε κλικ εδώ για να επιλέξετε τι θα κρατήσετε."
   },
   "btnCancel": {
-    "message": "Ακύρωση",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Ακύρωση"
   },
   "btnDiscard": {
-    "message": "Απόρριψη",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Απόρριψη"
   },
   "btnSave": {
-    "message": "Αποθήκευση",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Αποθήκευση"
   },
   "btnSaveAsNewBar": {
-    "message": "Αποθήκευση ως νέα γραμμή",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Αποθήκευση ως νέα γραμμή"
   },
   "btnSwitchAnyway": {
-    "message": "Εναλλαγή ούτως ή άλλως",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Εναλλαγή ούτως ή άλλως"
   },
   "cmdNextBar": {
-    "message": "Μετάβαση στην επόμενη γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Μετάβαση στην επόμενη γραμμή σελιδοδεικτών."
   },
   "cmdPreviousBar": {
-    "message": "Μετάβαση στην προηγούμενη γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Μετάβαση στην προηγούμενη γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo1": {
-    "message": "Μετάβαση στην 1η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Μετάβαση στην 1η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo10": {
-    "message": "Μετάβαση στην 10η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Μετάβαση στην 10η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo2": {
-    "message": "Μετάβαση στην 2η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Μετάβαση στην 2η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo3": {
-    "message": "Μετάβαση στην 3η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Μετάβαση στην 3η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo4": {
-    "message": "Μετάβαση στην 4η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Μετάβαση στην 4η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo5": {
-    "message": "Μετάβαση στην 5η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Μετάβαση στην 5η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo6": {
-    "message": "Μετάβαση στην 6η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Μετάβαση στην 6η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo7": {
-    "message": "Μετάβαση στην 7η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Μετάβαση στην 7η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo8": {
-    "message": "Μετάβαση στην 8η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Μετάβαση στην 8η γραμμή σελιδοδεικτών."
   },
   "cmdSwitchTo9": {
-    "message": "Μετάβαση στην 9η γραμμή σελιδοδεικτών.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Μετάβαση στην 9η γραμμή σελιδοδεικτών."
   },
   "errorMissingSets": {
-    "message": "Λείπει ο πίνακας 'sets'",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Λείπει ο πίνακας 'sets'"
   },
   "errorNoBars": {
-    "message": "Το αρχείο δεν περιέχει γραμμές",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Το αρχείο δεν περιέχει γραμμές"
   },
   "errorUnknownFormat": {
-    "message": "Μη αναγνωρισμένος τύπος αρχείου. Υποστηριζόμενοι: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Μη αναγνωρισμένος τύπος αρχείου. Υποστηριζόμενοι: {list}"
   },
   "extDescription": {
-    "message": "Εναλλαγή μεταξύ πολλαπλών γραμμών σελιδοδεικτών – διατηρήστε ξεχωριστά σύνολα σελιδοδεικτών και εναλλάξτε τα άμεσα μέσα και έξω από τη γραμμή.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Διατηρήστε πολλές γραμμές σελιδοδεικτών – μία ανά έργο ή περιβάλλον – και αλλάξτε με ένα κλικ."
   },
   "optionsAddBar": {
-    "message": "+ Προσθήκη γραμμής",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Προσθήκη γραμμής"
   },
   "optionsAddBarTitle": {
-    "message": "Προσθήκη",
-    "description": "Tooltip on the create-bar button."
+    "message": "Προσθήκη"
   },
   "optionsAddCommonBtn": {
-    "message": "Προσθήκη",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Προσθήκη"
   },
   "optionsAddCommonOption": {
-    "message": "Προσθήκη κοινής γραμμής…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Προσθήκη κοινής γραμμής…"
   },
   "optionsAddToAll": {
-    "message": "Προσθήκη αυτής της κοινής γραμμής σε κάθε άλλη γραμμή",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Προσθήκη αυτής της κοινής γραμμής σε κάθε άλλη γραμμή"
   },
   "optionsBarsHeading": {
-    "message": "Γραμμές σελιδοδεικτών",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Γραμμές σελιδοδεικτών"
   },
   "optionsBarsHint": {
-    "message": "Σύρετε μια γραμμή για αναδιάταξη. Σημειώστε μια γραμμή ως κοινή για να είναι οι σελιδοδείκτες της διαθέσιμοι σε άλλες γραμμές. Για κάθε μη κοινή γραμμή, επιλέξτε ποιες κοινές θα προστεθούν στην αρχή και με ποια σειρά.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Σύρετε μια γραμμή για αναδιάταξη. Σημειώστε μια γραμμή ως κοινή για να είναι οι σελιδοδείκτες της διαθέσιμοι σε άλλες γραμμές. Για κάθε μη κοινή γραμμή, επιλέξτε ποιες κοινές θα προστεθούν στην αρχή και με ποια σειρά."
   },
   "optionsCannotDeleteLast": {
-    "message": "Δεν είναι δυνατή η διαγραφή της τελευταίας γραμμής",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Δεν είναι δυνατή η διαγραφή της τελευταίας γραμμής"
   },
   "optionsCommonSet": {
-    "message": "Σήμανση ως κοινή γραμμή (οι σελιδοδείκτες της μπορούν να προστεθούν στην αρχή άλλων γραμμών)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Σήμανση ως κοινή γραμμή (οι σελιδοδείκτες της μπορούν να προστεθούν στην αρχή άλλων γραμμών)"
   },
   "optionsCommonUnset": {
-    "message": "Κοινή γραμμή - κάντε κλικ για κατάργηση σήμανσης",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Κοινή γραμμή - κάντε κλικ για κατάργηση σήμανσης"
   },
   "optionsCommonsLabel": {
-    "message": "Κοινές",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Κοινές"
   },
   "optionsDeleteBar": {
-    "message": "Διαγραφή αυτής της γραμμής",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Διαγραφή αυτής της γραμμής"
   },
   "optionsDeleteConfirm": {
-    "message": "Να αφαιρεθεί αυτή η γραμμή σελιδοδεικτών και όλοι οι σελιδοδείκτες της;",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Να αφαιρεθεί αυτή η γραμμή σελιδοδεικτών και όλοι οι σελιδοδείκτες της;"
   },
   "optionsDeleteRemove": {
-    "message": "Αφαίρεση",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Αφαίρεση"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Απόρριψη & εφαρμογή",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Απόρριψη & εφαρμογή"
   },
   "optionsDirtySaveApply": {
-    "message": "Αποθήκευση & εφαρμογή",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Αποθήκευση & εφαρμογή"
   },
   "optionsExportFailed": {
-    "message": "Η εξαγωγή απέτυχε: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Η εξαγωγή απέτυχε: "
   },
   "optionsExportOne": {
-    "message": "Εξαγωγή αυτής της γραμμής σε αρχείο",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Εξαγωγή αυτής της γραμμής σε αρχείο"
   },
   "optionsFileFormatLabel": {
-    "message": "Μορφή αρχείου",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Μορφή αρχείου"
   },
   "optionsFileFormatTitle": {
-    "message": "Μορφή που χρησιμοποιείται κατά την εξαγωγή μιας γραμμής. Οι εισαγωγές ανιχνεύουν τη μορφή από το ίδιο το αρχείο.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Μορφή που χρησιμοποιείται κατά την εξαγωγή μιας γραμμής. Οι εισαγωγές ανιχνεύουν τη μορφή από το ίδιο το αρχείο."
   },
   "optionsGripTitle": {
-    "message": "Σύρετε για αναδιάταξη γραμμών",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Σύρετε για αναδιάταξη γραμμών"
   },
   "optionsHeaderSuffix": {
-    "message": "- Ρυθμίσεις",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Ρυθμίσεις"
   },
   "optionsImportFailed": {
-    "message": "Η εισαγωγή απέτυχε: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Η εισαγωγή απέτυχε: "
   },
   "optionsImportNewBar": {
-    "message": "Εισαγωγή γραμμής…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Εισαγωγή γραμμής…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Εισαγωγή μιας γραμμής από αρχείο ως νέο αντίγραφο — δεν αντικαθιστά ποτέ μια υπάρχουσα γραμμή.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Εισαγωγή μιας γραμμής από αρχείο ως νέο αντίγραφο — δεν αντικαθιστά ποτέ μια υπάρχουσα γραμμή."
   },
   "optionsIoHeading": {
-    "message": "Εισαγωγή & εξαγωγή",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Εισαγωγή & εξαγωγή"
   },
   "optionsIoHint": {
-    "message": "Επιλέξτε τη μορφή αρχείου που χρησιμοποιείται από το κουμπί εξαγωγής σε κάθε γραμμή. Το JSON είναι ένα πλήρες αντίγραφο ασφαλείας — αποκαθιστά επίσης τους συνδέσμους της γραμμής με τις κοινές γραμμές της. Οι άλλες μορφές είναι αναγνώσιμο κείμενο που μπορείτε να επικολλήσετε οπουδήποτε και διατηρούν μόνο φακέλους και συνδέσμους. Η εισαγωγή δέχεται οποιαδήποτε από αυτές τις μορφές και ανιχνεύει τη σωστή από το αρχείο.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Επιλέξτε τη μορφή αρχείου που χρησιμοποιείται από το κουμπί εξαγωγής σε κάθε γραμμή. Το JSON είναι ένα πλήρες αντίγραφο ασφαλείας — αποκαθιστά επίσης τους συνδέσμους της γραμμής με τις κοινές γραμμές της. Οι άλλες μορφές είναι αναγνώσιμο κείμενο που μπορείτε να επικολλήσετε οπουδήποτε και διατηρούν μόνο φακέλους και συνδέσμους. Η εισαγωγή δέχεται οποιαδήποτε από αυτές τις μορφές και ανιχνεύει τη σωστή από το αρχείο."
   },
   "optionsLanguageAuto": {
-    "message": "Αυτόματη (γλώσσα περιηγητή)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Αυτόματη (γλώσσα περιηγητή)"
   },
   "optionsLanguageLabel": {
-    "message": "Γλώσσα",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Γλώσσα"
   },
   "optionsLoadedTag": {
-    "message": "Φορτωμένη",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Φορτωμένη"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Όνομα νέας γραμμής…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Όνομα νέας γραμμής…"
   },
   "optionsNoCommons": {
-    "message": "Δεν υπάρχουν κοινές γραμμές ακόμα. Σημειώστε μια γραμμή ως κοινή για να τη χρησιμοποιήσετε εδώ.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Δεν υπάρχουν κοινές γραμμές ακόμα. Σημειώστε μια γραμμή ως κοινή για να τη χρησιμοποιήσετε εδώ."
   },
   "optionsRemergeDirty": {
-    "message": "Η τρέχουσα φορτωμένη γραμμή \"{title}\" έχει μη αποθηκευμένες αλλαγές. Να αποθηκευτούν, να απορριφθούν ή να ακυρωθεί αυτή η αλλαγή διαμόρφωσης;",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "Η τρέχουσα φορτωμένη γραμμή \"{title}\" έχει μη αποθηκευμένες αλλαγές. Να αποθηκευτούν, να απορριφθούν ή να ακυρωθεί αυτή η αλλαγή διαμόρφωσης;"
   },
   "optionsRemoveFromAll": {
-    "message": "Αφαίρεση αυτής της κοινής γραμμής από κάθε άλλη γραμμή",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Αφαίρεση αυτής της κοινής γραμμής από κάθε άλλη γραμμή"
   },
   "optionsRemoveFromBar": {
-    "message": "Αφαίρεση από αυτή τη γραμμή",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Αφαίρεση από αυτή τη γραμμή"
   },
   "popupCapturedBarName": {
-    "message": "Γραμμή εργαλείων {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Γραμμή εργαλείων {date}"
   },
   "popupCommonBar": {
-    "message": "Κοινή γραμμή",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Κοινή γραμμή"
   },
   "popupDirtySave": {
-    "message": "Αποθήκευση αλλαγών στο \"{loaded}\";",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Αποθήκευση αλλαγών στο \"{loaded}\";"
   },
   "popupDirtySwitch": {
-    "message": "Αποθήκευση αλλαγών στο \"{loaded}\" πριν την εναλλαγή στο \"{target}\";",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Αποθήκευση αλλαγών στο \"{loaded}\" πριν την εναλλαγή στο \"{target}\";"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed} από {visited} εικονίδια ανανεώθηκαν",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed} από {visited} εικονίδια ανανεώθηκαν"
   },
   "popupRefreshingIcons": {
-    "message": "Ανανέωση εικονιδίων... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Ανανέωση εικονιδίων... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Τρέχουσα φορτωμένη",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Τρέχουσα φορτωμένη"
   },
   "popupRowSwitch": {
-    "message": "Κάντε κλικ για εναλλαγή",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Κάντε κλικ για εναλλαγή"
   },
   "popupSaveInPlace": {
-    "message": "Αποθήκευση αλλαγών γραμμής σε αυτό το σύνολο",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Αποθήκευση αλλαγών γραμμής σε αυτό το σύνολο"
   },
   "popupShowCommons": {
-    "message": "Εμφάνιση κοινών γραμμών",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Εμφάνιση κοινών γραμμών"
   },
   "popupUnknownStatus": {
-    "message": "Αυτή η γραμμή εργαλείων δεν ταιριάζει με καμία αποθηκευμένη γραμμή.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Αυτή η γραμμή εργαλείων δεν ταιριάζει με καμία αποθηκευμένη γραμμή."
   },
   "popupUnknownSwitch": {
-    "message": "Οι σελιδοδείκτες στη γραμμή εργαλείων σας δεν ταιριάζουν με καμία από τις αποθηκευμένες γραμμές σας. Η εναλλαγή σε «{target}» θα τους αντικαταστήσει.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "Οι σελιδοδείκτες στη γραμμή εργαλείων σας δεν ταιριάζουν με καμία από τις αποθηκευμένες γραμμές σας. Η εναλλαγή σε «{target}» θα τους αντικαταστήσει."
   },
   "popupUnsavedChanges": {
-    "message": "Μη αποθηκευμένες αλλαγές",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Μη αποθηκευμένες αλλαγές"
   },
   "tooltipGithub": {
-    "message": "Πηγαίος κώδικας στο GitHub",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Πηγαίος κώδικας στο GitHub"
   },
   "tooltipHelp": {
-    "message": "Βοήθεια",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Βοήθεια"
   },
   "tooltipRefreshIcons": {
-    "message": "Ανανέωση εικονιδίων σελιδοδεικτών που λείπουν (Shift-κλικ: όλα)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Ανανέωση εικονιδίων σελιδοδεικτών που λείπουν (Shift-κλικ: όλα)"
   },
   "tooltipSettings": {
-    "message": "Ρυθμίσεις",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Ρυθμίσεις"
   }
 }

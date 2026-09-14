@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Vaihto peruutettu – tämä työkalupalkki ei vastaa mitään tallennettua palkkia. Napsauta tästä valitaksesi, mitä säilytetään.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Vaihto peruutettu – tämä työkalupalkki ei vastaa mitään tallennettua palkkia. Napsauta tästä valitaksesi, mitä säilytetään."
   },
   "btnCancel": {
-    "message": "Peruuta",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Peruuta"
   },
   "btnDiscard": {
-    "message": "Hylkää",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Hylkää"
   },
   "btnSave": {
-    "message": "Tallenna",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Tallenna"
   },
   "btnSaveAsNewBar": {
-    "message": "Tallenna uutena palkkina",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Tallenna uutena palkkina"
   },
   "btnSwitchAnyway": {
-    "message": "Vaihda silti",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Vaihda silti"
   },
   "cmdNextBar": {
-    "message": "Vaihda seuraavaan kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Vaihda seuraavaan kirjanmerkkipalkkiin."
   },
   "cmdPreviousBar": {
-    "message": "Vaihda edelliseen kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Vaihda edelliseen kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo1": {
-    "message": "Vaihda 1. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Vaihda 1. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo10": {
-    "message": "Vaihda 10. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Vaihda 10. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo2": {
-    "message": "Vaihda 2. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Vaihda 2. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo3": {
-    "message": "Vaihda 3. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Vaihda 3. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo4": {
-    "message": "Vaihda 4. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Vaihda 4. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo5": {
-    "message": "Vaihda 5. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Vaihda 5. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo6": {
-    "message": "Vaihda 6. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Vaihda 6. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo7": {
-    "message": "Vaihda 7. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Vaihda 7. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo8": {
-    "message": "Vaihda 8. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Vaihda 8. kirjanmerkkipalkkiin."
   },
   "cmdSwitchTo9": {
-    "message": "Vaihda 9. kirjanmerkkipalkkiin.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Vaihda 9. kirjanmerkkipalkkiin."
   },
   "errorMissingSets": {
-    "message": "Puuttuva 'sets'-taulukko",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Puuttuva 'sets'-taulukko"
   },
   "errorNoBars": {
-    "message": "Tiedosto ei sisällä palkkeja",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Tiedosto ei sisällä palkkeja"
   },
   "errorUnknownFormat": {
-    "message": "Tunnistamaton tiedostotyyppi. Tuetut: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Tunnistamaton tiedostotyyppi. Tuetut: {list}"
   },
   "extDescription": {
-    "message": "Vaihda useiden kirjanmerkkipalkkien välillä - pidä erillisiä kirjanmerkkisarjoja ja vaihda niitä palkkiin ja pois palkista hetkessä.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Pidä useita kirjanmerkkipalkkeja – yksi per projekti tai konteksti – ja vaihda yhdellä napsautuksella."
   },
   "optionsAddBar": {
-    "message": "+ Lisää palkki",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Lisää palkki"
   },
   "optionsAddBarTitle": {
-    "message": "Lisää",
-    "description": "Tooltip on the create-bar button."
+    "message": "Lisää"
   },
   "optionsAddCommonBtn": {
-    "message": "Lisää",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Lisää"
   },
   "optionsAddCommonOption": {
-    "message": "Lisää yhteinen palkki…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Lisää yhteinen palkki…"
   },
   "optionsAddToAll": {
-    "message": "Lisää tämä yhteinen palkki kaikkiin muihin palkkeihin",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Lisää tämä yhteinen palkki kaikkiin muihin palkkeihin"
   },
   "optionsBarsHeading": {
-    "message": "Kirjanmerkkipalkit",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Kirjanmerkkipalkit"
   },
   "optionsBarsHint": {
-    "message": "Vedä palkkia järjestääksesi uudelleen. Merkitse palkki yhteiseksi, jotta sen kirjanmerkit ovat saatavilla muille palkkeille. Valitse jokaiselle ei-yhteiselle palkille, mitkä yhteiset lisätään alkuun ja missä järjestyksessä.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Vedä palkkia järjestääksesi uudelleen. Merkitse palkki yhteiseksi, jotta sen kirjanmerkit ovat saatavilla muille palkkeille. Valitse jokaiselle ei-yhteiselle palkille, mitkä yhteiset lisätään alkuun ja missä järjestyksessä."
   },
   "optionsCannotDeleteLast": {
-    "message": "Viimeistä palkkia ei voi poistaa",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Viimeistä palkkia ei voi poistaa"
   },
   "optionsCommonSet": {
-    "message": "Merkitse yhteiseksi palkiksi (sen kirjanmerkit voidaan lisätä muiden palkkien alkuun)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Merkitse yhteiseksi palkiksi (sen kirjanmerkit voidaan lisätä muiden palkkien alkuun)"
   },
   "optionsCommonUnset": {
-    "message": "Yhteinen palkki - napsauta poistaaksesi merkinnän",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Yhteinen palkki - napsauta poistaaksesi merkinnän"
   },
   "optionsCommonsLabel": {
-    "message": "Yhteiset",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Yhteiset"
   },
   "optionsDeleteBar": {
-    "message": "Poista tämä palkki",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Poista tämä palkki"
   },
   "optionsDeleteConfirm": {
-    "message": "Poista tämä kirjanmerkkipalkki ja kaikki sen kirjanmerkit?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Poista tämä kirjanmerkkipalkki ja kaikki sen kirjanmerkit?"
   },
   "optionsDeleteRemove": {
-    "message": "Poista",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Poista"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Hylkää ja käytä",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Hylkää ja käytä"
   },
   "optionsDirtySaveApply": {
-    "message": "Tallenna ja käytä",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Tallenna ja käytä"
   },
   "optionsExportFailed": {
-    "message": "Vienti epäonnistui: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Vienti epäonnistui: "
   },
   "optionsExportOne": {
-    "message": "Vie tämä palkki tiedostoon",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Vie tämä palkki tiedostoon"
   },
   "optionsFileFormatLabel": {
-    "message": "Tiedostomuoto",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Tiedostomuoto"
   },
   "optionsFileFormatTitle": {
-    "message": "Muoto, jota käytetään palkin viennissä. Tuonnit tunnistavat muodon itse tiedostosta.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Muoto, jota käytetään palkin viennissä. Tuonnit tunnistavat muodon itse tiedostosta."
   },
   "optionsGripTitle": {
-    "message": "Vedä järjestääksesi palkkeja uudelleen",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Vedä järjestääksesi palkkeja uudelleen"
   },
   "optionsHeaderSuffix": {
-    "message": "- Asetukset",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Asetukset"
   },
   "optionsImportFailed": {
-    "message": "Tuonti epäonnistui: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Tuonti epäonnistui: "
   },
   "optionsImportNewBar": {
-    "message": "Tuo palkki…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Tuo palkki…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Tuo palkki tiedostosta uutena kopiona — se ei koskaan korvaa olemassa olevaa palkkia.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Tuo palkki tiedostosta uutena kopiona — se ei koskaan korvaa olemassa olevaa palkkia."
   },
   "optionsIoHeading": {
-    "message": "Tuo ja vie",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Tuo ja vie"
   },
   "optionsIoHint": {
-    "message": "Valitse tiedostomuoto, jota käytetään kunkin palkin vientipainikkeessa. JSON on täydellinen varmuuskopio — se palauttaa myös palkin linkit sen yhteisiin palkkeihin. Muut muodot ovat luettavaa tekstiä, jonka voit liittää minne tahansa, ja ne säilyttävät vain kansiot ja linkit. Tuonti hyväksyy minkä tahansa näistä muodoista ja tunnistaa oikean tiedostosta.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Valitse tiedostomuoto, jota käytetään kunkin palkin vientipainikkeessa. JSON on täydellinen varmuuskopio — se palauttaa myös palkin linkit sen yhteisiin palkkeihin. Muut muodot ovat luettavaa tekstiä, jonka voit liittää minne tahansa, ja ne säilyttävät vain kansiot ja linkit. Tuonti hyväksyy minkä tahansa näistä muodoista ja tunnistaa oikean tiedostosta."
   },
   "optionsLanguageAuto": {
-    "message": "Automaattinen (selaimen kieli)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Automaattinen (selaimen kieli)"
   },
   "optionsLanguageLabel": {
-    "message": "Kieli",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Kieli"
   },
   "optionsLoadedTag": {
-    "message": "Ladattu",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Ladattu"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Uuden palkin nimi…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Uuden palkin nimi…"
   },
   "optionsNoCommons": {
-    "message": "Ei vielä yhteisiä palkkeja. Merkitse palkki yhteiseksi käyttääksesi sitä täällä.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Ei vielä yhteisiä palkkeja. Merkitse palkki yhteiseksi käyttääksesi sitä täällä."
   },
   "optionsRemergeDirty": {
-    "message": "Tällä hetkellä ladatussa palkissa \"{title}\" on tallentamattomia muutoksia. Tallenna, hylkää vai peruuta tämä kokoonpanomuutos?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "Tällä hetkellä ladatussa palkissa \"{title}\" on tallentamattomia muutoksia. Tallenna, hylkää vai peruuta tämä kokoonpanomuutos?"
   },
   "optionsRemoveFromAll": {
-    "message": "Poista tämä yhteinen palkki kaikista muista palkkeista",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Poista tämä yhteinen palkki kaikista muista palkkeista"
   },
   "optionsRemoveFromBar": {
-    "message": "Poista tästä palkista",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Poista tästä palkista"
   },
   "popupCapturedBarName": {
-    "message": "Työkalupalkki {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Työkalupalkki {date}"
   },
   "popupCommonBar": {
-    "message": "Yhteinen palkki",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Yhteinen palkki"
   },
   "popupDirtySave": {
-    "message": "Tallenna muutokset kohteeseen \"{loaded}\"?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Tallenna muutokset kohteeseen \"{loaded}\"?"
   },
   "popupDirtySwitch": {
-    "message": "Tallenna muutokset kohteeseen \"{loaded}\" ennen vaihtamista kohteeseen \"{target}\"?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Tallenna muutokset kohteeseen \"{loaded}\" ennen vaihtamista kohteeseen \"{target}\"?"
   },
   "popupRefreshIconsDone": {
-    "message": "Päivitetty {fixed}/{visited} kuvaketta",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "Päivitetty {fixed}/{visited} kuvaketta"
   },
   "popupRefreshingIcons": {
-    "message": "Päivitetään kuvakkeita... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Päivitetään kuvakkeita... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Tällä hetkellä ladattu",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Tällä hetkellä ladattu"
   },
   "popupRowSwitch": {
-    "message": "Napsauta vaihtaaksesi",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Napsauta vaihtaaksesi"
   },
   "popupSaveInPlace": {
-    "message": "Tallenna palkin muutokset tähän sarjaan",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Tallenna palkin muutokset tähän sarjaan"
   },
   "popupShowCommons": {
-    "message": "Näytä yhteiset palkit",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Näytä yhteiset palkit"
   },
   "popupUnknownStatus": {
-    "message": "Tämä työkalupalkki ei vastaa mitään tallennettua palkkia.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Tämä työkalupalkki ei vastaa mitään tallennettua palkkia."
   },
   "popupUnknownSwitch": {
-    "message": "Työkalupalkkisi kirjanmerkit eivät vastaa mitään tallennetuista palkkeistasi. Vaihtaminen kohteeseen ”{target}” korvaa ne.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "Työkalupalkkisi kirjanmerkit eivät vastaa mitään tallennetuista palkkeistasi. Vaihtaminen kohteeseen ”{target}” korvaa ne."
   },
   "popupUnsavedChanges": {
-    "message": "Tallentamattomat muutokset",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Tallentamattomat muutokset"
   },
   "tooltipGithub": {
-    "message": "Lähdekoodi GitHubissa",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Lähdekoodi GitHubissa"
   },
   "tooltipHelp": {
-    "message": "Ohje",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Ohje"
   },
   "tooltipRefreshIcons": {
-    "message": "Päivitä puuttuvat kirjanmerkkikuvakkeet (Shift-klikkaus: kaikki)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Päivitä puuttuvat kirjanmerkkikuvakkeet (Shift-klikkaus: kaikki)"
   },
   "tooltipSettings": {
-    "message": "Asetukset",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Asetukset"
   }
 }

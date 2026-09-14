@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Basculement annulé – cette barre d'outils ne correspond à aucune barre enregistrée. Cliquez ici pour choisir ce que vous souhaitez conserver.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Basculement annulé – cette barre d'outils ne correspond à aucune barre enregistrée. Cliquez ici pour choisir ce que vous souhaitez conserver."
   },
   "btnCancel": {
-    "message": "Annuler",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Annuler"
   },
   "btnDiscard": {
-    "message": "Ignorer",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Ignorer"
   },
   "btnSave": {
-    "message": "Enregistrer",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Enregistrer"
   },
   "btnSaveAsNewBar": {
-    "message": "Enregistrer comme nouvelle barre",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Enregistrer comme nouvelle barre"
   },
   "btnSwitchAnyway": {
-    "message": "Changer quand même",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Changer quand même"
   },
   "cmdNextBar": {
-    "message": "Passer à la barre de favoris suivante.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Passer à la barre de favoris suivante."
   },
   "cmdPreviousBar": {
-    "message": "Passer à la barre de favoris précédente.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Passer à la barre de favoris précédente."
   },
   "cmdSwitchTo1": {
-    "message": "Passer à la 1re barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Passer à la 1re barre de favoris."
   },
   "cmdSwitchTo10": {
-    "message": "Passer à la 10e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Passer à la 10e barre de favoris."
   },
   "cmdSwitchTo2": {
-    "message": "Passer à la 2e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Passer à la 2e barre de favoris."
   },
   "cmdSwitchTo3": {
-    "message": "Passer à la 3e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Passer à la 3e barre de favoris."
   },
   "cmdSwitchTo4": {
-    "message": "Passer à la 4e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Passer à la 4e barre de favoris."
   },
   "cmdSwitchTo5": {
-    "message": "Passer à la 5e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Passer à la 5e barre de favoris."
   },
   "cmdSwitchTo6": {
-    "message": "Passer à la 6e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Passer à la 6e barre de favoris."
   },
   "cmdSwitchTo7": {
-    "message": "Passer à la 7e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Passer à la 7e barre de favoris."
   },
   "cmdSwitchTo8": {
-    "message": "Passer à la 8e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Passer à la 8e barre de favoris."
   },
   "cmdSwitchTo9": {
-    "message": "Passer à la 9e barre de favoris.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Passer à la 9e barre de favoris."
   },
   "errorMissingSets": {
-    "message": "Tableau 'sets' manquant",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Tableau 'sets' manquant"
   },
   "errorNoBars": {
-    "message": "Le fichier ne contient aucune barre",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Le fichier ne contient aucune barre"
   },
   "errorUnknownFormat": {
-    "message": "Type de fichier non reconnu. Pris en charge : {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Type de fichier non reconnu. Pris en charge : {list}"
   },
   "extDescription": {
-    "message": "Basculez entre plusieurs barres de favoris - conservez des ensembles distincts de favoris et échangez-les instantanément.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Gardez plusieurs barres de favoris – une par projet ou contexte – et basculez en un clic."
   },
   "optionsAddBar": {
-    "message": "+ Ajouter une barre",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Ajouter une barre"
   },
   "optionsAddBarTitle": {
-    "message": "Ajouter",
-    "description": "Tooltip on the create-bar button."
+    "message": "Ajouter"
   },
   "optionsAddCommonBtn": {
-    "message": "Ajouter",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Ajouter"
   },
   "optionsAddCommonOption": {
-    "message": "Ajouter une barre commune…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Ajouter une barre commune…"
   },
   "optionsAddToAll": {
-    "message": "Ajouter cette barre commune à toutes les autres barres",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Ajouter cette barre commune à toutes les autres barres"
   },
   "optionsBarsHeading": {
-    "message": "Barres de favoris",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Barres de favoris"
   },
   "optionsBarsHint": {
-    "message": "Faites glisser une barre pour la réorganiser. Marquez une barre comme commune pour rendre ses favoris disponibles aux autres barres. Pour chaque barre non commune, choisissez quelles barres communes la précéderont et dans quel ordre.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Faites glisser une barre pour la réorganiser. Marquez une barre comme commune pour rendre ses favoris disponibles aux autres barres. Pour chaque barre non commune, choisissez quelles barres communes la précéderont et dans quel ordre."
   },
   "optionsCannotDeleteLast": {
-    "message": "Impossible de supprimer la dernière barre",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Impossible de supprimer la dernière barre"
   },
   "optionsCommonSet": {
-    "message": "Marquer comme barre commune (ses favoris peuvent être ajoutés en début d'autres barres)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Marquer comme barre commune (ses favoris peuvent être ajoutés en début d'autres barres)"
   },
   "optionsCommonUnset": {
-    "message": "Barre commune - cliquer pour désactiver",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Barre commune - cliquer pour désactiver"
   },
   "optionsCommonsLabel": {
-    "message": "Communes",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Communes"
   },
   "optionsDeleteBar": {
-    "message": "Supprimer cette barre",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Supprimer cette barre"
   },
   "optionsDeleteConfirm": {
-    "message": "Supprimer cette barre de favoris et tous ses favoris ?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Supprimer cette barre de favoris et tous ses favoris ?"
   },
   "optionsDeleteRemove": {
-    "message": "Supprimer",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Supprimer"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Ignorer et appliquer",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Ignorer et appliquer"
   },
   "optionsDirtySaveApply": {
-    "message": "Enregistrer et appliquer",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Enregistrer et appliquer"
   },
   "optionsExportFailed": {
-    "message": "Échec de l'exportation : ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Échec de l'exportation : "
   },
   "optionsExportOne": {
-    "message": "Exporter cette barre vers un fichier",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Exporter cette barre vers un fichier"
   },
   "optionsFileFormatLabel": {
-    "message": "Format de fichier",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Format de fichier"
   },
   "optionsFileFormatTitle": {
-    "message": "Format utilisé lors de l'exportation d'une barre. Les importations détectent le format à partir du fichier lui-même.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Format utilisé lors de l'exportation d'une barre. Les importations détectent le format à partir du fichier lui-même."
   },
   "optionsGripTitle": {
-    "message": "Faites glisser pour réorganiser les barres",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Faites glisser pour réorganiser les barres"
   },
   "optionsHeaderSuffix": {
-    "message": "- Paramètres",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Paramètres"
   },
   "optionsImportFailed": {
-    "message": "Échec de l'importation : ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Échec de l'importation : "
   },
   "optionsImportNewBar": {
-    "message": "Importer une barre…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Importer une barre…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Importer une barre à partir d'un fichier en tant que nouvelle copie — elle ne remplace jamais une barre existante.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Importer une barre à partir d'un fichier en tant que nouvelle copie — elle ne remplace jamais une barre existante."
   },
   "optionsIoHeading": {
-    "message": "Importer et exporter",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Importer et exporter"
   },
   "optionsIoHint": {
-    "message": "Choisissez le format de fichier utilisé par le bouton d'exportation sur chaque barre. JSON est une sauvegarde complète — il restaure également les liens de la barre vers ses barres communes. Les autres formats sont du texte lisible que vous pouvez coller n'importe où, et ne conservent que les dossiers et les liens. L'importation accepte n'importe lequel de ces formats et détecte le bon à partir du fichier.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Choisissez le format de fichier utilisé par le bouton d'exportation sur chaque barre. JSON est une sauvegarde complète — il restaure également les liens de la barre vers ses barres communes. Les autres formats sont du texte lisible que vous pouvez coller n'importe où, et ne conservent que les dossiers et les liens. L'importation accepte n'importe lequel de ces formats et détecte le bon à partir du fichier."
   },
   "optionsLanguageAuto": {
-    "message": "Auto (langue du navigateur)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Auto (langue du navigateur)"
   },
   "optionsLanguageLabel": {
-    "message": "Langue",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Langue"
   },
   "optionsLoadedTag": {
-    "message": "Chargée",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Chargée"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Nom de la nouvelle barre…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Nom de la nouvelle barre…"
   },
   "optionsNoCommons": {
-    "message": "Aucune barre commune pour l'instant. Marquez une barre comme commune pour l'utiliser ici.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Aucune barre commune pour l'instant. Marquez une barre comme commune pour l'utiliser ici."
   },
   "optionsRemergeDirty": {
-    "message": "La barre actuellement chargée « {title} » a des modifications non enregistrées. Voulez-vous les enregistrer, les ignorer ou annuler ce changement de configuration ?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "La barre actuellement chargée « {title} » a des modifications non enregistrées. Voulez-vous les enregistrer, les ignorer ou annuler ce changement de configuration ?"
   },
   "optionsRemoveFromAll": {
-    "message": "Retirer cette barre commune de toutes les autres barres",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Retirer cette barre commune de toutes les autres barres"
   },
   "optionsRemoveFromBar": {
-    "message": "Retirer de cette barre",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Retirer de cette barre"
   },
   "popupCapturedBarName": {
-    "message": "Barre d'outils {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Barre d'outils {date}"
   },
   "popupCommonBar": {
-    "message": "Barre commune",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Barre commune"
   },
   "popupDirtySave": {
-    "message": "Enregistrer les modifications de « {loaded} » ?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Enregistrer les modifications de « {loaded} » ?"
   },
   "popupDirtySwitch": {
-    "message": "Enregistrer les modifications de « {loaded} » avant de basculer vers « {target} » ?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Enregistrer les modifications de « {loaded} » avant de basculer vers « {target} » ?"
   },
   "popupRefreshIconsDone": {
-    "message": "{fixed} icônes sur {visited} actualisées",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "{fixed} icônes sur {visited} actualisées"
   },
   "popupRefreshingIcons": {
-    "message": "Actualisation des icônes... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Actualisation des icônes... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Actuellement chargée",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Actuellement chargée"
   },
   "popupRowSwitch": {
-    "message": "Cliquer pour basculer",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Cliquer pour basculer"
   },
   "popupSaveInPlace": {
-    "message": "Enregistrer les modifications de la barre dans cet ensemble",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Enregistrer les modifications de la barre dans cet ensemble"
   },
   "popupShowCommons": {
-    "message": "Afficher les barres communes",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Afficher les barres communes"
   },
   "popupUnknownStatus": {
-    "message": "Cette barre d'outils ne correspond à aucune barre enregistrée.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Cette barre d'outils ne correspond à aucune barre enregistrée."
   },
   "popupUnknownSwitch": {
-    "message": "Les marque-pages de votre barre d'outils ne correspondent à aucune de vos barres enregistrées. Le passage à «{target}» les remplacera.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "Les marque-pages de votre barre d'outils ne correspondent à aucune de vos barres enregistrées. Le passage à «{target}» les remplacera."
   },
   "popupUnsavedChanges": {
-    "message": "Modifications non enregistrées",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Modifications non enregistrées"
   },
   "tooltipGithub": {
-    "message": "Source sur GitHub",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Source sur GitHub"
   },
   "tooltipHelp": {
-    "message": "Aide",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Aide"
   },
   "tooltipRefreshIcons": {
-    "message": "Actualiser les icônes de marque-pages manquantes (Maj+clic : tout)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Actualiser les icônes de marque-pages manquantes (Maj+clic : tout)"
   },
   "tooltipSettings": {
-    "message": "Paramètres",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Paramètres"
   }
 }

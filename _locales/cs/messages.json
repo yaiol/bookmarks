@@ -1,298 +1,224 @@
 {
   "badgeUnknownBar": {
-    "message": "Přepnutí zrušeno – tento panel nástrojů neodpovídá žádnému uloženému panelu. Klikněte zde pro výběr, co si ponechat.",
-    "description": "Toolbar-button tooltip after a keyboard switch was refused because the toolbar matched no saved bar. The tooltip is on the extension's own button, so it never names the product (the brand mark is not translated)."
+    "message": "Přepnutí zrušeno – tento panel nástrojů neodpovídá žádnému uloženému panelu. Klikněte zde pro výběr, co si ponechat."
   },
   "btnCancel": {
-    "message": "Zrušit",
-    "description": "Generic dialog button - dismiss without acting."
+    "message": "Zrušit"
   },
   "btnDiscard": {
-    "message": "Zahodit",
-    "description": "Dialog button - drop unsaved changes."
+    "message": "Zahodit"
   },
   "btnSave": {
-    "message": "Uložit",
-    "description": "Dialog button - save the current bar before switching."
+    "message": "Uložit"
   },
   "btnSaveAsNewBar": {
-    "message": "Uložit jako nový panel",
-    "description": "Popup unrecognised-bar dialog - keep the current toolbar as a new saved bar before switching"
+    "message": "Uložit jako nový panel"
   },
   "btnSwitchAnyway": {
-    "message": "Přepnout přesto",
-    "description": "Popup unrecognised-bar dialog - erase the toolbar and switch without keeping it"
+    "message": "Přepnout přesto"
   },
   "cmdNextBar": {
-    "message": "Přepnout na další panel záložek.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Přepnout na další panel záložek."
   },
   "cmdPreviousBar": {
-    "message": "Přepnout na předchozí panel záložek.",
-    "description": "Keyboard-shortcut description shown on chrome://extensions/shortcuts."
+    "message": "Přepnout na předchozí panel záložek."
   },
   "cmdSwitchTo1": {
-    "message": "Přepnout na 1. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 1st bar."
+    "message": "Přepnout na 1. panel záložek."
   },
   "cmdSwitchTo10": {
-    "message": "Přepnout na 10. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 10th bar."
+    "message": "Přepnout na 10. panel záložek."
   },
   "cmdSwitchTo2": {
-    "message": "Přepnout na 2. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 2nd bar."
+    "message": "Přepnout na 2. panel záložek."
   },
   "cmdSwitchTo3": {
-    "message": "Přepnout na 3. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 3rd bar."
+    "message": "Přepnout na 3. panel záložek."
   },
   "cmdSwitchTo4": {
-    "message": "Přepnout na 4. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 4th bar."
+    "message": "Přepnout na 4. panel záložek."
   },
   "cmdSwitchTo5": {
-    "message": "Přepnout na 5. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 5th bar."
+    "message": "Přepnout na 5. panel záložek."
   },
   "cmdSwitchTo6": {
-    "message": "Přepnout na 6. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 6th bar."
+    "message": "Přepnout na 6. panel záložek."
   },
   "cmdSwitchTo7": {
-    "message": "Přepnout na 7. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 7th bar."
+    "message": "Přepnout na 7. panel záložek."
   },
   "cmdSwitchTo8": {
-    "message": "Přepnout na 8. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 8th bar."
+    "message": "Přepnout na 8. panel záložek."
   },
   "cmdSwitchTo9": {
-    "message": "Přepnout na 9. panel záložek.",
-    "description": "Keyboard-shortcut description - jump to the 9th bar."
+    "message": "Přepnout na 9. panel záložek."
   },
   "errorMissingSets": {
-    "message": "Chybí pole 'sets'",
-    "description": "Error thrown when an imported JSON file has no top-level sets array."
+    "message": "Chybí pole 'sets'"
   },
   "errorNoBars": {
-    "message": "Soubor neobsahuje žádné panely",
-    "description": "Error thrown when a single-bar import file contains zero bars."
+    "message": "Soubor neobsahuje žádné panely"
   },
   "errorUnknownFormat": {
-    "message": "Nerozpoznaný typ souboru. Podporované: {list}",
-    "description": "Error shown when an imported file has an extension no format claims. {list} is a comma-separated list of extensions such as .json, .md - do not translate it."
+    "message": "Nerozpoznaný typ souboru. Podporované: {list}"
   },
   "extDescription": {
-    "message": "Přepínejte mezi více panely záložek - mějte oddělené sady záložek a okamžitě je vyměňujte v panelu.",
-    "description": "Browser store description; must remain under 132 characters."
+    "message": "Mějte několik panelů záložek – jeden pro každý projekt či kontext – a přepínejte je kliknutím."
   },
   "optionsAddBar": {
-    "message": "+ Přidat panel",
-    "description": "Label of the button that creates a new bar."
+    "message": "+ Přidat panel"
   },
   "optionsAddBarTitle": {
-    "message": "Přidat",
-    "description": "Tooltip on the create-bar button."
+    "message": "Přidat"
   },
   "optionsAddCommonBtn": {
-    "message": "Přidat",
-    "description": "Button that confirms adding the selected common to the bar."
+    "message": "Přidat"
   },
   "optionsAddCommonOption": {
-    "message": "Přidat společný panel…",
-    "description": "Placeholder option in the dropdown that adds a common to a bar."
+    "message": "Přidat společný panel…"
   },
   "optionsAddToAll": {
-    "message": "Přidat tento společný panel ke všem ostatním panelům",
-    "description": "Tooltip on the + button of a common bar card."
+    "message": "Přidat tento společný panel ke všem ostatním panelům"
   },
   "optionsBarsHeading": {
-    "message": "Panely záložek",
-    "description": "Heading of the bars-management section in settings."
+    "message": "Panely záložek"
   },
   "optionsBarsHint": {
-    "message": "Přetáhněte panel pro změnu pořadí. Označte panel jako společný, aby jeho záložky byly dostupné ostatním. Pro každý nespololečný panel vyberte, které společné se mají připojit na začátek a v jakém pořadí.",
-    "description": "Explanatory hint under the Bookmark bars heading."
+    "message": "Přetáhněte panel pro změnu pořadí. Označte panel jako společný, aby jeho záložky byly dostupné ostatním. Pro každý nespololečný panel vyberte, které společné se mají připojit na začátek a v jakém pořadí."
   },
   "optionsCannotDeleteLast": {
-    "message": "Nelze smazat poslední panel",
-    "description": "Tooltip on the delete icon when only one bar remains (disabled)."
+    "message": "Nelze smazat poslední panel"
   },
   "optionsCommonSet": {
-    "message": "Označit jako společný panel (jeho záložky lze připojit na začátek jiných panelů)",
-    "description": "Tooltip on the common toggle when the bar is not yet common."
+    "message": "Označit jako společný panel (jeho záložky lze připojit na začátek jiných panelů)"
   },
   "optionsCommonUnset": {
-    "message": "Společný panel - kliknutím zrušíte",
-    "description": "Tooltip on the common toggle when the bar is already common."
+    "message": "Společný panel - kliknutím zrušíte"
   },
   "optionsCommonsLabel": {
-    "message": "Společné",
-    "description": "Label above the per-bar list of selected common bars."
+    "message": "Společné"
   },
   "optionsDeleteBar": {
-    "message": "Smazat tento panel",
-    "description": "Tooltip on the per-bar delete icon."
+    "message": "Smazat tento panel"
   },
   "optionsDeleteConfirm": {
-    "message": "Odebrat tento panel záložek a všechny jeho záložky?",
-    "description": "Body of the delete-confirmation modal."
+    "message": "Odebrat tento panel záložek a všechny jeho záložky?"
   },
   "optionsDeleteRemove": {
-    "message": "Odebrat",
-    "description": "Confirm button of the delete-confirmation modal."
+    "message": "Odebrat"
   },
   "optionsDirtyDiscardApply": {
-    "message": "Zahodit a použít",
-    "description": "Button that discards unsaved edits and applies the config change."
+    "message": "Zahodit a použít"
   },
   "optionsDirtySaveApply": {
-    "message": "Uložit a použít",
-    "description": "Button that saves unsaved edits then applies the config change."
+    "message": "Uložit a použít"
   },
   "optionsExportFailed": {
-    "message": "Export se nezdařil: ",
-    "description": "Alert prefix when a JSON export fails; followed by the error detail."
+    "message": "Export se nezdařil: "
   },
   "optionsExportOne": {
-    "message": "Exportovat tento panel do souboru",
-    "description": "Tooltip on the per-bar export icon. The file format comes from the Import & export section picker."
+    "message": "Exportovat tento panel do souboru"
   },
   "optionsFileFormatLabel": {
-    "message": "Formát souboru",
-    "description": "Label beside the dropdown that selects the export file format."
+    "message": "Formát souboru"
   },
   "optionsFileFormatTitle": {
-    "message": "Formát použitý při exportu panelu. Importy detekují formát ze samotného souboru.",
-    "description": "Tooltip on the file-format dropdown."
+    "message": "Formát použitý při exportu panelu. Importy detekují formát ze samotného souboru."
   },
   "optionsGripTitle": {
-    "message": "Přetáhněte pro změnu pořadí panelů",
-    "description": "Tooltip on the drag handle of a bar card."
+    "message": "Přetáhněte pro změnu pořadí panelů"
   },
   "optionsHeaderSuffix": {
-    "message": "- Nastavení",
-    "description": "Suffix after the app name in the settings page header and tab title."
+    "message": "- Nastavení"
   },
   "optionsImportFailed": {
-    "message": "Import se nezdařil: ",
-    "description": "Alert prefix when applying an import fails; followed by the error detail."
+    "message": "Import se nezdařil: "
   },
   "optionsImportNewBar": {
-    "message": "Importovat lištu…",
-    "description": "Label of the button beside Add bar that imports a bar from a file as a new dated copy."
+    "message": "Importovat lištu…"
   },
   "optionsImportNewBarTitle": {
-    "message": "Importovat lištu ze souboru jako novou kopii — nikdy nenahradí existující lištu.",
-    "description": "Tooltip on the Import bar button beside Add bar."
+    "message": "Importovat lištu ze souboru jako novou kopii — nikdy nenahradí existující lištu."
   },
   "optionsIoHeading": {
-    "message": "Import a export",
-    "description": "Heading of the settings section holding the file-format picker and the Import button."
+    "message": "Import a export"
   },
   "optionsIoHint": {
-    "message": "Vyberte formát souboru používaný tlačítkem exportu na každém panelu. JSON je kompletní záloha — obnovuje také odkazy panelu na jeho běžné panely. Ostatní formáty jsou čitelné texty, které můžete vložit kamkoli, a uchovávají pouze složky a odkazy. Import přijímá kterýkoli z těchto formátů a detekuje správný z daného souboru.",
-    "description": "Explanatory hint under the Import & export heading."
+    "message": "Vyberte formát souboru používaný tlačítkem exportu na každém panelu. JSON je kompletní záloha — obnovuje také odkazy panelu na jeho běžné panely. Ostatní formáty jsou čitelné texty, které můžete vložit kamkoli, a uchovávají pouze složky a odkazy. Import přijímá kterýkoli z těchto formátů a detekuje správný z daného souboru."
   },
   "optionsLanguageAuto": {
-    "message": "Auto (jazyk prohlížeče)",
-    "description": "First option in the language picker - follow the browser's language."
+    "message": "Auto (jazyk prohlížeče)"
   },
   "optionsLanguageLabel": {
-    "message": "Jazyk",
-    "description": "Label for the UI-language picker in settings."
+    "message": "Jazyk"
   },
   "optionsLoadedTag": {
-    "message": "Načteno",
-    "description": "Tag shown on the bar card that is currently active in the bar."
+    "message": "Načteno"
   },
   "optionsNewBarPlaceholder": {
-    "message": "Název nového panelu…",
-    "description": "Placeholder in the create-bar text input."
+    "message": "Název nového panelu…"
   },
   "optionsNoCommons": {
-    "message": "Zatím žádné společné panely. Označte panel jako společný, abyste jej zde mohli použít.",
-    "description": "Empty-state text in a bar's commons picker when no common bars exist."
+    "message": "Zatím žádné společné panely. Označte panel jako společný, abyste jej zde mohli použít."
   },
   "optionsRemergeDirty": {
-    "message": "Aktuálně načtený panel „{title}“ má neuložené změny. Chcete je uložit, zahodit, nebo zrušit tuto změnu konfigurace?",
-    "description": "Dirty prompt shown when a settings change would re-merge the loaded bar. {title} is the bar name."
+    "message": "Aktuálně načtený panel „{title}“ má neuložené změny. Chcete je uložit, zahodit, nebo zrušit tuto změnu konfigurace?"
   },
   "optionsRemoveFromAll": {
-    "message": "Odebrat tento společný panel ze všech ostatních panelů",
-    "description": "Tooltip on the − button of a common bar card."
+    "message": "Odebrat tento společný panel ze všech ostatních panelů"
   },
   "optionsRemoveFromBar": {
-    "message": "Odebrat z tohoto panelu",
-    "description": "Tooltip on the ✕ that removes a common from a bar's selection."
+    "message": "Odebrat z tohoto panelu"
   },
   "popupCapturedBarName": {
-    "message": "Panel nástrojů {date}",
-    "description": "Default name for a bar created from the current toolbar. {date} is YYYY-MM-DD."
+    "message": "Panel nástrojů {date}"
   },
   "popupCommonBar": {
-    "message": "Společný panel",
-    "description": "Tooltip on the icon marking a row as a common bar."
+    "message": "Společný panel"
   },
   "popupDirtySave": {
-    "message": "Uložit změny do „{loaded}“?",
-    "description": "Dirty prompt when no target bar is named. {loaded} is the current bar name."
+    "message": "Uložit změny do „{loaded}“?"
   },
   "popupDirtySwitch": {
-    "message": "Uložit změny do „{loaded}“ před přepnutím na „{target}“?",
-    "description": "Dirty-switch prompt when moving from one bar to another. {loaded} and {target} are bar names."
+    "message": "Uložit změny do „{loaded}“ před přepnutím na „{target}“?"
   },
   "popupRefreshIconsDone": {
-    "message": "Obnoveno {fixed} z {visited} ikon",
-    "description": "Result shown on the refresh button. {fixed} is how many icons actually arrived, {visited} how many pages were visited."
+    "message": "Obnoveno {fixed} z {visited} ikon"
   },
   "popupRefreshingIcons": {
-    "message": "Obnovuji ikony... {done}/{total}",
-    "description": "Progress shown on the refresh button while it runs. {done} and {total} are counts."
+    "message": "Obnovuji ikony... {done}/{total}"
   },
   "popupRowLoaded": {
-    "message": "Aktuálně načteno",
-    "description": "Tooltip on the bar row that is currently active in the bookmark bar."
+    "message": "Aktuálně načteno"
   },
   "popupRowSwitch": {
-    "message": "Kliknutím přepnete",
-    "description": "Tooltip on an inactive bar row - click it to load that bar."
+    "message": "Kliknutím přepnete"
   },
   "popupSaveInPlace": {
-    "message": "Uložit změny panelu do této sady",
-    "description": "Tooltip on the save icon shown on the dirty loaded row."
+    "message": "Uložit změny panelu do této sady"
   },
   "popupShowCommons": {
-    "message": "Zobrazit společné panely",
-    "description": "Popup checkbox label - also list bars marked as common in the switcher."
+    "message": "Zobrazit společné panely"
   },
   "popupUnknownStatus": {
-    "message": "Tento panel nástrojů neodpovídá žádnému uloženému panelu.",
-    "description": "Popup notice shown above the bar list when the toolbar matches no saved bar"
+    "message": "Tento panel nástrojů neodpovídá žádnému uloženému panelu."
   },
   "popupUnknownSwitch": {
-    "message": "Záložky na vašem panelu nástrojů neodpovídají žádnému z vašich uložených panelů. Přepnutím na „{target}“ je nahradíte.",
-    "description": "Popup dialog shown before switching when the toolbar matches no saved bar. {target} is the bar being switched to."
+    "message": "Záložky na vašem panelu nástrojů neodpovídají žádnému z vašich uložených panelů. Přepnutím na „{target}“ je nahradíte."
   },
   "popupUnsavedChanges": {
-    "message": "Neuložené změny",
-    "description": "Tooltip on the dot marking the loaded bar as having unsaved edits."
+    "message": "Neuložené změny"
   },
   "tooltipGithub": {
-    "message": "Zdroj na GitHubu",
-    "description": "Footer icon tooltip - link to the source repository."
+    "message": "Zdroj na GitHubu"
   },
   "tooltipHelp": {
-    "message": "Nápověda",
-    "description": "Footer icon tooltip - opens the online help page."
+    "message": "Nápověda"
   },
   "tooltipRefreshIcons": {
-    "message": "Obnovit chybějící ikony záložek (Shift+klik: vše)",
-    "description": "Popup footer button. Re-fetches the favicons of the bookmarks on the bar."
+    "message": "Obnovit chybějící ikony záložek (Shift+klik: vše)"
   },
   "tooltipSettings": {
-    "message": "Nastavení",
-    "description": "Footer gear-icon tooltip - opens the settings page."
+    "message": "Nastavení"
   }
 }
