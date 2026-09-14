@@ -19,7 +19,7 @@
 </div>
 
 <h3 align="center">
-  <a href="https://apps.yaiol.com/en/p/bookmarks/">Website</a>
+  <a href="https://apps.yaiol.com/p/bookmarks/">Website</a>
   <span>&nbsp;·&nbsp;</span>
   <a href="#install">Install</a>
   <span>&nbsp;·&nbsp;</span>
@@ -31,7 +31,7 @@
 </h3>
 
 <div align="center">
-  <sub><a href="https://apps.yaiol.com/en/p/bookmarks/help/"><b>Help in 28 languages</b></a></sub>
+  <sub><a href="https://apps.yaiol.com/p/bookmarks/help/"><b>Help in 28 languages</b></a></sub>
 </div>
 
 <!-- /readme:nav -->
@@ -78,9 +78,9 @@ A browser sticks you with one bookmark bar. Bookmark Bar Switcher lets you keep 
 
 | | |
 |---|---|
-| **User manual** | [Read it online](https://apps.yaiol.com/en/p/bookmarks/help/) |
-| **What's new** | [Release notes](https://apps.yaiol.com/en/p/bookmarks/help/releases/) |
-| **Product page** | [apps.yaiol.com](https://apps.yaiol.com/en/p/bookmarks/) |
+| **User manual** | [Read it online](https://apps.yaiol.com/p/bookmarks/help/) |
+| **What's new** | [Release notes](https://apps.yaiol.com/p/bookmarks/help/releases/) |
+| **Product page** | [apps.yaiol.com](https://apps.yaiol.com/p/bookmarks/) |
 
 ---
 
